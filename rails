@@ -1,0 +1,741 @@
+Script started on Sat 01 Jan 2011 01:21:55 PM EST
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+Could not find gem 'indextank (= 0.0.4, runtime)' in any of the gem sources.
+Try running `bundle install`.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle install
+Fetching source index for http://rubygems.org/
+Enter your password to install the bundled RubyGems to your system: 
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.0) 
+Using builder (2.1.2) 
+Using i18n (0.4.2) 
+Using activemodel (3.0.0) 
+Using erubis (2.6.6) 
+Using rack (1.2.1) 
+Using rack-mount (0.6.13) 
+Using rack-test (0.5.6) 
+Using tzinfo (0.3.23) 
+Using actionpack (3.0.0) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.13) 
+Using actionmailer (3.0.0) 
+Using arel (1.0.1) 
+Using activerecord (3.0.0) 
+Using activeresource (3.0.0) 
+Installing addressable (2.2.2) 
+Using bundler (1.0.2) 
+Installing multipart-post (1.0.1) 
+Installing faraday (0.5.3) 
+Installing yajl-ruby (0.7.7) with native extensions 
+Installing indextank (0.0.4) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.0) 
+Using rails (3.0.0) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle show indextank
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Gemfile
+#	new file:   Gemfile.lock
+#	new file:   app/assets/.sax_single.rb.swo
+#	new file:   app/assets/.sax_single.rb.swp
+#	new file:   app/assets/output_saved.txt
+#	new file:   app/assets/sax.rb
+#	new file:   app/assets/sax_single.rb
+#	new file:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/output_saved.txt
+#	deleted:    app/sax.rb
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git -commi[K[K[K[K[K[Kcommit =am[K[K[K-am "gem in[K[Kand moving files"
+[master 01c648c] gem and moving files
+ 7 files changed, 96 insertions(+), 9 deletions(-)
+ create mode 100644 Gemfile.lock
+ create mode 100644 app/assets/.sax_single.rb.swo
+ create mode 100644 app/assets/.sax_single.rb.swp
+ rename app/{ => assets}/output_saved.txt (100%)
+ copy app/{ => assets}/sax.rb (100%)
+ rename app/{sax.rb => assets/sax_single.rb} (96%)
+ create mode 100644 rails
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Counting objects: 12, done.
+Delta compression using up to 2 threads.
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 5.61 KiB, done.
+Total 9 (delta 4), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   4b8ab2e..01c648c  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku create
+Creating deep-robot-309.... done
+Created http://deep-robot-309.heroku.com/ | git@heroku.com:deep-robot-309.git
+Git remote heroku added
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku addons:add indextank:contest_30day
+Adding indextank:contest_30day to deep-robot-309... done
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ cd apps/ass[K[K[K[K[K/assets/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_o[Ksingle.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+Adj
+
+ Of a test match
+		 His test average was nearly 100.
+
+Noun
+
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+
+Verb
+
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+sax_single.rb:226: syntax error, unexpected tIDENTIFIER, expecting tASSOC
+...ord => word[:word], :text word[:meaning]})
+                              ^
+sax_single.rb:226: syntax error, unexpected '}', expecting kEND
+...[:word], :text word[:meaning]})
+                              ^
+sax_single.rb:235: syntax error, unexpected $end, expecting kEND
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb clear[K
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+sax_single.rb:234:in `[]': can't convert String into Integer (TypeError)
+	from sax_single.rb:234
+	from sax_single.rb:233:in `each'
+	from sax_single.rb:233
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ jj[K[Kclearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+resultsdocid2text To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+docid1text A challengeNoun|challenge.
+ An examination, given often during the academic term.
+search_time0.021facetsmatches2
+sax_single.rb:235:in `[]': can't convert String into Integer (TypeError)
+	from sax_single.rb:235
+	from sax_single.rb:234:in `each'
+	from sax_single.rb:234
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+resultsdocid1text A challengeNoun|challenge.
+ An examination, given often during the academic term.
+docid2text To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+search_time0.002facetsmatches2
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cl[K[Kclear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+sax_single.rb:235: unterminated string meets end of file
+sax_single.rb:235: syntax error, unexpected $end, expecting kEND
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = Verb
+nil
+word = Noun
+nil
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ce[Klear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+word = Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = meaning To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+wordVerb
+speech = Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = meaning A challengeNoun|challenge.
+ An examination, given often during the academic term.
+wordNoun
+speech = Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = meaning A challengeNoun|challenge.
+ An examination, given often during the academic term.
+wordNoun
+word = meaning To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+wordVerb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = {'meaning': ' A challengeNoun|challenge.\n An examination, given often during the academic term.\n', 'word': 'Noun\n'}
+word = {'meaning': ' To challengeVerb|challenge.\n To administer or assign an examination that is given often during the academic term.\n', 'word': 'Verb\n'}
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+word = {'meaning': ' A challengeNoun|challenge.\n An examination, given often during the academic term.\n', 'word': 'Noun\n'}
+word = {'meaning': ' To challengeVerb|challenge.\n To administer or assign an examination that is given often during the academic term.\n', 'word': 'Verb\n'}
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+meaning Of a test match
+		 His test average was nearly 100.
+wordAdj
+meaning A challengeNoun|challenge.
+ An examination, given often during the academic term.
+wordNoun
+meaning To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+wordVerb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+word = Verb
+word = Verb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb clear[K
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+Verb
+Verb
+Verb
+word = Verb
+word = Verb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+sax_single.rb:28: undefined local variable or method `word' for main:Object (NameError)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+test
+test
+test
+word = Verb
+word = Verb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+word = Verb
+speech = Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = Verb
+speech = Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+word = test
+speech = Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+word = test
+speech = Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+sax_single.rb:232: undefined local variable or method `meaning' for main:Object (NameError)
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:29:in `each_with_index'
+	from sax_single.rb:227:in `each'
+	from sax_single.rb:227:in `each_with_index'
+	from sax_single.rb:227
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+test
+Adj
+
+ Of a test match
+		 His test average was nearly 100.
+Noun
+
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:90:in `search': IndexTank::IndexInitializing (IndexTank::IndexInitializing)
+	from sax_single.rb:240
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+test
+Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:90:in `search': IndexTank::IndexInitializing (IndexTank::IndexInitializing)
+	from sax_single.rb:240
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ /home/bhaarat/Downloads/sample.txt >[K< ""t"e"s"t"
+bash: test: No such file or directory
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ "test" > /home/h[Kbhaarat/Downloads/sample.txt
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ more /home/bhaarat/Downloads/sample.txt 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ more /home/bhaarat/Downloads/sample.txt "test" > /home/bhaarat/Downloads/sample.txt[1@e[1@c[1@h[1@o[1@ 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ echo "test" > /home/bhaarat/Downloads/sample.txt[8Pmore /home/bhaarat/Downloads/sample.txt 
+test
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ more /home/bhaarat/Downloads/sample.txt echo "test" > /home/bhaarat/Downloads/sample.txt[C[C[1P[1P[1P[1P[1@c[1@r[1@i[1@c[1@k[1@e[1@t
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ Aecho "cricket" > /home/bhaarat/Downloads/sample.txt[11Pmore /home/bhaarat/Downloads/sample.txt 
+cricket
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ gedit /home/bhaarat/d[KDownloads/cr[K[Ksample.txt 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cleargedit /home/bhaarat/Downloads/sample.txt 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cleargedit /home/bhaarat/Downloads/sample.txt clear[Kgedit /home/bhaarat/Downloads/sample.txt [1Pmore[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "cricket" > /home/bhaarat/Downloads/sample.txt[11Pmore /home/bhaarat/Downloads/sample.txt echo "test" > /home/bhaarat/Downloads/sample.txt[8Pmore /home/bhaarat/Downloads/sample.txt "test" > /home/bhaarat/Downloads/sample.txt/home/bhaarat/Downloads/sample.txt < "test"[24Pruby sax_single.rb clear[Kruby sax_single.rb clear[Kruby sax_single.rb 
+sax_single.rb:22: warning: character class has `-' without escape
+sax_single.rb:10: undefined method `int' for main:Object (NoMethodError)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb clear[K
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:22: warning: character class has `-' without escape
+test
+test
+Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+sax_single.rb:238: undefined method `document' for nil:NilClass (NoMethodError)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:22: warning: character class has `-' without escape
+test
+1
+test
+Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/function.rb:45: IndexTank::IndexInitializing (IndexTank::IndexInitializing)
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/builder.rb:18
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:57:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:239
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:20: warning: character class has `-' without escape
+test
+1
+test
+Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+test
+2
+test
+Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:20: warning: character class has `-' without escape
+test
+1
+test
+2
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:20: warning: character class has `-' without escape
+test
+1
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:41:in `delete': IndexTank::NonExistentIndex (IndexTank::NonExistentIndex)
+	from sax_single.rb:15
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ :[Kclear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+test
+1
+test
+2
+sax_single.rb:245: undefined method `[]' for nil:NilClass (NoMethodError)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:19: warning: character class has `-' without escape
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/function.rb:47: IndexTank::NonExistentIndex (IndexTank::NonExistentIndex)
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/builder.rb:18
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:57:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:236
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:20: warning: character class has `-' without escape
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/function.rb:45: IndexTank::IndexInitializing (IndexTank::IndexInitializing)
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/builder.rb:18
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:57:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:237
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:20: warning: character class has `-' without escape
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/function.rb:47: IndexTank::NonExistentIndex (IndexTank::NonExistentIndex)
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/builder.rb:18
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:57:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:237
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+/usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/function.rb:45: IndexTank::IndexInitializing (IndexTank::IndexInitializing)
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:45:in `finish'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/builder.rb:18
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/response.rb:17:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:57:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:238
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ c;ear
+c: command not found
+No command 'ear' found, did you mean:
+ Command 'dar' from package 'dar' (universe)
+ Command 'jar' from package 'openjdk-6-jdk' (main)
+ Command 'jar' from package 'fastjar' (main)
+ Command 'jar' from package 'gcj-4.3' (universe)
+ Command 'jar' from package 'gcj-4.4-jdk' (main)
+ Command 'xar' from package 'xar' (universe)
+ Command 'tar' from package 'tar' (main)
+ Command 'ar' from package 'binutils' (main)
+ Command 'ar' from package 'binutils-multiarch' (universe)
+ Command 'rar' from package 'rar' (multiverse)
+ Command 'sar' from package 'sysstat' (main)
+ Command 'sar' from package 'atsar' (universe)
+ Command 'par' from package 'par' (universe)
+ Command 'pear' from package 'php-pear' (main)
+ear: command not found
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear;ear
+c: command not found
+No command 'ear' found, did you mean:
+ Command 'dar' from package 'dar' (universe)
+ Command 'jar' from package 'openjdk-6-jdk' (main)
+ Command 'jar' from package 'fastjar' (main)
+ Command 'jar' from package 'gcj-4.3' (universe)
+ Command 'jar' from package 'gcj-4.4-jdk' (main)
+ Command 'xar' from package 'xar' (universe)
+ Command 'tar' from package 'tar' (main)
+ Command 'ar' from package 'binutils' (main)
+ Command 'ar' from package 'binutils-multiarch' (universe)
+ Command 'rar' from package 'rar' (multiverse)
+ Command 'sar' from package 'sysstat' (main)
+ Command 'sar' from package 'atsar' (universe)
+ Command 'par' from package 'par' (universe)
+ Command 'pear' from package 'php-pear' (main)
+ear: command not found
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear;earlear;earruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+0 documents found\n]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ ruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+2 documents found\nword = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+test
+test
+2 documents found\nword = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb 
+sax_single.rb:21: warning: character class has `-' without escape
+test
+test
+2 documents found\nword = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+word = test
+speech = Adj
+ Of a test match
+		 His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb clear
+sax_single.rb:20: warning: character class has `-' without escape
+^[[Acricket
+^[[A^C/usr/lib/ruby/1.8/net/protocol.rb:135:in `sysread': Interrupt
+	from /usr/lib/ruby/1.8/net/protocol.rb:135:in `rbuf_fill'
+	from /usr/lib/ruby/1.8/timeout.rb:62:in `timeout'
+	from /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+	from /usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+	from /usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+	from /usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+	from /usr/lib/ruby/1.8/net/http.rb:2024:in `read_status_line'
+	from /usr/lib/ruby/1.8/net/http.rb:2013:in `read_new'
+	from /usr/lib/ruby/1.8/net/http.rb:1050:in `request'
+	from /usr/lib/ruby/1.8/net/http.rb:1037:in `request'
+	from /usr/lib/ruby/1.8/net/http.rb:543:in `start'
+	from /usr/lib/ruby/1.8/net/http.rb:1035:in `request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/adapter/net_http.rb:45:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/request.rb:26:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:169:in `run_request'
+	from /usr/lib/ruby/gems/1.8/gems/faraday-0.5.3/lib/faraday/connection.rb:72:in `put'
+	from /usr/lib/ruby/gems/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:21:in `add'
+	from sax_single.rb:238
+
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb clear
+sax_single.rb:20: warning: character class has `-' without escape
+cricket
+test
+1 documents found\nword = cricket
+speech = Noun
+ An insect in the order Orthoptera that makes a chirping sound by rubbing its wing casings against combs on its hind legs.
+ A wooden footstool.
+Noun
+ A game played outdoors with bats and a ball between two teams of eleven, popular in England and many Commonwealth countries.
+ An act that is fair and sportsmanlike, derived from the sport.
+		 That players foul wasnt cricket!
+Verb
+ To play the game of cricket.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clearruby sax_single.rb clear
+sax_single.rb:20: warning: character class has `-' without escape
+cricket
+test
+1 documents found\nword = cricket
+speech = Noun
+ An insect in the order Orthoptera that makes a chirping sound by rubbing its wing casings against combs on its hind legs.
+ A wooden footstool.
+Noun
+ A game played outdoors with bats and a ball between two teams of eleven, popular in England and many Commonwealth countries.
+ An act that is fair and sportsmanlike, derived from the sport.
+		 That players foul wasnt cricket!
+Verb
+ To play the game of cricket.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ mv /home/bhaarat/dow[K[K[KDownloads/sample.txt .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .sample.txt.swp
+#	new file:   sample.txt
+#	modified:   sax_single.rb
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discar

@@ -1,27 +1,37 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'indextank'
 
 #file = File.read(File.join())
-#file = File.new('/home/bhaarat/Downloads/output.txt', 'r')
 #out = File.new('allmeanings.txt', 'w')
 
-#while (line = file.gets)
-word = ""
-line = "test"
+#file = File.new('/home/bhaarat/Downloads/sample.txt', 'r')
+file = File.new(File.join(RAILS_ROOT, "app/assets/sample.txt"))
+counter = 0
+while (line = file.gets)
+
+client = IndexTank::Client.new(ENV['INDEXTANK_API_URL'] || 'http://:9sQ4eiUCEF+935@dw6hr.api.indextank.com')
+index_name = client.indexes('idx')
+#index.delete()
+#index.add()
+sword = ""
 if (line.match(/^Wiktionary/) == nil and line.match(/^Appendix/) == nil and line.match(/^Category/) == nil and line.match(/^Index/) == nil)
-	#word = line.gsub(/\n/,'')
+	sword = line.gsub(/\n/,'')
 	if (line.gsub(/\n/,'').match(/^[a-zA-Z-\s]+$/)!=nil)
-		word = line.gsub(/\n/,'')
+		sword = line.gsub(/\n/,'')
 	end
-	if (word.length > 0 and word.match(/\w+\s\w+/))
-		word = word.gsub(/\s/,'_')
+	if (sword.length > 0 and sword.match(/\w+\s\w+/))
+		sword = sword.gsub(/\s/,'_')
 	end
 end
-#out << word + "\n" 
-puts word
-if (word.length > 0)
-link = "http://en.wiktionary.org/w/api.php?action=query&titles="+word.to_s+"&prop=revisions&rvprop=content&rvgeneratexml=&format=xml"
+#out << sword + "\n" 
+#puts sword
+if (sword.length > 0)
+counter = counter + 1
+#puts counter.to_s
+puts sword
+link = "http://en.wiktionary.org/w/api.php?action=query&titles="+sword.to_s+"&prop=revisions&rvprop=content&rvgeneratexml=&format=xml"
 doc = Nokogiri::HTML(open(link, 'User-Agent'=>'ruby'))
 node = doc.xpath('//pages/page')
 pageid = node[0]['pageid']
@@ -215,9 +225,27 @@ end
 if (i == 1 and words_meanings.size == 0) 
 	words_meanings << {:word => word, :meaning => text}
 end
-words_meanings.each do |word|
-	puts word[:word] + "\n"
-	puts word[:meaning] + "\n"
+searched_word = sword
+searched_words_text = ""
+words_meanings.each_with_index do |speech, i|
+	#puts word[:word] + "\n"
+	#puts word[:meaning] + "\n"
+	#puts sword
+	#index.document(i.to_s).add({:sword => sword, :word => speech[:word], :text => speech[:meaning]})
+	searched_words_text += speech[:word] + speech[:meaning]
 end
+#puts searched_word
+#puts searched_words_text
+index_name.document(counter.to_s).add({:searched_word => searched_word, :text => searched_words_text})
 end #end if
-#end
+end
+
+
+results = index_name.search("game played outdoors", :fetch=>'searched_word,text')
+print "#{results['matches']} documents found\\n"
+#puts results
+results['results'].each do |n|
+puts "word = #{n['searched_word']}"
+puts "speech = #{n['text']}"
+#puts n['text']
+end
