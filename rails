@@ -1320,4 +1320,160 @@ App is in a crashed state: see the crash logs with `heroku logs`.
 ]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
 # On branch master
 # Changed but not updated:
-#   (use "git add/rm <file>..." to update what will be com
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../Gemfile
+#	deleted:    .sax.rb.swp
+#	modified:   ../../rails
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.Gemfile.swp
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit -am "adding je[Kson pure gem for indexTank"
+[master 41c00bf] adding json pure gem for indexTank
+ 3 files changed, 261 insertions(+), 1 deletions(-)
+ delete mode 100644 app/assets/.sax.rb.swp
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push origin master
+Counting objects: 11, done.
+Delta compression using up to 2 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.26 KiB, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   9c16952..41c00bf  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ her[K[K[Kgit push heroku master
+Counting objects: 11, done.
+Delta compression using up to 2 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.26 KiB, done.
+Total 6 (delta 4), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       Unresolved dependencies detected; Installing...
+       [31mYou have modified your Gemfile in development but did not check
+       the resulting snapshot (Gemfile.lock) into version control
+       
+       You have added to the Gemfile:
+       * json_pure (= 1.4.6)[0m
+       FAILED: http://docs.heroku.com/bundler
+ !     Heroku push rejected, failed to install gems via Bundler
+
+error: hooks/pre-receive exited with error code 1
+To git@heroku.com:deep-robot-309.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:deep-robot-309.git'
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ bundle install
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.0) 
+Using builder (2.1.2) 
+Using i18n (0.4.2) 
+Using activemodel (3.0.0) 
+Using erubis (2.6.6) 
+Using rack (1.2.1) 
+Using rack-mount (0.6.13) 
+Using rack-test (0.5.6) 
+Using tzinfo (0.3.23) 
+Using actionpack (3.0.0) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.13) 
+Using actionmailer (3.0.0) 
+Using arel (1.0.1) 
+Using activerecord (3.0.0) 
+Using activeresource (3.0.0) 
+Using addressable (2.2.2) 
+Using bundler (1.0.2) 
+Using multipart-post (1.0.1) 
+Using faraday (0.5.3) 
+Using yajl-ruby (0.7.7) 
+Using indextank (0.0.4) 
+Using json_pure (1.4.6) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.0) 
+Using rails (3.0.0) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ bundle show ju[Kson_pure
+/usr/lib/ruby/gems/1.8/gems/json_pure-1.4.6
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git heroku pus mast[K[K[K[K[Kh master
+git: 'heroku' is not a git command. See 'git --help'.
+
+Did you mean this?
+	checkout
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cleargit heroku push masterclear[Kbundle show json_pure[7Pinstallgit push heroku masterorigin[C[C[C[C[C[C[Cheroku[C[C[C[C[C[C[C
+Counting objects: 11, done.
+Delta compression using up to 2 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.26 KiB, done.
+Total 6 (delta 4), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       Unresolved dependencies detected; Installing...
+       [31mYou have modified your Gemfile in development but did not check
+       the resulting snapshot (Gemfile.lock) into version control
+       
+       You have added to the Gemfile:
+       * json_pure (= 1.4.6)[0m
+       FAILED: http://docs.heroku.com/bundler
+ !     Heroku push rejected, failed to install gems via Bundler
+
+error: hooks/pre-receive exited with error code 1
+To git@heroku.com:deep-robot-309.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:deep-robot-309.git'
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku condi[K[Kfig:add BUNDLE_WITHOUT="development test"
+Adding config vars:
+  BUNDLE_WITHOUT => development test
+Restarting app...done.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ bundle update
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.0) 
+Using builder (2.1.2) 
+Using i18n (0.4.2) 
+Using activemodel (3.0.0) 
+Using erubis (2.6.6) 
+Using rack (1.2.1) 
+Using rack-mount (0.6.13) 
+Using rack-test (0.5.6) 
+Using tzinfo (0.3.23) 
+Using actionpack (3.0.0) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.13) 
+Using actionmailer (3.0.0) 
+Using arel (1.0.1) 
+Using activerecord (3.0.0) 
+Using activeresource (3.0.0) 
+Using addressable (2.2.2) 
+Using bundler (1.0.2) 
+Using multipart-post (1.0.1) 
+Using faraday (0.5.3) 
+Using yajl-ruby (0.7.7) 
+Using indextank (0.0.4) 
+Using json_pure (1.4.6) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.0) 
+Using rails (3.0.0) 
+[32mYour bundle is updated! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/ap
