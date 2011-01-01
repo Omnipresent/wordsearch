@@ -738,4 +738,237 @@ Verb
 #
 # Changed but not updated:
 #   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discar
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    .sax_single.rb.swo
+#	modified:   ../../rails
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit -am "sample file for heroku"
+[master 797d9f1] sample file for heroku
+ 4 files changed, 787 insertions(+), 16 deletions(-)
+ rename app/assets/{.sax_single.rb.swo => .sample.txt.swp} (55%)
+ create mode 100644 app/assets/sample.txt
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push origin master
+Counting objects: 13, done.
+Delta compression using up to 2 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 5.48 KiB, done.
+Total 8 (delta 2), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   01c648c..797d9f1  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push oe[Krigin master
+Everything up-to-date
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit a[K-am "sample fils[Kes"
+# On branch master
+nothing to commit (working directory clean)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push origin [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push heroku
+Warning: Permanently added the RSA host key for IP address '50.16.215.196' to the list of known hosts.
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@heroku.com:deep-robot-309.git'
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push heroku master
+Counting objects: 86, done.
+Delta compression using up to 2 threads.
+Compressing objects:   1% (1/69)   Compressing objects:   2% (2/69)   Compressing objects:   4% (3/69)   Compressing objects:   5% (4/69)   Compressing objects:   7% (5/69)   Compressing objects:   8% (6/69)   Compressing objects:  10% (7/69)   Compressing objects:  11% (8/69)   Compressing objects:  13% (9/69)   Compressing objects:  14% (10/69)   Compressing objects:  15% (11/69)   Compressing objects:  17% (12/69)   Compressing objects:  18% (13/69)   Compressing objects:  20% (14/69)   Compressing objects:  21% (15/69)   Compressing objects:  23% (16/69)   Compressing objects:  24% (17/69)   Compressing objects:  26% (18/69)   Compressing objects:  27% (19/69)   Compressing objects:  28% (20/69)   Compressing objects:  30% (21/69)   Compressing objects:  31% (22/69)   Compressing objects:  33% (23/69)   Compressing objects:  34% (24/69)   Compressing objects:  36% (25/69)   Compressing objects:  37% (26/69)   Compressing objects:  39% (27/69)   Compressing objects:  40% (28/69)   Compressing objects:  42% (29/69)   Compressing objects:  43% (30/69)   Compressing objects:  44% (31/69)   Compressing objects:  46% (32/69)   Compressing objects:  47% (33/69)   Compressing objects:  49% (34/69)   Compressing objects:  50% (35/69)   Compressing objects:  52% (36/69)   Compressing objects:  53% (37/69)   Compressing objects:  55% (38/69)   Compressing objects:  56% (39/69)   Compressing objects:  57% (40/69)   Compressing objects:  59% (41/69)   Compressing objects:  60% (42/69)   Compressing objects:  62% (43/69)   Compressing objects:  63% (44/69)   Compressing objects:  65% (45/69)   Compressing objects:  66% (46/69)   Compressing objects:  68% (47/69)   Compressing objects:  69% (48/69)   Compressing objects:  71% (49/69)   Compressing objects:  72% (50/69)   Compressing objects:  73% (51/69)   Compressing objects:  75% (52/69)   Compressing objects:  76% (53/69)   Compressing objects:  78% (54/69)   Compressing objects:  79% (55/69)   Compressing objects:  81% (56/69)   Compressing objects:  82% (57/69)   Compressing objects:  84% (58/69)   Compressing objects:  85% (59/69)   Compressing objects:  86% (60/69)   Compressing objects:  88% (61/69)   Compressing objects:  89% (62/69)   Compressing objects:  91% (63/69)   Compressing objects:  92% (64/69)   Compressing objects:  94% (65/69)   Compressing objects:  95% (66/69)   Compressing objects:  97% (67/69)   Compressing objects:  98% (68/69)   Compressing objects: 100% (69/69)   Compressing objects: 100% (69/69), done.
+Writing objects:   1% (1/86)   Writing objects:   2% (2/86)   Writing objects:   3% (3/86)   Writing objects:   4% (4/86)   Writing objects:   5% (5/86)   Writing objects:   6% (6/86)   Writing objects:   8% (7/86)   Writing objects:   9% (8/86)   Writing objects:  10% (9/86)   Writing objects:  11% (10/86)   Writing objects:  12% (11/86)   Writing objects:  13% (12/86)   Writing objects:  15% (13/86)   Writing objects:  16% (14/86)   Writing objects:  17% (15/86)   Writing objects:  17% (15/86), 16.00 KiB | 2 KiB/s   Writing objects:  17% (15/86), 2.16 MiB | 435 KiB/s   Writing objects:  17% (15/86), 2.40 MiB | 374 KiB/s   Writing objects:  17% (15/86), 2.52 MiB | 358 KiB/s   Writing objects:  17% (15/86), 2.77 MiB | 345 KiB/s   Writing objects:  17% (15/86), 2.90 MiB | 326 KiB/s   Writing objects:  17% (15/86), 3.15 MiB | 312 KiB/s   Writing objects:  17% (15/86), 3.40 MiB | 193 KiB/s   Writing objects:  17% (15/86), 3.52 MiB | 194 KiB/s   Writing objects:  17% (15/86), 3.66 MiB | 197 KiB/s   Writing objects:  17% (15/86), 3.90 MiB | 181 KiB/s   Writing objects:  17% (15/86), 4.02 MiB | 188 KiB/s   Writing objects:  17% (15/86), 4.27 MiB | 183 KiB/s   Writing objects:  17% (15/86), 4.40 MiB | 178 KiB/s   Writing objects:  17% (15/86), 4.52 MiB | 128 KiB/s   Writing objects:  17% (15/86), 4.82 MiB | 148 KiB/s   Writing objects:  17% (15/86), 5.43 MiB | 191 KiB/s   Writing objects:  17% (15/86), 5.80 MiB | 220 KiB/s   Writing objects:  17% (15/86), 6.18 MiB | 237 KiB/s   Writing objects:  17% (15/86), 6.30 MiB | 224 KiB/s   Writing objects:  17% (15/86), 6.55 MiB | 232 KiB/s   Writing objects:  17% (15/86), 6.68 MiB | 321 KiB/s   Writing objects:  17% (15/86), 6.93 MiB | 304 KiB/s   Writing objects:  17% (15/86), 7.18 MiB | 306 KiB/s   Writing objects:  17% (15/86), 7.68 MiB | 281 KiB/s   Writing objects:  17% (15/86), 8.18 MiB | 296 KiB/s   Writing objects:  18% (16/86), 8.18 MiB | 296 KiB/s   Writing objects:  19% (17/86), 8.18 MiB | 296 KiB/s   Writing objects:  20% (18/86), 8.18 MiB | 296 KiB/s   Writing objects:  22% (19/86), 8.18 MiB | 296 KiB/s   Writing objects:  23% (20/86), 8.18 MiB | 296 KiB/s   Writing objects:  24% (21/86), 8.18 MiB | 296 KiB/s   Writing objects:  25% (22/86), 8.18 MiB | 296 KiB/s   Writing objects:  26% (23/86), 8.18 MiB | 296 KiB/s   Writing objects:  27% (24/86), 8.18 MiB | 296 KiB/s   Writing objects:  29% (25/86), 8.18 MiB | 296 KiB/s   Writing objects:  30% (26/86), 8.18 MiB | 296 KiB/s   Writing objects:  31% (27/86), 8.18 MiB | 296 KiB/s   Writing objects:  32% (28/86), 8.18 MiB | 296 KiB/s   Writing objects:  33% (29/86), 8.18 MiB | 296 KiB/s   Writing objects:  34% (30/86), 8.18 MiB | 296 KiB/s   Writing objects:  36% (31/86), 8.18 MiB | 296 KiB/s   Writing objects:  37% (32/86), 8.18 MiB | 296 KiB/s   Writing objects:  38% (33/86), 8.18 MiB | 296 KiB/s   Writing objects:  39% (34/86), 8.18 MiB | 296 KiB/s   Writing objects:  40% (35/86), 8.18 MiB | 296 KiB/s   Writing objects:  41% (36/86), 8.18 MiB | 296 KiB/s   Writing objects:  43% (37/86), 8.18 MiB | 296 KiB/s   Writing objects:  44% (38/86), 8.18 MiB | 296 KiB/s   Writing objects:  45% (39/86), 8.18 MiB | 296 KiB/s   Writing objects:  46% (40/86), 8.18 MiB | 296 KiB/s   Writing objects:  47% (41/86), 8.18 MiB | 296 KiB/s   Writing objects:  48% (42/86), 8.18 MiB | 296 KiB/s   Writing objects:  50% (43/86), 8.18 MiB | 296 KiB/s   Writing objects:  51% (44/86), 8.18 MiB | 296 KiB/s   Writing objects:  52% (45/86), 8.18 MiB | 296 KiB/s   Writing objects:  53% (46/86), 8.18 MiB | 296 KiB/s   Writing objects:  54% (47/86), 8.18 MiB | 296 KiB/s   Writing objects:  55% (48/86), 8.18 MiB | 296 KiB/s   Writing objects:  56% (49/86), 8.18 MiB | 296 KiB/s   Writing objects:  58% (50/86), 8.18 MiB | 296 KiB/s   Writing objects:  59% (51/86), 8.18 MiB | 296 KiB/s   Writing objects:  60% (52/86), 8.18 MiB | 296 KiB/s   Writing objects:  61% (53/86), 8.18 MiB | 296 KiB/s   Writing objects:  62% (54/86), 8.18 MiB | 296 KiB/s   Writing objects:  63% (55/86), 8.18 MiB | 296 KiB/s   Writing objects:  65% (56/86), 8.18 MiB | 296 KiB/s   Writing objects:  66% (57/86), 8.18 MiB | 296 KiB/s   Writing objects:  67% (58/86), 8.18 MiB | 296 KiB/s   Writing objects:  68% (59/86), 8.18 MiB | 296 KiB/s   Writing objects:  69% (60/86), 8.18 MiB | 296 KiB/s   Writing objects:  70% (61/86), 8.18 MiB | 296 KiB/s   Writing objects:  72% (62/86), 8.18 MiB | 296 KiB/s   Writing objects:  73% (63/86), 8.18 MiB | 296 KiB/s   Writing objects:  74% (64/86), 8.18 MiB | 296 KiB/s   Writing objects:  75% (65/86), 8.18 MiB | 296 KiB/s   Writing objects:  76% (66/86), 8.18 MiB | 296 KiB/s   Writing objects:  77% (67/86), 8.18 MiB | 296 KiB/s   Writing objects:  79% (68/86), 8.18 MiB | 296 KiB/s   Writing objects:  80% (69/86), 8.18 MiB | 296 KiB/s   Writing objects:  81% (70/86), 8.18 MiB | 296 KiB/s   Writing objects:  82% (71/86), 8.18 MiB | 296 KiB/s   Writing objects:  83% (72/86), 8.18 MiB | 296 KiB/s   Writing objects:  84% (73/86), 8.18 MiB | 296 KiB/s   Writing objects:  86% (74/86), 8.18 MiB | 296 KiB/s   Writing objects:  87% (75/86), 8.18 MiB | 296 KiB/s   Writing objects:  88% (76/86), 8.18 MiB | 296 KiB/s   Writing objects:  89% (77/86), 8.18 MiB | 296 KiB/s   Writing objects:  90% (78/86), 8.18 MiB | 296 KiB/s   Writing objects:  91% (79/86), 8.18 MiB | 296 KiB/s   Writing objects:  93% (80/86), 8.18 MiB | 296 KiB/s   Writing objects:  94% (81/86), 8.18 MiB | 296 KiB/s   Writing objects:  95% (82/86), 8.18 MiB | 296 KiB/s   Writing objects:  96% (83/86), 8.18 MiB | 296 KiB/s   Writing objects:  97% (84/86), 8.18 MiB | 296 KiB/s   Writing objects:  98% (85/86), 8.18 MiB | 296 KiB/s   Writing objects: 100% (86/86), 8.18 MiB | 296 KiB/s   Writing objects: 100% (86/86), 8.40 MiB | 335 KiB/s, done.
+Total 86 (delta 11), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       Unresolved dependencies detected; Installing...
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.0) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.4.2) 
+       Installing activemodel (3.0.0) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.1) 
+       Installing rack-mount (0.6.13) 
+       Installing rack-test (0.5.6) 
+       Installing tzinfo (0.3.23) 
+       Installing actionpack (3.0.0) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.13) 
+       Installing actionmailer (3.0.0) 
+       Installing arel (1.0.1) 
+       Installing activerecord (3.0.0) 
+       Installing activeresource (3.0.0) 
+       Installing addressable (2.2.2) 
+       Installing multipart-post (1.0.1) 
+       Installing faraday (0.5.3) 
+       Installing yajl-ruby (0.7.7) with native extensions 
+       Installing indextank (0.0.4) 
+       Installing nokogiri (1.4.4) with native extensions 
+       Using bundler (1.0.3) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.0) 
+       Installing rails (3.0.0) 
+       [32mYour bundle is complete! It was installed into ./.bundle/gems[0m
+       Compiled slug size is 13.3MB
+-----> Launching... done
+       http://deep-robot-309.heroku.com deployed to Heroku
+
+To git@heroku.com:deep-robot-309.git
+ * [new branch]      master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku console
+Couldn't run console command
+App is in a crashed state: see the crash logs with `heroku logs`.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku logs
+/disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+==> dyno-4057590.log (crash) <==
+/disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_797d9f1_754f-c46cc42a-7a31-42cc-83cb-c1a329ee9ce4/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+-----> Your application is requiring a file that it can't find.
+
+       Most often this is due to missing gems, or it could be that you failed
+       to commit the file to your repo.  See http://docs.heroku.com/gems for
+       more information on managing gems.
+
+       Examine the backtrace above this message to debug.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ hroku confit[Kg --long|grep INDEXTANK
+hroku: command not found
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ hroku config --long|grep INDEXTANK[C[1@e
+[01;31m[KINDEXTANK[m[K_API_URL   => http://:9sQ4eiUCEF+935@dw6hr.api.indextank.com
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ gem install indextank
+Fetching: indextank-0.0.5.gemFetching: indextank-0.0.5.gem (  9%)Fetching: indextank-0.0.5.gem ( 27%)Fetching: indextank-0.0.5.gem ( 44%)Fetching: indextank-0.0.5.gem ( 62%)Fetching: indextank-0.0.5.gem ( 80%)Fetching: indextank-0.0.5.gem ( 98%)Fetching: indextank-0.0.5.gem (100%)Fetching: indextank-0.0.5.gem (100%)
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions into the /usr/lib/ruby/gems/1.8 directory.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ sudo gem install indextank
+[sudo] password for bhaarat: 
+Fetching: indextank-0.0.5.gemFetching: indextank-0.0.5.gem (  9%)Fetching: indextank-0.0.5.gem ( 27%)Fetching: indextank-0.0.5.gem ( 44%)Fetching: indextank-0.0.5.gem ( 62%)Fetching: indextank-0.0.5.gem ( 80%)Fetching: indextank-0.0.5.gem ( 97%)Fetching: indextank-0.0.5.gem (100%)Fetching: indextank-0.0.5.gem (100%)
+Successfully installed indextank-0.0.5
+1 gem installed
+Installing ri documentation for indextank-0.0.5...
+Installing RDoc documentation for indextank-0.0.5...
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    .sample.txt.swp
+#	modified:   ../../rails
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.Gemfile.swp
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit -a
+[?1049h[?1h=[1;38r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[38;1H".git/COMMIT_EDITMSG" 14L, 399C[>c[1;1H[3107m" Press ? for help[m[13C[7m|[2;32H|[m
+[1m[36m.. (up a dir)[m[18C[7m|[m
+[3173m[4233m/home/bhaarat/rails/wordsearch/[m[7m|[m
+[3167m|[m[315m+[m[1m[36mapp[m[373m/[m[25C[7m|[m
+[3167m|[m[315m+[m[1m[36mconfig[m[373m/[m[22C[7m|[m
+[3167m|[m[315m+[m[1m[36mdb[m[373m/[m[26C[7m|[m
+[3167m|[m[315m+[m[1m[36mdoc[m[373m/[m[25C[7m|[m
+[3167m|[m[315m+[m[1m[36mlib[m[373m/[m[25C[7m|[m
+[3167m|[m[315m+[m[1m[36mlog[m[373m/[m[25C[7m|[m
+[3167m|[m[315m+[m[1m[36mpublic[m[373m/[m[22C[7m|[m
+[3167m|[m[315m+[m[1m[36mscript[m[373m/[m[22C[7m|[m
+[3167m|[m[315m+[m[1m[36mtest[m[373m/[m[24C[7m|[m
+[3167m|[m[315m+[m[1m[36mtmp[m[373m/[m[25C[7m|[m
+[3167m|[m[315m+[m[1m[36mvendor[m[373m/[m[22C[7m|[m
+[3167m|-[mconfig.ru[20C[7m|[m
+[3167m|-[mGemfile[22C[7m|[m
+[3167m|-[mGemfile.lock[17C[7m|[m
+[3167m|-[mrails[24C[7m|[m
+[3167m|-[mRakefile[21C[7m|[m
+[3167m`-[mREADME[23C[7m|[22;32H|[23;32H|[24;32H|[25;32H|[26;32H|[27;32H|[28;32H|[29;32H|[30;32H|[31;32H|[32;32H|[33;32H|[34;32H|[35;32H|[36;32H|[m[22;1H[1m[34m~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              
+~                              [m
+[7m/home/bhaarat/rails/wordsearch  [m[1;33H[3159m  1 [2;33H  2 [m[3180m# Please enter the commit message for your changes. Lines starting[m[3;33H[3159m  3 [m[3180m# with '#' will be ignored, and an empty message aborts the commit.[m[4;33H[3159m  4 [m[3180m# On branch [m[3167mmaster[m[5;33H[3159m  5 [m[3180m# [m[3103mChanges to be committed:[m[6;33H[3159m  6 [m[3180m#   (use "git reset HEAD <file>..." to unstage)[m[7;33H[3159m  7 [m[3180m#[m[8;33H[3159m  8 [m[3180m#   [m[3167mdeleted[m[3180m: [m[373m   .sample.txt.swp[m[9;33H[3159m  9 [m[3180m#   [m[3167mmodified[m[3180m: [m[373m  ../../rails[m[10;33H[3159m 10 [m[3180m#[m[11;33H[3159m 11 [m[3180m# [m[3103mUntracked files:[m[12;33H[3159m 12 [m[3180m#   (use "git add <file>..." to include in what will be committed)[m[13;33H[3159m 13 [m[3180m#[m[14;33H[3159m 14 [m[3180m#   [m[373m../../.Gemfile.swp[m[15;33H[1m[34m~                                                                                                                            [16;33H~                                                                                                                            [17;33H~                                                                                                                            [18;33H~                                                                                                                            [19;33H~                                                                                                                            [20;33H~                                                                                                                            [21;33H~                                                                                                                            [22;33H~                                                                                                                            [23;33H~                                                                                                                            [24;33H~                                                                                                                            [25;33H~                                                                                        
