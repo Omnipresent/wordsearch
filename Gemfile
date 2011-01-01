@@ -20,6 +20,7 @@ gem 'rails', '3.0.0'
 # gem 'bj'
  gem 'nokogiri'
  gem 'indextank', '0.0.4'
+ gem 'json_pure', '1.4.6', :require => 'json'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 

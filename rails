@@ -1061,4 +1061,263 @@ To git@heroku.com:deep-robot-309.git
 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
-	from /usr/ruby1.8.7/lib/rub
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+-----> Your application is requiring a file that it can't find.
+
+       Most often this is due to missing gems, or it could be that you failed
+       to commit the file to your repo.  See http://docs.heroku.com/gems for
+       more information on managing gems.
+
+       Examine the backtrace above this message to debug.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commi[K[K[K[K[Kadd .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .sax.rb.swp
+#	modified:   sax.rb
+#	modified:   sax_single.rb
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../rails
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git pus[K[K[Kcommit =[K-am "removing require"
+[master 9c16952] removing require
+ 4 files changed, 98 insertions(+), 8 deletions(-)
+ create mode 100644 app/assets/.sax.rb.swp
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push heroku master
+Counting objects: 14, done.
+Delta compression using up to 2 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 4.57 KiB, done.
+Total 8 (delta 4), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 13.3MB
+-----> Launching... done
+       http://deep-robot-309.heroku.com deployed to Heroku
+
+To git@heroku.com:deep-robot-309.git
+   e671baf..9c16952  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push origin master
+Counting objects: 14, done.
+Delta compression using up to 2 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 4.57 KiB, done.
+Total 8 (delta 4), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   e671baf..9c16952  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push heorku [K[K[K[K[K[Kro[K[Kerokyu [K[K[Ku master
+Everything up-to-date
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku logs
+/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+==> dyno-4057590.log (crash) <==
+/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+-----> Your application is requiring a file that it can't find.
+
+       Most often this is due to missing gems, or it could be that you failed
+       to commit the file to your repo.  See http://docs.heroku.com/gems for
+       more information on managing gems.
+
+       Examine the backtrace above this message to debug.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku console
+Couldn't run console command
+App is in a crashed state: see the crash logs with `heroku logs`.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ heroku logs
+/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+==> dyno-4057590.log (crash) <==
+/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_9c16952_754f-af3ae022-1a7a-4d65-a47c-513cb4bc7a03/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+-----> Your application is requiring a file that it can't find.
+
+       Most often this is due to missing gems, or it could be that you failed
+       to commit the file to your repo.  See http://docs.heroku.com/gems for
+       more information on managing gems.
+
+       Examine the backtrace above this message to debug.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push o[K[K[K[K[K[K[K add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be com
