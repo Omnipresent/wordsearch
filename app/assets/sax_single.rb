@@ -1,7 +1,7 @@
-require 'rubygems'
-require 'nokogiri'
-require 'open-uri'
-require 'indextank'
+#require 'rubygems'
+#require 'nokogiri'
+#require 'open-uri'
+#require 'indextank'
 
 #file = File.read(File.join())
 #out = File.new('allmeanings.txt', 'w')

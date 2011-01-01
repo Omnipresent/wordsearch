@@ -971,4 +971,94 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ~                              
 ~                              
 ~                              [m
-[7m/home/bhaarat/rails/wordsearch  [m[1;33H[3159m  1 [2;33H  2 [m[3180m# Please enter the commit message for your changes. Lines starting[m[3;33H[3159m  3 [m[3180m# with '#' will be ignored, and an empty message aborts the commit.[m[4;33H[3159m  4 [m[3180m# On branch [m[3167mmaster[m[5;33H[3159m  5 [m[3180m# [m[3103mChanges to be committed:[m[6;33H[3159m  6 [m[3180m#   (use "git reset HEAD <file>..." to unstage)[m[7;33H[3159m  7 [m[3180m#[m[8;33H[3159m  8 [m[3180m#   [m[3167mdeleted[m[3180m: [m[373m   .sample.txt.swp[m[9;33H[3159m  9 [m[3180m#   [m[3167mmodified[m[3180m: [m[373m  ../../rails[m[10;33H[3159m 10 [m[3180m#[m[11;33H[3159m 11 [m[3180m# [m[3103mUntracked files:[m[12;33H[3159m 12 [m[3180m#   (use "git add <file>..." to include in what will be committed)[m[13;33H[3159m 13 [m[3180m#[m[14;33H[3159m 14 [m[3180m#   [m[373m../../.Gemfile.swp[m[15;33H[1m[34m~                                                                                                                            [16;33H~                                                                                                                            [17;33H~                                                                                                                            [18;33H~                                                                                                                            [19;33H~                                                                                                                            [20;33H~                                                                                                                            [21;33H~                                                                                                                            [22;33H~                                                                                                                            [23;33H~                                                                                                                            [24;33H~                                                                                                                            [25;33H~                                                                                        
+[7m/home/bhaarat/rails/wordsearch  [m[1;33H[3159m  1 [2;33H  2 [m[3180m# Please enter the commit message for your changes. Lines starting[m[3;33H[3159m  3 [m[3180m# with '#' will be ignored, and an empty message aborts the commit.[m[4;33H[3159m  4 [m[3180m# On branch [m[3167mmaster[m[5;33H[3159m  5 [m[3180m# [m[3103mChanges to be committed:[m[6;33H[3159m  6 [m[3180m#   (use "git reset HEAD <file>..." to unstage)[m[7;33H[3159m  7 [m[3180m#[m[8;33H[3159m  8 [m[3180m#   [m[3167mdeleted[m[3180m: [m[373m   .sample.txt.swp[m[9;33H[3159m  9 [m[3180m#   [m[3167mmodified[m[3180m: [m[373m  ../../rails[m[10;33H[3159m 10 [m[3180m#[m[11;33H[3159m 11 [m[3180m# [m[3103mUntracked files:[m[12;33H[3159m 12 [m[3180m#   (use "git add <file>..." to include in what will be committed)[m[13;33H[3159m 13 [m[3180m#[m[14;33H[3159m 14 [m[3180m#   [m[373m../../.Gemfile.swp[m[15;33H[1m[34m~                                                                                                                            [16;33H~                                                                                                                            [17;33H~                                                                                                                            [18;33H~                                                                                                                            [19;33H~                                                                                                                            [20;33H~                                                                                                                            [21;33H~                                                                                                                            [22;33H~                                                                                                                            [23;33H~                                                                                                                            [24;33H~                                                                                                                            [25;33H~                                                                                                                            [26;33H~                                                                                                                            [27;33H~                                                                                                                            [28;33H~                                                                                                                            [29;33H~                                                                                                                            [30;33H~                                                                                                                            [31;33H~                                                                                                                            [32;33H~                                                                                                                            [33;33H~                                                                                                                            [34;33H~                                                                                                                            [35;33H~                                                                                                                            [36;33H~                                                                                                                            [m[37;33H[1m[7m.git/COMMIT_EDITMSG                                                                                        1,0-1          All]2;COMMIT_EDITMSG (~/rails/wordsearch/.git) - VIM]1;COMMIT_EDITMSG[1;37H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[m[38;1H[K[38;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[1;1H[3173m[4233m/home/bhaarat/rails/wordsearch/[m[4233m                                                                                                                              [m[2;1H[3167m|[m[315m+[m[1m[36mapp[m[373m/[m[2;32H[K[3;1H[3167m|[m[315m+[m[1m[36mconfig[m[373m/[m[3;10H[K[4;1H[3167m|[m[315m+[m[1m[36mdb[m[373m/[m[4;6H[K[5;2H[315m+[m[1m[36mdoc[m[373m/[m[5;32H[K[6;2H[315m+[m[1m[36mlib[m[373m/[m[6;7H[K[7;2H[315m+[m[1m[36mlog[m[373m/[m[7;32H[K[8;2H[315m+[m[1m[36mpublic[m[373m/[m[8;32H[K[9;2H[315m+[m[1m[36mscript[m[373m/[m[9;32H[K[10;2H[315m+[m[1m[36mtest[m[373m/[m[10;32H[K[11;2H[315m+[m[1m[36mtmp[m[373m/[m[11;7H[K[12;2H[315m+[m[1m[36mvendor[m[373m/[m[12;32H[K[13;1H[3167m|-[mconfig.ru[13;32H[K[14;1H[3167m|-[mGemfile[14;32H[K[15;1H[3167m|-[mGemfile.lock[15;32H[K[16;2H[3167m-[mrails[16;8H[K[17;2H[3167m-[mRakefile[17;32H[K[18;1H[3167m`-[mREADME[18;9H[K[19;1H[1m[34m~                                 
+~                                 
+~                                 [22;32H   [23;32H   [24;32H   [25;32H   [26;32H   [27;32H   [28;32H   [29;32H   [30;32H   [31;32H   [32;32H   [33;32H   [34;32H   [35;32H   [36;32H   
+~                                                                                                                                                            [m[38;140H4,1[11CBot]2;NERD_tree_1 - (~/rails/wordsearch) - VIM]1;NERD_tree_1[1;1H[?12l[?25h[?25l[38;1H[K[38;1H:[?12l[?25hq[?25l[?12l[?25h[?25l]2;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assets]1;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assets[38;1H[K[38;1H[?1l>[?12l[?25h[?1049lAborting commit due to empty commit message.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit -a "committed"
+fatal: Paths with -a does not make sense.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git commit -a "committed"[Cm "committed"
+[master e671baf] committed
+ 2 files changed, 234 insertions(+), 1 deletions(-)
+ delete mode 100644 app/assets/.sample.txt.swp
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git pug[Ksh origin master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 4.73 KiB, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   797d9f1..e671baf  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push heroku master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 4.73 KiB, done.
+Total 5 (delta 3), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 13.3MB
+-----> Launching... done
+       http://deep-robot-309.heroku.com deployed to Heroku
+
+To git@heroku.com:deep-robot-309.git
+   797d9f1..e671baf  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git [K[K[K[Kheor[K[Kroku logs
+/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:51:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler.rb:112:in `require'
+	from /disk1/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/config/application.rb:7
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /disk1/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/config/environment.rb:2
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `new'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:63:in `map'
+	from /home/heroku_rack/heroku.ru:18
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:11:in `new'
+	from /home/heroku_rack/heroku.ru:11
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+==> dyno-4057590.log (crash) <==
+/home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1:in `require': no such file to load -- json (LoadError)
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/document.rb:1
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/index.rb:2
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank/client.rb:1
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5:in `require'
+	from /home/slugs/395425_e671baf_754f-99549a76-a022-4eb8-9e02-d05251e0baec/mnt/.bundle/gems/ruby/1.8/gems/indextank-0.0.4/lib/indextank.rb:5
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:64:in `require'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `each'
+	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/bundler-1.0.3/lib/bundler/runtime.rb:62:in `require'
+	from /usr/ruby1.8.7/lib/rub
