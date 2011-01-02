@@ -4712,4 +4712,175 @@ fatal: The remote end hung up unexpectedly
 Counting objects: 19, done.
 Delta compression using up to 2 threads.
 Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
-Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 3.56 KiB, done.
+Total 11 (delta 6), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 25.0MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   dc68556..244e452  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   app/assets/.output_saved.txt.swp
+#	modified:   app/assets/output_saved.txt
+#	new file:   app/views/layouts/.application.html.erb.swp
+#	modified:   app/views/layouts/application.html.erb
+#	modified:   app/views/words/.index.html.erb.swp
+#	modified:   app/views/words/index.html.erb
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/helpers/.application_helper.rb.swp
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git pu[K[Kcommit -am "analytics"
+[master d84488f] analytics
+ 7 files changed, 57 insertions(+), 10882 deletions(-)
+ rename app/{helpers/.application_helper.rb.swp => views/layouts/.application.html.erb.swp} (92%)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Counting objects: 28, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  60% (9/15)   Writing objects:  66% (10/15)   Writing objects:  73% (11/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15)   Writing objects:  93% (14/15)   Writing objects: 100% (15/15)   Writing objects: 100% (15/15), 6.29 KiB, done.
+Total 15 (delta 8), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   244e452..d84488f  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heroku master
+Counting objects: 28, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  60% (9/15)   Writing objects:  66% (10/15)   Writing objects:  73% (11/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15)   Writing objects:  93% (14/15)   Writing objects: 100% (15/15)   Writing objects: 100% (15/15), 6.29 KiB, done.
+Total 15 (delta 8), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 24.9MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   244e452..d84488f  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails[K[K[K[K[Kscript [K/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 18:06:45] INFO  WEBrick 1.3.1
+[2011-01-02 18:06:45] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 18:06:45] INFO  WEBrick::HTTPServer#start: pid=15664 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 18:06:50 -0500 2011
+
+SyntaxError (/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:3: syntax error, unexpected tIDENTIFIER, expecting kEND
+	'<script type='text/javascript'>
+	                   ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:3: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+	'<script type='text/javascript'>
+	                               ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tIDENTIFIER, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                         ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tCONSTANT, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                               ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tSTRING_BEG, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                                           ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:7: syntax error, unexpected tIDENTIFIER, expecting kEND
+  _gaq.push(['_trackPageview']);
+                            ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tIDENTIFIER, expecting kEND
+...document.createElement('script'); ga.type = 'text/javascript...
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tIDENTIFIER, expecting kEND
+...ent('script'); ga.type = 'text/javascript'; ga.async = true;
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...); ga.type = 'text/javascript'; ga.async = true;
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+    ga.src = ('https:' == document.location.protoc...
+                    ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+...ent.location.protocol ? 'https://ssl' : 'http://www') + '.go...
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: unknown regexp option - l
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+...otocol ? 'https://ssl' : 'http://www') + '.google-analytics....
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: unknown regexp options - www
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tSTRING_BEG, expecting kEND
+... '.google-analytics.com/ga.js';
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:12: syntax error, unexpected tIDENTIFIER, expecting kEND
+...t.getElementsByTagName('script')[0]; s.parentNode.insertBefo...
+                              ^):
+  app/controllers/application_controller.rb:1
+  app/controllers/words_controller.rb:1
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 18:08:11 -0500 2011
+
+SyntaxError (/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:3: syntax error, unexpected tIDENTIFIER, expecting kEND
+	'<script type='text/javascript'>
+	                   ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:3: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+	'<script type='text/javascript'>
+	                               ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tIDENTIFIER, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                         ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tCONSTANT, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                               ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:6: syntax error, unexpected tSTRING_BEG, expecting kEND
+  _gaq.push(['_setAccount', 'UA-20516254-1']);
+                                           ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:7: syntax error, unexpected tIDENTIFIER, expecting kEND
+  _gaq.push(['_trackPageview']);
+                            ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tIDENTIFIER, expecting kEND
+...document.createElement('script'); ga.type = 'text/javascript...
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tIDENTIFIER, expecting kEND
+...ent('script'); ga.type = 'text/javascript'; ga.async = true;
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:10: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...); ga.type = 'text/javascript'; ga.async = true;
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+    ga.src = ('https:' == document.location.protoc...
+                    ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+...ent.location.protocol ? 'https://ssl' : 'http://www') + '.go...
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: unknown regexp option - l
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting kEND
+...otocol ? 'https://ssl' : 'http://www') + '.google-analytics....
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: unknown regexp options - www
