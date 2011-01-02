@@ -4657,4 +4657,59 @@ To git@github.com:Omnipresent/wordsearch.git
 Counting objects: 25, done.
 Delta compression using up to 2 threads.
 Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
-Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  43% (7/16), 2.17 MiB | 2.62 MiB/s   Writing objects:  43% (7/16), 2.55 MiB | 1.68 MiB/s   Writing objects:  43% (7/16), 3.30 MiB | 1.15 MiB/s   Writing objects:  43% (7/16), 3.68 MiB | 1.04 MiB/s   Writing objects:  43% (7/16), 4.42 MiB | 920 KiB/s   Writing objects:  43% (7/16), 4.80 MiB | 878 KiB/s   Writing objects:  43% (7/16), 5.55 MiB | 565 KiB/s   Writing objects:  43% (7/16), 5.92 MiB | 566 KiB/s   Writing objects:  43% (7/16), 6.30 MiB | 566 KiB/s   Writing objects:  43% (7/16), 7.05 MiB | 565 KiB/s   Writing objects:  43% (7/16), 7.17 MiB | 519 KiB/s   Writing objects:  43% (7/16), 8.14 MiB | 567 KiB/s   Writing objects:  43% (7/16), 8.52 MiB | 568 KiB/s   Writing objects:  43% (7/16), 9.14 MiB | 518 KiB/s   Writing objects:  43% (7/16), 9.70 MiB | 563 KiB/s   Writing objects:  43% (7/16), 10.45 MiB | 566 KiB/s   Writing objects:  43% (7/16), 10.70 MiB | 597 KiB/s   Writing objects:  43% (7/16), 11.45 MiB | 560 KiB/s   Writing objects:  43% (7/16), 11.84 MiB | 550 KiB/s   Writing objects:  50% (8/16), 11.84 MiB | 550 KiB/s   Writing objects:  56% (9/16), 11.84 MiB | 550 KiB/s   Writing objects:  62% (10/16), 11.84 MiB | 550 KiB/s   Writing objects:  68% (11/16), 11.84 MiB | 550 KiB/s   Writing objects:  75% (12
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  43% (7/16), 2.17 MiB | 2.62 MiB/s   Writing objects:  43% (7/16), 2.55 MiB | 1.68 MiB/s   Writing objects:  43% (7/16), 3.30 MiB | 1.15 MiB/s   Writing objects:  43% (7/16), 3.68 MiB | 1.04 MiB/s   Writing objects:  43% (7/16), 4.42 MiB | 920 KiB/s   Writing objects:  43% (7/16), 4.80 MiB | 878 KiB/s   Writing objects:  43% (7/16), 5.55 MiB | 565 KiB/s   Writing objects:  43% (7/16), 5.92 MiB | 566 KiB/s   Writing objects:  43% (7/16), 6.30 MiB | 566 KiB/s   Writing objects:  43% (7/16), 7.05 MiB | 565 KiB/s   Writing objects:  43% (7/16), 7.17 MiB | 519 KiB/s   Writing objects:  43% (7/16), 8.14 MiB | 567 KiB/s   Writing objects:  43% (7/16), 8.52 MiB | 568 KiB/s   Writing objects:  43% (7/16), 9.14 MiB | 518 KiB/s   Writing objects:  43% (7/16), 9.70 MiB | 563 KiB/s   Writing objects:  43% (7/16), 10.45 MiB | 566 KiB/s   Writing objects:  43% (7/16), 10.70 MiB | 597 KiB/s   Writing objects:  43% (7/16), 11.45 MiB | 560 KiB/s   Writing objects:  43% (7/16), 11.84 MiB | 550 KiB/s   Writing objects:  50% (8/16), 11.84 MiB | 550 KiB/s   Writing objects:  56% (9/16), 11.84 MiB | 550 KiB/s   Writing objects:  62% (10/16), 11.84 MiB | 550 KiB/s   Writing objects:  68% (11/16), 11.84 MiB | 550 KiB/s   Writing objects:  75% (12/16), 11.84 MiB | 550 KiB/s   Writing objects:  81% (13/16), 11.84 MiB | 550 KiB/s   Writing objects:  87% (14/16), 11.84 MiB | 550 KiB/s   Writing objects:  93% (15/16), 11.84 MiB | 550 KiB/s   Writing objects: 100% (16/16), 11.84 MiB | 550 KiB/s   Writing objects: 100% (16/16), 11.92 MiB | 549 KiB/s, done.
+Total 16 (delta 6), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 25.0MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   bb40617..dc68556  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku open
+Opening http://wikidex.heroku.com/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git pu[K[Kstatus
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   app/helpers/.application_helper.rb.swp
+#	modified:   app/helpers/application_helper.rb
+#	new file:   app/views/words/.index.html.erb.swp
+#	modified:   app/views/words/index.html.erb
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   app/views/words/.index.html.erb.swp
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git a[Kcommit -am "analytics"
+[master 244e452] analytics
+ 5 files changed, 102 insertions(+), 1 deletions(-)
+ create mode 100644 app/helpers/.application_helper.rb.swp
+ create mode 100644 app/views/words/.index.html.erb.swp
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Counting objects: 19, done.
+Delta compression using up to 2 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 3.52 KiB, done.
+Total 11 (delta 6), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   dc68556..244e452  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heorku master
+fatal: 'heorku' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heorku master[1P[C[1@o
+Counting objects: 19, done.
+Delta compression using up to 2 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:
