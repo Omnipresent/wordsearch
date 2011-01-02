@@ -1,5 +1,7 @@
 Wordsearch::Application.routes.draw do
   # The priority is based upon order of creation:
+resources :words, :only => [:index]
+root :to => 'words#index'
   # first created -> highest priority.
 
   # Sample of regular route:

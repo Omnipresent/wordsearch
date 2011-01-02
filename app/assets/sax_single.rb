@@ -1,13 +1,13 @@
-#require 'rubygems'
-#require 'nokogiri'
-#require 'open-uri'
-#require 'indextank'
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+require 'indextank'
 
 #file = File.read(File.join())
-#out = File.new('allmeanings.txt', 'w')
+out = File.new('/home/bhaarat/Downloads/errors.txt', 'w')
 
-#file = File.new('/home/bhaarat/Downloads/sample.txt', 'r')
-file = File.new(File.join(RAILS_ROOT, "app/assets/sample.txt"))
+file = File.new('/home/bhaarat/rails/wordsearch/app/assets/output_saved.txt', 'r')
+#file = File.new(File.join(RAILS_ROOT, "app/assets/sample.txt"))
 counter = 0
 while (line = file.gets)
 
@@ -16,8 +16,7 @@ index_name = client.indexes('idx')
 #index.delete()
 #index.add()
 sword = ""
-if (line.match(/^Wiktionary/) == nil and line.match(/^Appendix/) == nil and line.match(/^Category/) == nil and line.match(/^Index/) == nil)
-	sword = line.gsub(/\n/,'')
+if (line.match(/^Wiktionary/) == nil and line.match(/^Appendix/) == nil and line.match(/^Category/) == nil and line.match(/^Index/) == nil && line.match(/^Help/)== nil)
 	if (line.gsub(/\n/,'').match(/^[a-zA-Z-\s]+$/)!=nil)
 		sword = line.gsub(/\n/,'')
 	end
@@ -236,16 +235,20 @@ words_meanings.each_with_index do |speech, i|
 end
 #puts searched_word
 #puts searched_words_text
-index_name.document(counter.to_s).add({:searched_word => searched_word, :text => searched_words_text})
+begin
+	index_name.document(counter.to_s).add({:searched_word => searched_word, :text => searched_words_text})
+rescue Timeout::Error => e
+	out << "error with: #{searched_word}"
+end
 end #end if
 end
 
 
-results = index_name.search("game played outdoors", :fetch=>'searched_word,text')
-print "#{results['matches']} documents found\\n"
+#results = index_name.search("game played outdoors", :fetch=>'searched_word,text')
+#print "#{results['matches']} documents found\\n"
 #puts results
-results['results'].each do |n|
-puts "word = #{n['searched_word']}"
-puts "speech = #{n['text']}"
+#results['results'].each do |n|
+#puts "word = #{n['searched_word']}"
+#puts "speech = #{n['text']}"
 #puts n['text']
-end
+#end

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Wiktionary Search - IndexTank</title>
+	</head>
+<body>
+
+<div id="logo">
+	Wiktionary Search 
+	<div id="search">
+		<%= form_tag words_path, :method => :get do %>
+  			<%= text_field_tag :query %> &nbsp;&nbsp; <p id="small">=> word:xxx to find exact words</p>
+		<% end %>
+	</div>
+	<div id="brag">
+		<p>:by => <a id="link" href="http://bhaaratman.heroku.com">Bhaarat Sharma</a>, :for => <a id = "link" href="http://blog.indextank.com/93/holiday-hacks-indextank-heroku/">IndexTank Contest</a>, :source => <a id = "link" href="https://github.com/Omnipresent/wordsearch">Omnipresent/wordsearch</a></p>
+	</div>
+</div>
+<div id="content-out">
+<div id="content">
+<% if @docs %>
+  <p id="result-count">Search for <b>"<%= params[:query] %>"</b> returned <b><%= pluralize @docs['matches'], 'result' %></b> in <%=@docs['search_time']%> seconds</p>
+<br><br>
+	<%@docs['results'].each do |record|%>
+		<div id="word">
+		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
+		<!--<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet") if record['snippet_text']!=nil%>-->
+		<%= simple_format(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'))%>
+		</div>	
+	<%end%> 
+<% end %>
+</div>
+</div>
+</body>
+</html>

@@ -1476,4 +1476,2681 @@ Using thor (0.14.6)
 Using railties (3.0.0) 
 Using rails (3.0.0) 
 [32mYour bundle is updated! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
-]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/ap
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ hero[K[K[K[Kgit add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git status
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../Gemfile
+#	modified:   ../../Gemfile.lock
+#	modified:   ../../rails
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.Gemfile.swp
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ c[Kgit commit =am[K[K[K-am "gemfile lock
+> "
+[master 29392d3] gemfile lock
+ 3 files changed, 162 insertions(+), 1 deletions(-)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ gti pu[K[K[K[K[K[Kgit push origin master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 1.49 KiB, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   41c00bf..29392d3  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ git push heroku master
+Counting objects: 17, done.
+Delta compression using up to 2 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  45% (5/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 2.65 KiB, done.
+Total 11 (delta 8), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       Unresolved dependencies detected; Installing...
+       Using --without development:test
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.0) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.4.2) 
+       Installing activemodel (3.0.0) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.1) 
+       Installing rack-mount (0.6.13) 
+       Installing rack-test (0.5.6) 
+       Installing tzinfo (0.3.23) 
+       Installing actionpack (3.0.0) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.13) 
+       Installing actionmailer (3.0.0) 
+       Installing arel (1.0.1) 
+       Installing activerecord (3.0.0) 
+       Installing activeresource (3.0.0) 
+       Installing addressable (2.2.2) 
+       Installing multipart-post (1.0.1) 
+       Installing faraday (0.5.3) 
+       Installing yajl-ruby (0.7.7) with native extensions 
+       Installing indextank (0.0.4) 
+       Installing json_pure (1.4.6) 
+       Installing nokogiri (1.4.4) with native extensions 
+       Using bundler (1.0.3) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.0) 
+       Installing rails (3.0.0) 
+       [32mYour bundle is complete! It was installed into ./.bundle/gems[0m
+       Compiled slug size is 13.7MB
+-----> Launching... done
+       http://deep-robot-309.heroku.com deployed to Heroku
+
+To git@heroku.com:deep-robot-309.git
+   9c16952..29392d3  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cd /home/bhaarat/Downloads/output_
+bash: cd: /home/bhaarat/Downloads/output_: No such file or directory
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cd /home/bhaarat/Downloads/output_[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcla[Ke[Kear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cp output_saved.txt /home/bhaarat/output_saved.txt
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/assetsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/assets$ cd ../..
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rm public/index.html 
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   app/assets/output_saved.txt
+#	modified:   app/assets/sax_single.rb
+#	new file:   app/controllers/.words_controller.rb.swp
+#	new file:   app/controllers/words_controller.rb
+#	new file:   app/models/word_searcher.rb
+#	new file:   app/views/words_controller.html.erb
+#	new file:   config/.routes.rb.swp
+#	modified:   config/routes.rb
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    public/index.html
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script [K/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+Exiting
+/usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:151:in `default_controller_and_action': missing :action (ArgumentError)
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:68:in `normalize_options!'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:50:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:234:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:234:in `match'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:716:in `match'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:928:in `match'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:230:in `root'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/mapper.rb:727:in `root'
+	from /home/bhaarat/rails/wordsearch/config/routes.rb:4
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:233:in `instance_exec'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:233:in `draw'
+	from /home/bhaarat/rails/wordsearch/config/routes.rb:1
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:235:in `load'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:235:in `load'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:591:in `new_constants_in'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:235:in `load'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:127:in `reload_routes!'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:127:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:127:in `reload_routes!'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:120
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/file_update_checker.rb:32:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/file_update_checker.rb:32:in `execute_if_updated'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/railtie.rb:14:in `_callback_before_5'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:419:in `_run_prepare_callbacks'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:40:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:33:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:33:in `build'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:79:in `build'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:208:in `inject'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:79:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:79:in `inject'
+	from /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/stack.rb:79:in `build'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:162:in `build_middleware_stack'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application/finisher.rb:35
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:25:in `instance_exec'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:25:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:50:in `run_initializers'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:49:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:49:in `run_initializers'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:134:in `initialize!'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+	from /home/bhaarat/rails/wordsearch/config/environment.rb:5
+	from /home/bhaarat/rails/wordsearch/config.ru:3:in `require'
+	from /home/bhaarat/rails/wordsearch/config.ru:3
+	from /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/bhaarat/rails/wordsearch/config.ru:1:in `new'
+	from /home/bhaarat/rails/wordsearch/config.ru:1
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 16:59:28] INFO  WEBrick 1.3.1
+[2011-01-01 16:59:28] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 16:59:28] INFO  WEBrick::HTTPServer#start: pid=21319 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 01 16:59:37 -0500 2011
+  Processing by WordsController#index as HTML
+Completed   in 17ms
+
+ActionView::MissingTemplate (Missing template words/index with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rhtml, :rxml, :erb, :builder, :rjs]} in view paths "/home/bhaarat/rails/wordsearch/app/views"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.6ms)
+^C[2011-01-01 17:05:01] INFO  going to shutdown ...
+[2011-01-01 17:05:01] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ cd[K[Kmkdir app/views/words
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ mk[Kv app/views.[K/words_controller.html.erb app_[K/views/words
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ cd app/views/words/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ ls
+words_controller.html.erb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ clear[3Pls
+words_controller.html.erb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ lsclear[3Plscd app/views/words/mv app/views/words_controller.html.erb app/views/words[35Pcd app/views/words/ls[Kclear[3Pls[Kcd ../../..
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  config.ru  [01;34mdb[0m  [01;34mdoc[0m  Gemfile  Gemfile.lock  [01;34mlib[0m  [01;34mlog[0m  [01;34mpublic[0m  rails  Rakefile  README  [01;34mscript[0m  [01;34mtest[0m  [01;34mtmp[0m  [01;34mvendor[0m
+[m]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ lscd ../../..ls[Kclear[3Plscd app/views/words/mv app/views/words_controller.html.erb app/views/words[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pkdir[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pscript/rails server[9Pgit statusscript/rails servermkdir app/views/words[2Pscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 17:06:01] INFO  WEBrick 1.3.1
+[2011-01-01 17:06:01] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 17:06:01] INFO  WEBrick::HTTPServer#start: pid=22012 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 01 17:06:08 -0500 2011
+  Processing by WordsController#index as HTML
+Completed   in 9ms
+
+ActionView::MissingTemplate (Missing template words/index with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rhtml, :rxml, :erb, :builder, :rjs]} in view paths "/home/bhaarat/rails/wordsearch/app/views"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+^C[2011-01-01 17:06:50] INFO  going to shutdown ...
+[2011-01-01 17:06:50] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ l[Kcd app/views/words/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ ls
+words_controller.html.erb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ mv words_controller.html.erb  [Kindex.html.erb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearch/app/views/wordsbhaarat@bhaarat-laptop:~/rails/wordsearch/app/views/words$ cd ../../..
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ cd ../../..mv words_controller.html.erb index.html.erbls[Kcd app/views/words/script/rails serverls[Kscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 17:07:11] INFO  WEBrick 1.3.1
+[2011-01-01 17:07:11] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 17:07:11] INFO  WEBrick::HTTPServer#start: pid=22227 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 01 17:07:13 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:07:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 475ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+^C[2011-01-01 17:07:33] INFO  going to shutdown ...
+[2011-01-01 17:07:33] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clearscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+[2011-01-01 17:39:03] INFO  WEBrick 1.3.1
+[2011-01-01 17:39:03] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 17:39:03] INFO  WEBrick::HTTPServer#start: pid=29812 port=3000
+
+
+
+
+
+
+
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 01 17:39:13 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:39:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 769ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+entered search
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 17:40:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 317ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nil
+entered search
+resultssearch_time0.002facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examinaiton" for 127.0.0.1 at Sat Jan 01 17:41:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examinaiton"}
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 512ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+c 
+
+
+
+
+
+
+
+
+
+
+
+nil
+entered search
+1
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:42:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 575ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 17:43:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=example" for 127.0.0.1 at Sat Jan 01 17:43:52 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"example"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 849ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 17:45:03 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 17:45:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 494ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 17:45:46 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 17:45:48 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 581ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:49:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1382ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 17:52:57 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed   in 939ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    7: 	testtesttesttest
+    8:   <p id="result-count">Your search for "<%= params[:query] %>" returned <%= pluralize @docs['matches'], 'result' %></p>
+    9: <br><br>
+    10: 	<%@docs['result'].each do |record|%>
+    11: 		<%= simple_format(record['text'])%>
+    12: 	
+    13: 	<%end%> 
+  app/views/words/index.html.erb:10:in `_app_views_words_index_html_erb__698900337__617568758_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 17:53:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 17:53:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 367ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:54:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 593ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sat Jan 01 17:54:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 1186ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sat Jan 01 18:13:31 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 1302ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=India" for 127.0.0.1 at Sat Jan 01 18:14:21 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"India"}
+Rendered words/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 450ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=America" for 127.0.0.1 at Sat Jan 01 18:14:40 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"America"}
+Rendered words/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1064ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Dutch+province+Friesland" for 127.0.0.1 at Sat Jan 01 18:15:04 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Dutch province Friesland"}
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 390ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Dutch+province+Friesland" for 127.0.0.1 at Sat Jan 01 18:16:06 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Dutch province Friesland"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 406ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 18:28:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1779ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 18:29:17 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1234ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 18:29:25 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 967ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 18:29:44 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 448ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 18:30:25 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 559ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=his" for 127.0.0.1 at Sat Jan 01 18:30:29 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"his"}
+Rendered words/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 461ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=foolish+and+embarrasing" for 127.0.0.1 at Sat Jan 01 18:33:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"foolish and embarrasing"}
+Rendered words/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 602ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=foolish+and+embarrassing" for 127.0.0.1 at Sat Jan 01 18:34:02 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"foolish and embarrassing"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 1042ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Agaffe" for 127.0.0.1 at Sat Jan 01 19:37:25 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:gaffe"}
+Rendered words/index.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 749ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sat Jan 01 19:38:08 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 590ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sat Jan 01 19:38:58 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 955ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sat Jan 01 19:39:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 658ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+^C[2011-01-01 19:39:39] INFO  going to shutdown ...
+[2011-01-01 19:39:39] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails serverclear[Kscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 19:39:46] INFO  WEBrick 1.3.1
+[2011-01-01 19:39:46] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 19:39:47] INFO  WEBrick::HTTPServer#start: pid=10555 port=3000
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sat Jan 01 19:39:54 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 681ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+^C[2011-01-01 19:40:03] INFO  going to shutdown ...
+[2011-01-01 19:40:03] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 19:41:54] INFO  WEBrick 1.3.1
+[2011-01-01 19:41:54] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 19:41:56] INFO  WEBrick::HTTPServer#start: pid=11757 port=3000
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word:Hyderabad" for 127.0.0.1 at Sat Jan 01 19:41:58 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 391ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=gaffe" for 127.0.0.1 at Sat Jan 01 19:42:03 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"gaffe"}
+Rendered words/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 561ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=cricket" for 127.0.0.1 at Sat Jan 01 19:42:08 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"cricket"}
+Rendered words/index.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 924ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+^C[2011-01-01 19:47:15] INFO  going to shutdown ...
+[2011-01-01 19:47:15] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails serverclear[Kscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-01 19:47:20] INFO  WEBrick 1.3.1
+[2011-01-01 19:47:20] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-01 19:47:20] INFO  WEBrick::HTTPServer#start: pid=15592 port=3000
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sat Jan 01 19:47:31 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 646ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sat Jan 01 19:48:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1007ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sat Jan 01 19:48:18 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 546ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Ablack_ice" for 127.0.0.1 at Sat Jan 01 21:45:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:black_ice"}
+Completed   in 665ms
+
+IndexTank::InvalidQuery (IndexTank::InvalidQuery):
+  app/models/word_searcher.rb:12:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=black_ice" for 127.0.0.1 at Sat Jan 01 21:45:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"black_ice"}
+Rendered words/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 490ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sat Jan 01 21:45:54 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 804ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 01 21:53:37 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=hypocristic" for 127.0.0.1 at Sat Jan 01 21:53:41 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"hypocristic"}
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 765ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=hypocoristic" for 127.0.0.1 at Sat Jan 01 21:53:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"hypocoristic"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 380ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:53:54 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:53:55 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:54:20 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:54:20 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:54:59 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:54:59 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:55:09 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (73.1ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:55:10 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:57:21 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:57:21 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:57:41 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:57:41 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:58:26 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:58:26 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:58:41 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:58:41 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:58:53 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:58:53 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:59:05 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:59:05 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:59:10 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:59:10 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:59:39 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:59:39 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sat Jan 01 23:59:51 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sat Jan 01 23:59:51 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+^C[2011-01-01 23:59:59] INFO  going to shutdown ...
+[2011-01-01 23:59:59] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 00:00:05] INFO  WEBrick 1.3.1
+[2011-01-02 00:00:05] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 00:00:06] INFO  WEBrick::HTTPServer#start: pid=23844 port=3000
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:00:09 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:00:09 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:00:21 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:00:22 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:00:27 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:00:27 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:00:50 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:00:50 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:00:55 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:00:55 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:01:00 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:00 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:01:03 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:03 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:04 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:01:42 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:42 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:01:46 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:46 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:01:46 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/stylesheets/screen.css" for 127.0.0.1 at Sun Jan 02 00:02:31 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:03:21 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:04:04 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:04:48 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:05:45 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:05:54 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:25:08 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:29:33 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:30:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:32:06 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:38:42 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:39:19 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:40:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:41:24 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:41:31 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:46:48 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 181ms (Views: 180.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:47:04 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:48:24 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:48:31 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:48:38 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:48:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:48:57 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:49:14 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:49:33 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:49:39 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:49:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:50:19 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:50:34 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:51:31 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:51:37 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:55:35 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:56:07 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sun Jan 02 00:56:13 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 1380ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sun Jan 02 00:56:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1365ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 00:56:56 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1749ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 00:57:05] INFO  going to shutdown ...
+[2011-01-02 00:57:06] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clearscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 00:58:10] INFO  WEBrick 1.3.1
+[2011-01-02 00:58:10] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 00:58:10] INFO  WEBrick::HTTPServer#start: pid=9300 port=3000
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 00:58:17 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 00:58:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 5631ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:00:16 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 6410ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:02:00 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 623ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:03:14 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 579ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:03:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 550ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:06:12 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 868ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:06:47 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 332ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:07:13 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 468ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:07:16 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 475ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:07:30 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 464ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:07:41 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 701ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:09:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 737ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:09:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 875ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:09:34 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 540ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:10:32 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 754ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:10:58 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 3460ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:11:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 461ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:14:18 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 883ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:17:11 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 850ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:18:24 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 6305ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:18:40 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:24:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 570ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:25:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 424ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:26:14 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 10981ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:26:37 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 539ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:28:36 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 825ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:29:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 597ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:29:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 852ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:29:55 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 918ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:30:11 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 641ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:30:39 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 621ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:30:46 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 651ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:30:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 596ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:33:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1327ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:33:30 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 535ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:34:18 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 751ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:34:26 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 543ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:34:33 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 439ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:34:40 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:34:44 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 654ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:37:28 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:38:34 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:38:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 887ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:41:30 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:43:13 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 711ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:43:48 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 428ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 01:43:54 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:44:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 616ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 01:44:47 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 323ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:48:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 661ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Atest" for 127.0.0.1 at Sun Jan 02 01:48:17 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:test"}
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 5409ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Ajailbait" for 127.0.0.1 at Sun Jan 02 01:48:38 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:jailbait"}
+Rendered words/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 488ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:49:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 1047ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Aabuso" for 127.0.0.1 at Sun Jan 02 01:49:30 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:abuso"}
+Rendered words/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 365ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Atongs" for 127.0.0.1 at Sun Jan 02 01:50:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:tongs"}
+Rendered words/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 573ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Agaffe" for 127.0.0.1 at Sun Jan 02 01:50:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:gaffe"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 487ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Apsyche" for 127.0.0.1 at Sun Jan 02 01:51:49 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:psyche"}
+Rendered words/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 489ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Acupido" for 127.0.0.1 at Sun Jan 02 01:51:59 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:cupido"}
+Rendered words/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 655ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Afixed" for 127.0.0.1 at Sun Jan 02 01:52:21 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:fixed"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 513ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:52:40 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 355ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Ablack_ice" for 127.0.0.1 at Sun Jan 02 01:52:48 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:black_ice"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 384ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:52:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 527ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 01:53:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 455ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:57:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 538ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Agaffe" for 127.0.0.1 at Sun Jan 02 01:57:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:gaffe"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 328ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 01:58:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 749ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 01:58:49 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 621ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=India" for 127.0.0.1 at Sun Jan 02 01:58:57 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"India"}
+Rendered words/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 574ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Asemantics" for 127.0.0.1 at Sun Jan 02 01:59:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:semantics"}
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 695ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Aabaction" for 127.0.0.1 at Sun Jan 02 02:00:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:abaction"}
+Rendered words/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 546ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Aaceto" for 127.0.0.1 at Sun Jan 02 02:00:32 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:aceto"}
+Rendered words/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 547ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 02:02:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 1000ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:02:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 560ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:04:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 805ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:05:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 635ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:07:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 879ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:07:52 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 527ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:08:16 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 461ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:09:02 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 770ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Agaffe" for 127.0.0.1 at Sun Jan 02 02:09:34 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:gaffe"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 476ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:09:49 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 658ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:10:52 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 528ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=source" for 127.0.0.1 at Sun Jan 02 02:12:24 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"source"}
+Rendered words/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 10450ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=reconstructed" for 127.0.0.1 at Sun Jan 02 02:14:36 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"reconstructed"}
+Rendered words/index.html.erb within layouts/application (157.5ms)
+Completed 200 OK in 868ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=number" for 127.0.0.1 at Sun Jan 02 02:15:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"number"}
+Rendered words/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 790ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3Acognate" for 127.0.0.1 at Sun Jan 02 02:17:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:cognate"}
+Rendered words/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 739ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 02:17:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 628ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 02:22:07 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 776ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:22:18 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 15270ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:23:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 737ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:24:16 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 5134ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:27:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 762ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:27:26 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 459ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:28:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 417ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:28:11 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 340ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:28:25 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 5167ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:29:56 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 613ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:30:23 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 886ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:30:31 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 371ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:31:12 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 389ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:31:41 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 656ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:33:24 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 700ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:34:03 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 699ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:34:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 5262ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 02:34:56 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 378ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:35:02 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 430ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:35:09 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 408ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:36:26 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 5503ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:37:04 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 615ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb6482388>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:39:27 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 600ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb670a3bc>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 02:39:32 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 458ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb6678ee4>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sun Jan 02 08:09:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 677ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb65f3460>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=searched_word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:09:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"searched_word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 517ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 08:10:08] INFO  going to shutdown ...
+[2011-01-02 08:10:08] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 08:10:16] INFO  WEBrick 1.3.1
+[2011-01-02 08:10:16] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 08:10:16] INFO  WEBrick::HTTPServer#start: pid=6012 port=3000
+#<Enumerable::Enumerator:0xb66bff88>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 08:10:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 5157ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb6663d00>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sun Jan 02 08:10:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 403ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb65e2aac>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:11:31 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 977ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb669ac60>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Pakistan" for 127.0.0.1 at Sun Jan 02 08:11:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Pakistan"}
+Rendered words/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 725ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 08:12:05] INFO  going to shutdown ...
+[2011-01-02 08:12:05] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ script/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 08:46:34] INFO  WEBrick 1.3.1
+[2011-01-02 08:46:34] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 08:46:34] INFO  WEBrick::HTTPServer#start: pid=19391 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 08:46:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+#<Enumerable::Enumerator:0xb64c84f0>
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:46:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 784ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+entered here!
+resultssearch_time0.009facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:47:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 787ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+entered here!
+resultssearch_time0.009facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Abouncer" for 127.0.0.1 at Sun Jan 02 08:47:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:bouncer"}
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 1331ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+entered here!
+resultssearch_time0.029facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Adiscrete" for 127.0.0.1 at Sun Jan 02 08:48:08 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:discrete"}
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 478ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+entered here!
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:48:38 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Completed   in 518ms
+
+IndexTank::InvalidQuery (IndexTank::InvalidQuery):
+  app/models/word_searcher.rb:14:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+entered here!
+resultssearch_time0.003facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:51:30 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 913ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+entered here!: Hyderabad
+query = searched_word:Hyderabad
+resultssearch_time0.006facetsmatches0
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHyderabad" for 127.0.0.1 at Sun Jan 02 08:52:36 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Hyderabad"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 780ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+entered here!: garbage
+query = searched_word:garbage
+resultsdocid2344textNoun
+ useless|Useless or disposable material; waste material of any kind.
+ nonsense|Nonsense; gibberish.
+Verb
+ To eviscerate.
+searched_wordgarbagesearch_time0.002facetsmatches1
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Agarbage" for 127.0.0.1 at Sun Jan 02 08:53:02 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:garbage"}
+Rendered words/index.html.erb within layouts/application (23.2ms)
+Completed   in 402ms
+
+ActionView::Template::Error (private method `gsub' called for nil:NilClass):
+    23: 	<%@docs['results'].each do |record|%>
+    24: 		<div id="word">
+    25: 		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
+    26: 		<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet")%>
+    27: 		<%= simple_format(record['text'].gsub('\t','&nbsp;'))%>
+    28: 		</div>	
+    29: 	<%end%> 
+  app/views/words/index.html.erb:26:in `_app_views_words_index_html_erb__698900337__617100608_0'
+  app/views/words/index.html.erb:23:in `each'
+  app/views/words/index.html.erb:23:in `_app_views_words_index_html_erb__698900337__617100608_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.2ms)
+entered here!: garbage
+query = searched_word:garbage
+resultsdocid2344textNoun
+ useless|Useless or disposable material; waste material of any kind.
+ nonsense|Nonsense; gibberish.
+Verb
+ To eviscerate.
+searched_wordgarbagesearch_time0.003facetsmatches1
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Agarbage" for 127.0.0.1 at Sun Jan 02 08:55:54 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:garbage"}
+Rendered words/index.html.erb within layouts/application (65.9ms)
+Completed 200 OK in 989ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=material" for 127.0.0.1 at Sun Jan 02 08:57:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"material"}
+Rendered words/index.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 1030ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=material" for 127.0.0.1 at Sun Jan 02 08:58:23 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"material"}
+Rendered words/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1007ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=disposable+material" for 127.0.0.1 at Sun Jan 02 09:00:00 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"disposable material"}
+Rendered words/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 604ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AMiriam" for 127.0.0.1 at Sun Jan 02 09:02:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Miriam"}
+Rendered words/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 571ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Noun" for 127.0.0.1 at Sun Jan 02 09:02:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Noun"}
+Rendered words/index.html.erb within layouts/application (77.7ms)
+Completed 200 OK in 1402ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:03:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Noun" for 127.0.0.1 at Sun Jan 02 09:03:44 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Noun"}
+Rendered words/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 434ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:04:13 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 629ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Aplenipotentiary" for 127.0.0.1 at Sun Jan 02 09:04:48 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:plenipotentiary"}
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 739ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Golgotha" for 127.0.0.1 at Sun Jan 02 09:05:03 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Golgotha"}
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 485ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=love" for 127.0.0.1 at Sun Jan 02 09:05:21 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"love"}
+Rendered words/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 585ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:20:10 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:20:30 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:22:40 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:22:44 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:22:59 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:23:10 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:24:00 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 09:24:15 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:26:42 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:27:32 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:30:31 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:30:47 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 09:31:06 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Atest" for 127.0.0.1 at Sun Jan 02 09:31:13 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:test"}
+Rendered words/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 530ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Aexamination" for 127.0.0.1 at Sun Jan 02 09:31:21 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:examination"}
+Rendered words/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1732ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Acricket" for 127.0.0.1 at Sun Jan 02 09:31:27 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:cricket"}
+Rendered words/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 705ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Asx" for 127.0.0.1 at Sun Jan 02 09:31:33 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:sx"}
+Rendered words/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 550ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Asex" for 127.0.0.1 at Sun Jan 02 09:31:37 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:sex"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 308ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3AHeuschrecke" for 127.0.0.1 at Sun Jan 02 09:31:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Heuschrecke"}
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 538ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=locust" for 127.0.0.1 at Sun Jan 02 09:32:00 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"locust"}
+Rendered words/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 338ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:32:09 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 839ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=abject" for 127.0.0.1 at Sun Jan 02 09:32:14 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"abject"}
+Rendered words/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 10439ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=DIY" for 127.0.0.1 at Sun Jan 02 09:32:46 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"DIY"}
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 626ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3ADIY" for 127.0.0.1 at Sun Jan 02 09:32:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:DIY"}
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 444ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=expert" for 127.0.0.1 at Sun Jan 02 09:33:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"expert"}
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 798ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Nepali" for 127.0.0.1 at Sun Jan 02 09:34:05 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Nepali"}
+Rendered words/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 699ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:35:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 881ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+		 His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:36:49 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 535ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+		 His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:37:26 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 529ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+
+
+
+
+
+
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+&nbsp;&nbsp; His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:37:56 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 471ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+&nbsp;&nbsp; His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:38:27 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 5092ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+&nbsp;&nbsp; His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:38:49 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 555ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+&nbsp;&nbsp; His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:39:02 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 429ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+Adj
+ Favouring fundamental change, or change at the root cause of a matter.
+&nbsp;&nbsp; His beliefs are radical.
+ Of or pertaining to a root Noun
+ A member of the most progressive wing of the Liberal Party; someone favouring social reform (but generally stopping short of socialism).
+ A member of an influential, centrist political party favouring moderate social reform, a republican constitution, and secular politics.
+Adj
+ incorrect, in the context of 18th century US politics
+
+
+Started GET "/words?utf8=%E2%9C%93&query=politics" for 127.0.0.1 at Sun Jan 02 09:39:38 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"politics"}
+Rendered words/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 763ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+Adj
+ Requiring little skill or effort, soft.
+&nbsp;&nbsp; The teacher gave an easy test to her students.
+ Consenting readily to sex.
+&nbsp;&nbsp; She has a reputation for being easy; they say shes slept with half the senior class.
+Adj
+ comfortable|Comfortable; at ease.
+&nbsp;&nbsp; In the middle of the room was a fluffy easy chair.
+&nbsp;&nbsp; Now that I know its taken care of, I can rest easy at night.
+Noun
+ A form of prize which, when a ship was captured at sea, could be distributed at once.
+ plunder|Plunder taken from an enemy in time of war, or seized by piracy.
+Noun
+ The buttocks.
+&nbsp;&nbsp; You got a big ol booty.
+ A woman, considered as sexual partner or sex object.
+Noun
+ A red fox with pale yellow or (rarely) silver to black fur.
+ A person with graying hair who has sex appeal.
+Verb
+ To perform oral sex on another person.
+Noun
+ The belief that people of one sex or gender are inherently superior to people of the other sex or gender.
+&nbsp;&nbsp; The notion that either gender is smarter or stronger is sexism.
+ Unfair treatment or discrimination based on a difference of sex or gender.
+&nbsp;&nbsp; The fact that there is only one woman in a management position in that company makes it easy to believe that sexism runs rampant there.
+&nbsp;&nbsp; In order to succeed in this company, women generally must acquire various masculine traits, which only points out the underlying sexism.
+&nbsp;&nbsp; Hollywood contributes to sexism in our society by making and promoting violent films for men and romantic comedies for women.
+Noun
+ A chaotic mess that might be compared to group intercourse|sex, in which participants are so intertwined and intermingled that they might penetrate each other rather than their intended target. Its more precise usage describes a particular kind of Catch-22, in which ''multiple'' complicated problems mutually interfere with each other's solution. The looser usage, referring to any chaotic situation, probably prevails.
+Noun
+ A device pulled through the ground in order to break it open into furrows for planting.
+&nbsp;&nbsp; The horse-drawn plough had a tremendous impact on agriculture.
+ A horse-drawn plow (as opposed to plow, used for the mechanical variety)
+Verb
+ To use a plough on to prepare for planting.
+&nbsp;&nbsp; Ive still got to plough that field.
+ to fuck, to have sex with.
+Noun
+ indulgence|Indulgence in sensual pleasures; scandalous activities involving sex, alcohol, or drugs without inhibition.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=sex" for 127.0.0.1 at Sun Jan 02 09:40:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"sex"}
+Rendered words/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 5509ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 09:40:38] INFO  going to shutdown ...
+[2011-01-02 09:40:38] INFO  WEBrick::HTTPServer#start done.
+Exiting
+
