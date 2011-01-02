@@ -4153,4 +4153,123 @@ Completed 200 OK in 5509ms (Views: 59.7ms | ActiveRecord: 0.0ms)
 ^C[2011-01-02 09:40:38] INFO  going to shutdown ...
 [2011-01-02 09:40:38] INFO  WEBrick::HTTPServer#start done.
 Exiting
-
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   app/assets/output_saved.txt
+#	modified:   app/assets/sax_single.rb
+#	new file:   app/controllers/.words_controller.rb.swp
+#	new file:   app/controllers/words_controller.rb
+#	new file:   app/models/.word_searcher.rb.swp
+#	new file:   app/models/word_searcher.rb
+#	new file:   app/views/words/.index.html.erb.swp
+#	new file:   app/views/words/index.html.erb
+#	new file:   app/views/words_controller.html.erb
+#	new file:   config/.routes.rb.swp
+#	modified:   config/routes.rb
+#	new file:   public/stylesheets/screen.css
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/.words_controller.rb.swp
+#	deleted:    app/views/words_controller.html.erb
+#	deleted:    config/.routes.rb.swp
+#	deleted:    public/index.html
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git commit -am "search complete"
+[master be02667] search complete
+ 11 files changed, 2833 insertions(+), 45395 deletions(-)
+ create mode 100644 app/controllers/words_controller.rb
+ create mode 100644 app/models/.word_searcher.rb.swp
+ create mode 100644 app/models/word_searcher.rb
+ create mode 100644 app/views/words/.index.html.erb.swp
+ create mode 100644 app/views/words/index.html.erb
+ delete mode 100644 public/index.html
+ create mode 100644 public/stylesheets/screen.css
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push [K[K[K[K[K[K[K[K[Kgit push origin master
+Counting objects: 33, done.
+Delta compression using up to 2 threads.
+Compressing objects:   4% (1/21)   Compressing objects:   9% (2/21)   Compressing objects:  14% (3/21)   Compressing objects:  19% (4/21)   Compressing objects:  23% (5/21)   Compressing objects:  28% (6/21)   Compressing objects:  33% (7/21)   Compressing objects:  38% (8/21)   Compressing objects:  42% (9/21)   Compressing objects:  47% (10/21)   Compressing objects:  52% (11/21)   Compressing objects:  57% (12/21)   Compressing objects:  61% (13/21)   Compressing objects:  66% (14/21)   Compressing objects:  71% (15/21)   Compressing objects:  76% (16/21)   Compressing objects:  80% (17/21)   Compressing objects:  85% (18/21)   Compressing objects:  90% (19/21)   Compressing objects:  95% (20/21)   Compressing objects: 100% (21/21)   Compressing objects: 100% (21/21), done.
+Writing objects:   4% (1/21)   Writing objects:   9% (2/21)   Writing objects:  14% (3/21)   Writing objects:  19% (4/21)   Writing objects:  23% (5/21)   Writing objects:  28% (6/21)   Writing objects:  33% (7/21)   Writing objects:  38% (8/21)   Writing objects:  42% (9/21)   Writing objects:  52% (11/21)   Writing objects:  57% (12/21)   Writing objects:  61% (13/21)   Writing objects:  66% (14/21)   Writing objects:  71% (15/21)   Writing objects:  76% (16/21)   Writing objects:  80% (17/21)   Writing objects:  85% (18/21)   Writing objects:  90% (19/21)   Writing objects:  95% (20/21)   Writing objects: 100% (21/21)   Writing objects: 100% (21/21), 26.44 KiB, done.
+Total 21 (delta 10), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   29392d3..be02667  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku open
+Opening http://deep-robot-309.heroku.com/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku rename
+Invalid name.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku rename wordsearch
+ !   Name is already taken
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku rename wordsearch[C[K[K[K[K[K[K[K[K[K[K[K wikidex
+http://wikidex.heroku.com/ | git@heroku.com:wikidex.git
+Git remote heroku updated
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Everything up-to-date
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heroku master
+Counting objects: 33, done.
+Delta compression using up to 2 threads.
+Compressing objects:   4% (1/21)   Compressing objects:   9% (2/21)   Compressing objects:  14% (3/21)   Compressing objects:  19% (4/21)   Compressing objects:  23% (5/21)   Compressing objects:  28% (6/21)   Compressing objects:  33% (7/21)   Compressing objects:  38% (8/21)   Compressing objects:  42% (9/21)   Compressing objects:  47% (10/21)   Compressing objects:  52% (11/21)   Compressing objects:  57% (12/21)   Compressing objects:  61% (13/21)   Compressing objects:  66% (14/21)   Compressing objects:  71% (15/21)   Compressing objects:  76% (16/21)   Compressing objects:  80% (17/21)   Compressing objects:  85% (18/21)   Compressing objects:  90% (19/21)   Compressing objects:  95% (20/21)   Compressing objects: 100% (21/21)   Compressing objects: 100% (21/21), done.
+Writing objects:   4% (1/21)   Writing objects:   9% (2/21)   Writing objects:  14% (3/21)   Writing objects:  19% (4/21)   Writing objects:  23% (5/21)   Writing objects:  28% (6/21)   Writing objects:  33% (7/21)   Writing objects:  38% (8/21)   Writing objects:  42% (9/21)   Writing objects:  52% (11/21)   Writing objects:  57% (12/21)   Writing objects:  61% (13/21)   Writing objects:  66% (14/21)   Writing objects:  71% (15/21)   Writing objects:  76% (16/21)   Writing objects:  80% (17/21)   Writing objects:  85% (18/21)   Writing objects:  90% (19/21)   Writing objects:  95% (20/21)   Writing objects: 100% (21/21)   Writing objects: 100% (21/21), 26.49 KiB, done.
+Total 21 (delta 10), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 13.5MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   29392d3..be02667  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heorku open
+heorku: command not found
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku open
+Opening http://wikidex.heroku.com/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku logs
+
+==> dyno-4057590.log (crash) <==
+/disk1/home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/app/assets/sax.rb:13: warning: character class has `-' without escape
+/disk1/home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/app/assets/sax.rb:6:in `initialize': No such file or directory - /home/bhaarat/Downloads/output.txt (Errno::ENOENT)
+	from /disk1/home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/app/assets/sax.rb:6:in `new'
+	from /disk1/home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/app/assets/sax.rb:6
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:239:in `require'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:239:in `require'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:227:in `load_dependency'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:239:in `require'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:346:in `require_or_load'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:300:in `depend_on'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:216:in `require_dependency'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/engine.rb:138:in `eager_load!'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/engine.rb:137:in `each'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/engine.rb:137:in `eager_load!'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/engine.rb:135:in `each'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/engine.rb:135:in `eager_load!'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/application.rb:108:in `eager_load!'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/application/finisher.rb:41
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:25:in `instance_exec'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:25:in `run'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:50:in `run_initializers'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:49:in `each'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/initializable.rb:49:in `run_initializers'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/application.rb:134:in `initialize!'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+	from /disk1/home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/config/environment.rb:5
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from config.ru:3
+	from /home/heroku_rack/heroku.ru:23
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f5644288/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /home/slugs/395425_be02667_d6c6-b139bcb4-6e9c-4dd2-9984-d286f56

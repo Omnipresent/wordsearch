@@ -1,6 +1,6 @@
-#require 'rubygems'
-#require 'nokogiri'
-#require 'open-uri'
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
 
 #file = File.read(File.join())
 file = File.new('/home/bhaarat/Downloads/output.txt', 'r')
