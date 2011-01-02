@@ -4575,4 +4575,86 @@ Opening http://wikidex.heroku.com/
 	from /home/heroku_rack/heroku.ru:11:in `new'
 	from /home/heroku_rack/heroku.ru:11
 	from /home/slugs/395425_bb40617_d6c6-d4257567-f24c-433b-b99f-9d39097c017c/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
-	from /home/slugs/39542
+	from /home/slugs/395425_bb40617_d6c6-d4257567-f24c-433b-b99f-9d39097c017c/mnt/.bundle/gems/ruby/1.8/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from /home/heroku_rack/heroku.ru:1:in `new'
+	from /home/heroku_rack/heroku.ru:1
+
+-----> Your application could not find files necessary to start up.
+
+       Make sure all your files are commited to your git repo, are not listed
+       in your .gitignore, and that you have no Git submodules.
+
+       Examine the backtrace above this message to debug.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ ^C
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ gvim
+[m]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ s[Kgit status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   .gitignore
+#	new file:   .gitignore.swp
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/assets/.sax.rb.swp
+#	deleted:    app/models/.word_searcher.rb.swp
+#	deleted:    app/views/words/.index.html.erb.swp
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push [K[K[K[K[Kcommit am[K[K-am "no com[K[K[K[K[K[Kremoving sax_single.rb from commit"
+[master 9af48d0] removing sax_single.rb from commit
+ 5 files changed, 155 insertions(+), 1 deletions(-)
+ rename app/models/.word_searcher.rb.swp => .gitignore.swp (91%)
+ delete mode 100644 app/assets/.sax.rb.swp
+ delete mode 100644 app/views/words/.index.html.erb.swp
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Counting objects: 18, done.
+Delta compression using up to 2 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 1.73 KiB, done.
+Total 10 (delta 3), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   bb40617..9af48d0  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   app/assets/.output_saved.txt.swp
+#	modified:   app/assets/output_saved.txt
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    .gitignore.swp
+#	deleted:    app/assets/sax_single.rb
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Everything up-to-date
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git commit -am "removing parser"
+[master dc68556] removing parser
+ 4 files changed, 0 insertions(+), 93595 deletions(-)
+ delete mode 100644 .gitignore.swp
+ create mode 100644 app/assets/.output_saved.txt.swp
+ delete mode 100644 app/assets/sax_single.rb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push h[Korigin master
+Counting objects: 10, done.
+Delta compression using up to 2 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  66% (4/6), 2.17 MiB | 2.76 MiB/s   Writing objects:  66% (4/6), 2.90 MiB | 1.35 MiB/s   Writing objects:  66% (4/6), 3.27 MiB | 1.16 MiB/s   Writing objects:  66% (4/6), 3.65 MiB | 1.04 MiB/s   Writing objects:  66% (4/6), 4.40 MiB | 927 KiB/s   Writing objects:  66% (4/6), 4.77 MiB | 883 KiB/s   Writing objects:  66% (4/6), 5.52 MiB | 563 KiB/s   Writing objects:  66% (4/6), 5.90 MiB | 566 KiB/s   Writing objects:  66% (4/6), 6.65 MiB | 567 KiB/s   Writing objects:  66% (4/6), 7.02 MiB | 567 KiB/s   Writing objects:  66% (4/6), 7.87 MiB | 566 KiB/s   Writing objects:  66% (4/6), 8.24 MiB | 566 KiB/s   Writing objects:  66% (4/6), 8.99 MiB | 566 KiB/s   Writing objects:  66% (4/6), 9.37 MiB | 501 KiB/s   Writing objects:  66% (4/6), 10.37 MiB | 515 KiB/s   Writing objects:  66% (4/6), 11.02 MiB | 562 KiB/s   Writing objects:  66% (4/6), 11.27 MiB | 594 KiB/s   Writing objects:  83% (5/6), 11.77 MiB | 553 KiB/s   Writing objects: 100% (6/6), 11.77 MiB | 553 KiB/s   Writing objects: 100% (6/6), 11.92 MiB | 551 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   9af48d0..dc68556  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push hee[Kroku master
+Counting objects: 25, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  43% (7/16), 2.17 MiB | 2.62 MiB/s   Writing objects:  43% (7/16), 2.55 MiB | 1.68 MiB/s   Writing objects:  43% (7/16), 3.30 MiB | 1.15 MiB/s   Writing objects:  43% (7/16), 3.68 MiB | 1.04 MiB/s   Writing objects:  43% (7/16), 4.42 MiB | 920 KiB/s   Writing objects:  43% (7/16), 4.80 MiB | 878 KiB/s   Writing objects:  43% (7/16), 5.55 MiB | 565 KiB/s   Writing objects:  43% (7/16), 5.92 MiB | 566 KiB/s   Writing objects:  43% (7/16), 6.30 MiB | 566 KiB/s   Writing objects:  43% (7/16), 7.05 MiB | 565 KiB/s   Writing objects:  43% (7/16), 7.17 MiB | 519 KiB/s   Writing objects:  43% (7/16), 8.14 MiB | 567 KiB/s   Writing objects:  43% (7/16), 8.52 MiB | 568 KiB/s   Writing objects:  43% (7/16), 9.14 MiB | 518 KiB/s   Writing objects:  43% (7/16), 9.70 MiB | 563 KiB/s   Writing objects:  43% (7/16), 10.45 MiB | 566 KiB/s   Writing objects:  43% (7/16), 10.70 MiB | 597 KiB/s   Writing objects:  43% (7/16), 11.45 MiB | 560 KiB/s   Writing objects:  43% (7/16), 11.84 MiB | 550 KiB/s   Writing objects:  50% (8/16), 11.84 MiB | 550 KiB/s   Writing objects:  56% (9/16), 11.84 MiB | 550 KiB/s   Writing objects:  62% (10/16), 11.84 MiB | 550 KiB/s   Writing objects:  68% (11/16), 11.84 MiB | 550 KiB/s   Writing objects:  75% (12
