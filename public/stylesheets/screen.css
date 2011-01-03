@@ -65,3 +65,18 @@ input {
 #link > a:hover {
 	border-bottom: 1px solid #9DCB79;
 }
+#info {
+	margin-left: 25px;
+	font-size: 15px;
+}
+#heading {
+	font-weight: bold;
+	font-size: 1.7em;
+	text-decoration: underline;
+	display: inline;
+}
+#purpose {
+	display: inline;
+	margin-left: 10px;
+	font-size: 1.1em;
+}

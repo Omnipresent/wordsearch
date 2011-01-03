@@ -4884,3 +4884,1524 @@ SyntaxError (/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:3:
 ...otocol ? 'https://ssl' : 'http://www') + '.google-analytics....
                               ^
 /home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: unknown regexp options - www
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:11: syntax error, unexpected tSTRING_BEG, expecting kEND
+... '.google-analytics.com/ga.js';
+                              ^
+/home/bhaarat/rails/wordsearch/app/helpers/application_helper.rb:12: syntax error, unexpected tIDENTIFIER, expecting kEND
+...t.getElementsByTagName('script')[0]; s.parentNode.insertBefo...
+                              ^):
+  app/controllers/application_controller.rb:1
+  app/controllers/words_controller.rb:1
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 18:08:26 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 18:08:32] INFO  going to shutdown ...
+[2011-01-02 18:08:33] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add . && git commit -am "analytics simple" && git push ori[Kigin master && gis pu[K[K[K[Kt push herokyu [K[K[Ku master
+[master bf767f7] analytics simple
+ 7 files changed, 190 insertions(+), 22 deletions(-)
+ delete mode 100644 app/assets/.output_saved.txt.swp
+ rename app/{views/layouts/.application.html.erb.swp => helpers/.application_helper.rb.swp} (92%)
+ rewrite app/helpers/application_helper.rb (94%)
+Counting objects: 26, done.
+Delta compression using up to 2 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 3.13 KiB, done.
+Total 14 (delta 7), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   d84488f..bf767f7  master -> master
+Counting objects: 26, done.
+Delta compression using up to 2 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 3.16 KiB, done.
+Total 14 (delta 7), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 13.0MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   d84488f..bf767f7  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku open
+Opening http://wikidex.heroku.com/
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ ra[K[Ks[Kscript/rails server
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 18:16:24] INFO  WEBrick 1.3.1
+[2011-01-02 18:16:24] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 18:16:39] INFO  WEBrick::HTTPServer#start: pid=18378 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 18:16:40 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=sisterhood" for 127.0.0.1 at Sun Jan 02 18:16:47 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"sisterhood"}
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 693ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+Noun
+ the state, or kinship of being sisters
+ the quality of being sisterly; sisterly companionship
+Noun
+ companionship|Companionship.
+ A fraternity, a society or association.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=companionship" for 127.0.0.1 at Sun Jan 02 18:16:51 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"companionship"}
+Rendered words/index.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 503ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 18:33:21 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+* ''[[kiom]]'' how many, how much* ''[[tiom]]'' that many, that much* ''[[ĉiom]]'' all [of something]* ''[[iom]]'' [[some]]* ''[[neniom]]'' [[none]]* (nonce) ''[[aliom]]'': another amount[[Category:Esperanto endings|om]]
+# To make an adjective of a noun; [[-al]]#: ''[[broadel]]'' ("national") from ''[[broad#Breton|broad]]'' ("nation")
+'''estis''' (past tense of ''[[esti]]'', "to be")# [[was]], [[were]][[Category:Esperanto verb forms]]
+Noun
+ A female form of the word chief or chieftain, meaning the leader of a tribe or clan.
+ female (of animals)
+ A male (especially of mammalian species).
+ A man.
+ male (of some animal species)
+# of or pertaining to [[game]], abounding in game, tasting like game
+ Happening quickly and without warning; suddenly; unexpectedly; out of nowhere; out of the blue.
+ Any of several reversals in the polarity of the Earth's magnetic field (such that a compass points South) that have happened over geologic time.ta:magnetic reversal
+
+
+Started GET "/words?utf8=%E2%9C%93&query=of" for 127.0.0.1 at Sun Jan 02 18:33:24 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"of"}
+Rendered words/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 467ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+Noun
+ The act of looting, the act of stealing during a general disturbance.
+&nbsp;&nbsp;During the looting the looters stole everything they could and then set fire to the buildings.
+Noun
+'''looting'''
+&nbsp;&nbsp;While looting the stores the looters took the opportunity for revenge by destroying what they didnt steal.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=revenge" for 127.0.0.1 at Sun Jan 02 18:39:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"revenge"}
+Rendered words/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 849ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3ADiwali" for 127.0.0.1 at Sun Jan 02 18:42:03 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:Diwali"}
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 729ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+Proper noun
+ Hindu festival of lights, celebrated over several days in October and November.
+ festive, relating to a festival or feast
+Proper noun
+ the Jewish festival of Passover
+
+
+Started GET "/words?utf8=%E2%9C%93&query=festival" for 127.0.0.1 at Sun Jan 02 18:42:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"festival"}
+Rendered words/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 483ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=pakistan" for 127.0.0.1 at Sun Jan 02 18:42:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"pakistan"}
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 612ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 20:11:52] INFO  going to shutdown ...
+[2011-01-02 20:11:52] INFO  WEBrick::HTTPServer#start done.
+Exiting
+c
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ c
+^C
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ heroku addons:add redistogo:nano
+Adding redistogo:nano to wikidex... done
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle install
+Fetching source index for http://rubygems.org/
+^C[31m
+Quitting...[0m
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle update
+Fetching source index for http://rubygems.org/
+Enter your password to install the bundled RubyGems to your system: 
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.0) 
+Using builder (2.1.2) 
+Using i18n (0.4.2) 
+Using activemodel (3.0.0) 
+Using erubis (2.6.6) 
+Using rack (1.2.1) 
+Using rack-mount (0.6.13) 
+Installing rack-test (0.5.7) 
+Using tzinfo (0.3.23) 
+Using actionpack (3.0.0) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.13) 
+Using actionmailer (3.0.0) 
+Using arel (1.0.1) 
+Using activerecord (3.0.0) 
+Using activeresource (3.0.0) 
+Using addressable (2.2.2) 
+Using bundler (1.0.2) 
+Using multipart-post (1.0.1) 
+Using faraday (0.5.3) 
+Using yajl-ruby (0.7.7) 
+Using indextank (0.0.4) 
+Using json_pure (1.4.6) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.0) 
+Using rails (3.0.0) 
+Installing redis (2.1.1) 
+[32mYour bundle is updated! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle show redis
+/usr/lib/ruby/gems/1.8/gems/redis-2.1.1
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ gvim
+[m]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails console
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+Loading development environment (Rails 3.0.0)
+irb(main):001:0> REDIS.set("food, [K[K[K", "bar")
+=> "OK"
+irb(main):002:0> REDIS.get("foo")
+=> "bar"
+irb(main):003:0> REDIS.rpush("searches", "test")
+Timeout::Error: execution expired
+	from /usr/lib/ruby/1.8/timeout.rb:60:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:18:in `connect'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:134:in `connect_to'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:197:in `with_timeout'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:133:in `connect_to'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:18:in `connect'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:78:in `reconnect'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:156:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:191:in `rpush'
+	from (irb):3
+irb(main):004:0> REDIS.set("searches", "test")
+=> "OK"
+irb(main):005:0> REDIS.get("food[K[K[K[Ksearches")
+=> "test"
+irb(main):006:0> REDIS[K[K[K[K[Kexit
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails console
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+Loading development environment (Rails 3.0.0)
+irb(main):001:0> Red[K[KEDIS.rpush('searches','xyz')
+RuntimeError: -ERR Operation against a key holding the wrong kind of value
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:86:in `format_error_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:76:in `format_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:71:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:83:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:30:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:63:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:154:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:191:in `rpush'
+	from (irb):1
+irb(main):002:0> REDIS.lpush([K ('searches','xyz')
+(irb):2: warning: don't put space before argument parentheses
+RuntimeError: -ERR Operation against a key holding the wrong kind of value
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:86:in `format_error_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:76:in `format_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:71:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:83:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:30:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:63:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:154:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:199:in `lpush'
+	from (irb):2
+irb(main):003:0> RES[KDIS.rpush ('foo','bar')
+(irb):3: warning: don't put space before argument parentheses
+RuntimeError: -ERR Operation against a key holding the wrong kind of value
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:86:in `format_error_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:76:in `format_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:71:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:83:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:30:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:63:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:154:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:191:in `rpush'
+	from (irb):3
+irb(main):004:0> Re[K
+NameError: uninitialized constant R
+	from (irb):4
+irb(main):005:0> E[KREDIS
+=> #<Redis client v2.1.1 connected to redis://catfish.redistogo.com:9071/0 (Redis v2.0.4)>
+irb(main):006:0> REDIS.get('foo'
+irb(main):007:1> )
+=> "bar"
+irb(main):008:0> set foo bar
+NameError: undefined local variable or method `bar' for main:Object
+	from (irb):8
+irb(main):009:0> REDIS.push l[K[K[K[K[K[Klpush[K[K[K[K[Klpuh[Ksh cities "San"
+NoMethodError: undefined method `cities' for main:Object
+	from (irb):9
+irb(main):010:0> REDIS.lpush cities "San"[1@([C[1P[1@"[C[C[C[C[C[C" "San", "San"[C[1P"San"[C[C[C[C[C)
+=> 1
+irb(main):011:0> REDIS.rpush("searches","one")
+RuntimeError: -ERR Operation against a key holding the wrong kind of value
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:86:in `format_error_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:76:in `format_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:71:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:83:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:30:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:63:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:154:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:191:in `rpush'
+	from (irb):11
+irb(main):012:0> REDIS.rpush("searches","one")[1Ppush("searches","one")lpush("searches","one")
+RuntimeError: -ERR Operation against a key holding the wrong kind of value
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:86:in `format_error_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:76:in `format_reply'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:71:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:83:in `read'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:30:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:63:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:154:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:199:in `lpush'
+	from (irb):12
+irb(main):013:0> REDIS.lpush("searches","one")[C[C[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")c","one")i","one")t","one")i","one")e","one")s","one")
+=> 2
+irb(main):014:0> REDIS.lpush("cities","one")rpush("cities","one")[1Ppush("cities","one")[1Ppush("cities","one")rpush("cities","one")[C[C[C[C[C[C[C[C[C[C[C[C[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")[1P","one")[1P,"one")[1P","one")(","one")[C","one")r","one")e","one")c","one")e","one")n","one")t","one")
+=> 1
+irb(main):015:0> REDIS.rpush("recent","one")[1P")[1P")[1P")t")w")o")
+=> 2
+irb(main):016:0> REDIS.rpush("recent","two")[1P")[1P")[1P")t")h")r")e")e")
+=> 3
+irb(main):017:0> REDIS.lrance[K[Kge(0[K-10, [K[K[K[K[K'[K"recent", -10, 01[K[K-1)
+=> ["one", "two", "three"]
+irb(main):018:0> REDIS.lrange("recent", -10, -1)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prpush("recent","three")[2Pwo")hree")[1P")[1P")[1P")[1P")[1P")f")o")u")r")
+=> 4
+irb(main):019:0> REDIS.rpush("recent","four")lrange("recent", -10, -1)
+=> ["one", "two", "three", "four"]
+irb(main):020:0> REDIS.lrange("recent", -10, -1).each do |n|
+irb(main):021:1* puts n
+irb(main):022:1> end
+one
+two
+three
+four
+=> ["one", "two", "three", "four"]
+irb(main):023:0> endputs nREDIS.lrange("recent", -10, -1).each do |n|[K[C[1P[C[C[C[C0)
+=> []
+irb(main):024:0> REDIS.lrange("recent", -1, -10)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cend[Kputs nREDIS.lrange("recent", -10, -1).each do |n|[1@i[1P[C[1@.[1@r[1@e[1@v[1@e[1@r[1@s[1@e
+irb(main):025:1* puts n
+irb(main):026:1> ed[Knd
+four
+three
+two
+one
+=> ["four", "three", "two", "one"]
+irb(main):027:0> exit
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ re[K[Krails console
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+Loading development environment (Rails 3.0.0)
+irb(main):001:0> REDIS.lrance[K[Kge("recent", 01[K[K-1, [K[K0,-1)
+Timeout::Error: execution expired
+	from /usr/lib/ruby/1.8/timeout.rb:60:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/connection.rb:18:in `connect'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:134:in `connect_to'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:197:in `with_timeout'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:133:in `connect_to'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:18:in `connect'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:151:in `ensure_connected'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:58:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:118:in `logging'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:57:in `process'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis/client.rb:29:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/redis-2.1.1/lib/redis.rb:167:in `lrange'
+	from (irb):1
+irb(main):002:0> REDIS.lrange("recent", -10,-1)
+=> ["one", "two", "three", "four"]
+irb(main):003:0> exit
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails server
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-02 22:20:25] INFO  WEBrick 1.3.1
+[2011-01-02 22:20:25] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-02 22:20:25] INFO  WEBrick::HTTPServer#start: pid=17640 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:23:19 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:28:56 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:30:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:31:06 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:31:11 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:32:17 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:32:26 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:32:28 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:32:40 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:33:00 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:34:00 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:36:27 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:37:25 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:37:43 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:40:06 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:40:12 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:40:25 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:40:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:41:08 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:41:29 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:42:00 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:42:08 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:42:09 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:42:22 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:42:38 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:45:35 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:46:20 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (77.8ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:46:57 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:50:15 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:50:35 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:50:55 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:51:05 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:52:49 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 22:53:48 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 560ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 23:00:55 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 569ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jan 02 23:03:39 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 614ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+Adj
+ Of a test match
+&nbsp;&nbsp; His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+Noun
+ The state of reduced consciousness during which a human or animal rests in a daily rhythm.
+&nbsp;&nbsp; I really need some sleep.
+&nbsp;&nbsp; We need to conduct an overnight sleep test to diagnose your sleep problem.
+ An act or instance of sleeping.
+&nbsp;&nbsp; I’m just going to have a quick sleep.
+Verb
+ To rest in a state of reduced consciousness.
+&nbsp;&nbsp; You should sleep 8 hours a day.
+ (Of a spinning top) to spin on its axis with no other perceptible motion.
+&nbsp;&nbsp; When a top is sleeping, it is spinning but not precessing.
+Noun
+ A wager, an agreement between two parties that a stake (usually money) will be paid by the loser to the winner (the winner being the one who correctly forecast the outcome of an event).
+&nbsp;&nbsp; Dylan owes Fletcher $30 from an unsuccessful bet.
+ A degree of certainty.
+&nbsp;&nbsp; It’s a safe bet that it will rain tomorrow.
+&nbsp;&nbsp; It’s an even bet that Jim will come top of the maths test tomorrow
+Verb
+ To agree that payment be made to the successful forecaster of the result of an event (usually sporting) by the other party in the agreement. To make a guess about the outcome of an event.
+ To be sure of something; to be able to count on something.
+&nbsp;&nbsp; You bet!
+Adj
+ Relating to the mouth.
+ spoken|Spoken rather than written.
+&nbsp;&nbsp; An oral presentation
+Noun
+ A spoken test or examination, particularly in a language class.
+ A physical examination of the mouth.
+Noun
+ The act or process of breathe|breathing.
+&nbsp;&nbsp; I could hear the breath of the runner behind me.
+&nbsp;&nbsp; The childs breath came quickly and unevenly.
+ A single act of breathing in or out.
+&nbsp;&nbsp; I took a deep breath and started the test.
+Noun
+ A pulsation or throb.
+ A pulse on the beat level, the metric level at which pulses are heard as the basic unit.  Thus a beat is the basic time unit of a piece.
+Verb
+ To hit; to knock; to pound; to strike.
+&nbsp;&nbsp; As soon as she heard the news, she went into a rage and beat the wall with her fists until her knuckles bled.
+ To strike or pound repeatedly, usually in some sort of rhythm.
+&nbsp;&nbsp; He danced hypnotically while she beat the atabaque.
+&nbsp;&nbsp; Jan had little trouble beating John in tennis.  He lost five games in a row.
+&nbsp;&nbsp; No matter how quickly Joe finished his test, Roger always beat him.
+&nbsp;&nbsp; I just cant seem to beat the last level of this video game.
+Adj
+ fabulous
+&nbsp;&nbsp; Her makeup was beat!
+ exhausted
+&nbsp;&nbsp; After the long day, she was feeling completely beat.
+Noun
+ A beatnik.
+Noun
+ A test under controlled conditions  made to either demonstrate a known truth, examine the validity of a hypothesis, or determine the efficacy of something previously untried.
+ experience|Experience, practical familiarity with something.
+Verb
+ To conduct an experiment.
+ To experience; to feel; to perceive; to detect.
+Adj
+ Of produce, not from storage.
+&nbsp;&nbsp; I had a fresh salad made from vegetables straight out of the garden.
+ Of plant material, still green and not dried.
+Adv
+ Refreshing or cool.
+&nbsp;&nbsp; What a nice fresh breeze.
+ Without salt; not saline.
+&nbsp;&nbsp; After a day at sea it was good to feel the fresh water of the stream.
+Noun
+ Having only the files and settings of a specific release of the software package; without updates or upgrades that were released subsequent to the release of a specific version.
+&nbsp;&nbsp; A fresh installation of Windows XP has Internet Explorer version 6.
+&nbsp;&nbsp; QA uses a fresh copy of the old version to test backward-compatibility of new add-ons.
+Noun
+&nbsp;&nbsp; Im fresh out of ideas.
+ A rush of water, along a river or on to the land; a flood.
+Noun
+ A single point or spot on a playing card or die.
+ A card or die face so marked.
+&nbsp;&nbsp; I have the ace of diamonds.
+Verb
+ To pass (a test, interviews etc.) perfectly.
+ To win a point by an ace.
+Noun
+ The inevitable progression into the future with the passing of present events into the past.
+&nbsp;&nbsp; Time stops for nobody.
+&nbsp;&nbsp; the ebb and flow of time
+ A quantity of availability in time.
+&nbsp;&nbsp; More time is needed to complete the project.
+&nbsp;&nbsp; You had plenty of time, but you waited until the last minute.
+&nbsp;&nbsp; Are you finished yet? Time’s up!
+&nbsp;&nbsp; Our instructor didnt give us enough time to complete the test.
+&nbsp;&nbsp; The two of us can never find time to see each other any more.
+Verb
+ To measure seconds, hours etc passed, especially using a clock of some kind.
+ To choose how long something lasts.
+&nbsp;&nbsp; The President timed his speech badly, coinciding with the Super Bowl.
+&nbsp;&nbsp; The bomb was timed to explode at 920 p.m.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Sun Jan 02 23:03:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (157.7ms)
+Completed 200 OK in 916ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:03:53 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 32ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+Noun
+ A person who supervises students as they take an examination, in the United States at the college/university level; often the department secretary, or a fellow/graduate student.
+ An official at any of several older university|universities
+Adj
+ Of a test match
+&nbsp;&nbsp; His test average was nearly 100.
+Noun
+ A challengeNoun|challenge.
+ An examination, given often during the academic term.
+Verb
+ To challengeVerb|challenge.
+ To administer or assign an examination that is given often during the academic term.
+ an examination 
+ an exam
+ examination
+Adj
+ Free from error; true; the state of having an affirmed truth.
+ With good manners; well behaved; conforming with accepted standards of behaviour.
+Verb
+ To make something that was not valid become right.  To remove error.
+&nbsp;&nbsp; He corrected the position of the book on the mantle.
+ To grade (examination papers).
+Noun
+ A person who has attained a doctorate, such as a Ph.D. or Th.D. or one of many other terminal degrees conferred by a college or university.
+ A physician; a member of the medicine|medical profession; one who is trained and licensed to heal the sick.  The final examination and qualification may award a doctorate in which case the post-nominal letters are MD in the US or MBBS in the UK. 
+Verb
+ A nickname for a person who has special knowledge or talents to manipulate or arrange transactions.
+Verb
+ To act as a medical doctor to.
+&nbsp;&nbsp; Her children doctored her back to health.
+ To make (someone) into an (academic) doctor.
+Adj
+ Relating to the mouth.
+ spoken|Spoken rather than written.
+&nbsp;&nbsp; An oral presentation
+Noun
+ A spoken test or examination, particularly in a language class.
+ A physical examination of the mouth.
+Noun
+ A person who is running in an election or who is applying to a position for a job.
+ A participant in an examination.
+Noun
+ A competition in the answering of questions.
+ An school examination of less import, or of greater brevity, than others given in the same course.
+Verb
+ To hoax.
+ To question closely, to interrogate.
+Noun
+ Examination of the abdomen to detect abdominal disease.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=examination" for 127.0.0.1 at Sun Jan 02 23:04:40 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"examination"}
+Rendered words/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 877ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=Hyderabad" for 127.0.0.1 at Sun Jan 02 23:04:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"Hyderabad"}
+Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 430ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Asisterhood" for 127.0.0.1 at Sun Jan 02 23:04:52 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:sisterhood"}
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 477ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Agaffle" for 127.0.0.1 at Sun Jan 02 23:04:57 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:gaffle"}
+Rendered words/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 730ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Adictionary" for 127.0.0.1 at Sun Jan 02 23:05:04 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:dictionary"}
+Rendered words/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 570ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+Noun
+ The main character in a literary work or drama.
+ A leading person in a contest; a principal performer.
+Noun
+ Someone who has been a winner in a contest.
+ Someone who is chosen to represent a group of people in a contest.
+Verb
+ to promote, advocate, or act as a champion for
+Noun
+ A pursuit or activity with rules performed either alone or with others, for the purpose of entertainment. In many games, the objective is to win by defeating the other player or players or being the first to reach a specified goal, while in others, role-playing or cooperation is emphasized.
+&nbsp;&nbsp; Shall we play a game?
+ A contest between two individuals or teams. A game may refer to the entire encounter between the two (e.g. a basketball game), or to just one contest of several required to win (e.g. a tennis game).
+Adj
+ Willing to participate.
+&nbsp;&nbsp; Im game, would you like to tell me how to do that? - From the computer game wAdventure (computer game)|Adventure.
+ An animal that shows a tendency to continue to fight against another animal, despite being wounded, often severely.Verb
+ To gamble.
+ To play games and be a gamer.
+Verb
+ To overcome in battle or contest
+ To destroy, ruin, undo, lay waste toNoun
+ The act of defeating or being defeated
+Noun
+ The action of competing.
+&nbsp;&nbsp; The competition for this job is strong.
+ A contest for a prize or award.
+&nbsp;&nbsp; The newspaper is featuring a competition to win a car.
+Verb
+ To try to achieve a result; to make strenuous effort; to try earnestly and persistently.
+&nbsp;&nbsp; He strove to excel.
+ To struggle in opposition; to be in contention or dispute; to contend; to contest.
+&nbsp;&nbsp; to strive against fate
+&nbsp;&nbsp; to strive for the truth
+Noun
+ A large group of people distinguished from others on the basis of a common heritage.
+&nbsp;&nbsp; The Anglo-Saxon race
+ A large group of people distinguished from others on the basis of common, genetically linked, physical characteristics, such as skin color or hair type.
+&nbsp;&nbsp; Race was a significant issue during apartheid in South Africa.
+Noun
+ A contest between people, animals, vehicles, etc. where the goal is to be the first to reach some objective. Several horses run in a ''horse race'', and the first one to reach the finishing post wins; in an ''arms race'' several countries each try to acquire more powerful weapons than any other.
+ A progressive movement toward a goal.
+Verb
+ To take part in a race (in the sense of a contest).
+ To move or drive at high speed.
+&nbsp;&nbsp; As soon as it was time to go home, he raced for the door.
+&nbsp;&nbsp; Her heart was racing as she peered into the dimly lit room.
+Noun
+ An allowance of a certain amount of time or distance in starting, granted in a race (or other contest of skill) to the competitor possessing disadvantages; or an additional weight or other hindrance imposed upon the one possessing advantages, in order to equalize, as much as possible, the chances of success.
+&nbsp;&nbsp; The older boy won, even though his opponent had been granted a handicap of five meters.
+&nbsp;&nbsp; A handicap in chess often involves removal of the queens rook.
+ The disadvantage itself, in particular physical or mental disadvantages of people. 
+Verb
+ To encumber with a handicap in any contest.
+ To place at disadvantage.
+&nbsp;&nbsp; The candidate was heavily handicapped.
+&nbsp;&nbsp; Grandpa Andy would buy the racing form the day ahead of time so he could handicap the race before he even arrived at the track.
+Noun
+ A flying insect, of the order ''Hymenoptera'', superfamily ''Apoidea''.
+Noun
+ A contest, especially for spelling, see spelling bee.
+&nbsp;&nbsp; geography bee
+ A gathering for a specific purpose, e.g. a sewing bee or a quilting bee.Noun
+ A ring or torque; a bracelet.
+Noun
+ Archaic spelling of the verb ''be''.
+Adj
+ straight|Straight, not bent.
+ Of an angle, having a size of 90 degrees, or one quarter of a complete rotation; the angle between two perpendicular lines.
+&nbsp;&nbsp; The kitchen counter formed a right angle with the back wall.
+&nbsp;&nbsp; I thought youd made a mistake, but it seems you were right all along.
+&nbsp;&nbsp; Is this the right software for my computer?
+&nbsp;&nbsp; Im afraid my father is no longer in his right mind.
+&nbsp;&nbsp; After the accident, her right leg was slighly shorter than her left.
+Adv
+ On the right side.
+ Towards the right side.
+Interj
+ Yes. Correct. I agree.
+ Yes. I agree with whatever you say. I have no opinion.
+Noun
+ That which complies with justice, law or reason.
+&nbsp;&nbsp; Were on the side of right in this contest.
+ A legal or moral entitlement.
+&nbsp;&nbsp; You have no right to go through my book.
+&nbsp;&nbsp; The pharmacy is just on the right past the bookshop.
+Verb
+ To correct
+&nbsp;&nbsp; Righting all the wrongs of the war will be impossible.
+ To set upright
+&nbsp;&nbsp; The tow-truck righted what was left of the automobile.
+Adv
+ exactly|Exactly, precisely.
+&nbsp;&nbsp; The arrow landed right in the middle of the target.
+&nbsp;&nbsp; Luckily we arrived right at the start of the film.
+ very|Very, extremely, quite.
+&nbsp;&nbsp; I made a right stupid mistake there, didnt I?
+&nbsp;&nbsp; I stubbed my toe a week ago and it still hurts right much.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=contest" for 127.0.0.1 at Sun Jan 02 23:05:08 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"contest"}
+Rendered words/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 738ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=omnipresent" for 127.0.0.1 at Sun Jan 02 23:05:14 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"omnipresent"}
+Rendered words/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 355ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+Verb
+ to dry
+ to preserve by drying
+Noun
+ A great amount of happiness, usually accompany|accompanied by laughter.
+ Something that induces laughter.
+Noun
+ A female native or inhabitant of England; a woman who is English by birth, descent, or naturalization.
+Noun
+ The state of being private; the state of not being seen by others.
+Verb
+ To divide proportionately, especially by day.
+Noun
+ A long, sharp fragment of material; often wood.
+ A group that formed by splitting off from a larger membership.
+Verb
+ To come apart into long sharp fragments.
+&nbsp;&nbsp; The tall tree splintered during the storm.
+ To cause to break apart into long sharp fragments.
+&nbsp;&nbsp; His third kick splintered the door.
+Noun
+ A cluster, usually nine in number, of small iron balls, put together by means of cast-iron circular plates at top and bottom, with two rings, and a central connecting rod, in order to be used as a charge for a cannon. Formerly grapeshot were inclosed in canvas bags.
+Noun
+ A permit to enter and leave a country, normally issued by the authorities of the country to be visited.
+Proper noun
+ The standpoint that consumption decisions can be made by political criteria and perceived as being political.
+Noun
+ A type or form of for-profit incorporated company where ownership is divided into shares, and where the governing rules are set forth in a contract entered into by all of the initial shareholders. The name derives from the fact that regardless of potential losses or even bankruptcy of the corporation, individual shareholders will bear a maximum liability of the price they paid for their shares.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=by" for 127.0.0.1 at Sun Jan 02 23:05:17 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"by"}
+Rendered words/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 404ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+Noun
+ A female native or inhabitant of England; a woman who is English by birth, descent, or naturalization.
+Noun
+ A woman who plays the trumpet; a female trumpeter.
+Interj
+ Used to attract attention to something sighted, usually by lookouts.
+&nbsp;&nbsp; Sail ho!
+&nbsp;&nbsp; Another boat is visible!
+&nbsp;&nbsp; Land ho!
+&nbsp;&nbsp; Land is visible!
+&nbsp;&nbsp; Man ho!
+&nbsp;&nbsp; A town is visible!
+Noun
+ A whore; a sexually loose woman; in general use as a highly offensive name-calling word for a female with connotations of loose sexuality.
+&nbsp;&nbsp; Bros before hos!
+Noun
+ Either of two main divisions (either female or male) into which many organisms can be placed, according to reproductive function or organs.
+&nbsp;&nbsp; What sex is that hamster?
+&nbsp;&nbsp; The abnormality is found in both sexes.
+ The distinguishing property, quality, or assemblage of properties by which organisms are classified as female or male on the basis of their reproductive organs and functions; the set of properties by which male is distinguished from female.
+&nbsp;&nbsp; The effect of the medication is dependent upon age, sex, and other factors.
+&nbsp;&nbsp; The researchers divided the subjects by sex.
+Verb
+ To determine the biological sex of an animal.
+&nbsp;&nbsp; It is not easy to sex lizards.
+ To have sex with.
+&nbsp;&nbsp; The passionate lovers sexed each other every night.
+&nbsp;&nbsp; OK, so Im sexin  her, right, and all I can think of is this other girl.
+Adj
+ of or relating to having sex (as in verb phrase usage; e.g. sexual reproduction)
+ of or relating to the sex of an organism (as in concrete noun usage; e.g. male or female)
+Noun
+ A rarely used term used for a female mayor or the wife of a male mayor.
+Noun
+ A white liquid produced by the mammary glands of female mammals to nourish their young. From certain animals, especially cows, it is a common food for humans as a beverage or used to produce various dairy products such as butter, cheese, and yogurt.
+ The lacteal secretion, practically free from colostrum, obtained by the complete milking of one or more healthy cows, and including the addition of limited amounts of vitamin A, vitamin D, and other carriers or flavoring ingredients identified as safe and suitable.
+Verb
+ To express milk from (a mammal, especially a cow).
+&nbsp;&nbsp; The farmer milked his cows.
+ To express any liquid (from any creature).
+Noun
+ the equivalent title to Sir for a female knight
+&nbsp;&nbsp; Dame Edith Sitwell
+ Slightly derogatory way of referring to a woman.
+&nbsp;&nbsp; There aint nothin like a dame!
+Noun
+ breast, especially human female
+Verb
+ To make a mistake
+Noun
+ A woman who performs massage; a female masseur.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=female" for 127.0.0.1 at Sun Jan 02 23:05:22 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"female"}
+Rendered words/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 666ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+Noun
+ Either of two main divisions (either female or male) into which many organisms can be placed, according to reproductive function or organs.
+&nbsp;&nbsp; What sex is that hamster?
+&nbsp;&nbsp; The abnormality is found in both sexes.
+ The distinguishing property, quality, or assemblage of properties by which organisms are classified as female or male on the basis of their reproductive organs and functions; the set of properties by which male is distinguished from female.
+&nbsp;&nbsp; The effect of the medication is dependent upon age, sex, and other factors.
+&nbsp;&nbsp; The researchers divided the subjects by sex.
+Verb
+ To determine the biological sex of an animal.
+&nbsp;&nbsp; It is not easy to sex lizards.
+ To have sex with.
+&nbsp;&nbsp; The passionate lovers sexed each other every night.
+&nbsp;&nbsp; OK, so Im sexin  her, right, and all I can think of is this other girl.
+Adj
+ of or relating to having sex (as in verb phrase usage; e.g. sexual reproduction)
+ of or relating to the sex of an organism (as in concrete noun usage; e.g. male or female)
+ To marry.
+&nbsp;&nbsp;* Nain eilen Annan.
+&nbsp;&nbsp;** I married Anna yesterday.
+ To have sex or sexual intercourse with sb, copulate with sb, fuck.
+&nbsp;&nbsp;* Nain eilen Annaa.
+&nbsp;&nbsp;** I fucked Anna yesterday.
+Noun
+ A division between classes or kinds. E.g., the common gender.  The mental analog of sex: one's maleness, femaleness, etc., as seen from their own perspective.
+Verb
+ to engender
+Adj
+ sexually|Sexually attracted solely or primarily to other members of the same sex.
+ Pertaining to homosexuality, ''as'' a relationship, an attraction, a desire, etc.
+Noun
+ A person who is attracted solely or primarily to others of the same sex.
+Adj
+ Being a Noun|transsexual.Noun
+ A person whose gender self-image contradicts with the physical gender he/she was born with.
+ One who has changed or is in the process of changing his/her physical sex by undergoing medical treatment such as hormone replacement therapy (HRT) and/or sex reassignment surgery (SRS).
+Adj
+ Of the female sex; biologically female, not male, womanly.
+ Belonging to females; appropriated to, or used by, females.
+&nbsp;&nbsp; Mary, Elizabeth, and Edith are feminine names.
+&nbsp;&nbsp; Her heavenly form Angelic, but more soft and feminine — wJohn Milton|John Milton
+&nbsp;&nbsp; Her letters are remarkably deficient in feminine ease and grace — wThomas Babington Macaulay|Thomas Babington Macaulay
+&nbsp;&nbsp; Ninus being esteemed no man of war at all, but altogether feminine, and subject to ease and delicacy — wSir Walter Raleigh|Sir Walter Raleigh
+Adv
+ Of or pertaining to woman.
+ Having the qualities of a woman.
+Noun
+ The female principle
+ A woman.
+&nbsp;&nbsp; They guide the feminines toward the palace — wRichard Hakluyt|Richard Hakluyt
+Verb
+ To apply a force to (an object) so that it comes toward the person or thing applying the force.
+ To persuade (someone) to have sex with oneNoun
+ An act of pulling (applying force).
+&nbsp;&nbsp; He gave the hair a sharp pull and it came out.
+ An attractive force which causes motion towards the source
+&nbsp;&nbsp; The spaceship came under the pull of the gas giant.
+&nbsp;&nbsp; iron fillings drawn by the pull of a magnet
+&nbsp;&nbsp; She took a pull on her cigarette.
+&nbsp;&nbsp; a zipper pull
+Noun
+ A function, celebration, party.
+&nbsp;&nbsp; We’re having a bit of a do on Saturday to celebrate my birthday.
+ A hairdo.
+&nbsp;&nbsp; Nice do!
+Verb
+ Something that can or should be done (usually in the phrase ''dos and don'ts'').
+Abbreviation
+&nbsp;&nbsp; Do you go?
+&nbsp;&nbsp; I do not go.
+&nbsp;&nbsp; But I do go.
+&nbsp;&nbsp; I play tennis; he does too.
+ To perform; to execute.
+&nbsp;&nbsp; All you ever do is surf the internet.
+ To cause, make (someone) (do something).
+Abbreviation
+ To travel in, to tour, to make a circuit of.
+&nbsp;&nbsp; Let’s do New York also.
+ To treat in a certain way.
+Abbreviation
+ To spend (time) in jail.
+&nbsp;&nbsp; I did five years for armed robbery.
+ To impersonate or depict.
+&nbsp;&nbsp; They really laughed when he did Clinton, with a perfect accent and a leer.
+Abbreviation
+ To have sex with. (''See also'' '''do it''')
+ To cheat or swindle.
+&nbsp;&nbsp; That guy just did me out of two hundred bucks!
+Abbreviation
+ A syllable used in solfège to represent the first and eighth tonic of a major scale.Abbreviation
+'''do'''
+Adj
+ Belonging or referring to the sex which is generally characterized as the one associated with the larger gametes (for species which have two sexes and for which this distinction can be made).
+ Having an internal socket, as in a connector or pipe fitting.Noun
+ Someone or something of feminine sex or gender.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=sex" for 127.0.0.1 at Sun Jan 02 23:05:29 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"sex"}
+Rendered words/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 418ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:05:34 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 35ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+Noun
+ Someone who favors a republic; an anti-monarchist.
+ Someone who favors social equality and opposes aristocracy and privilege.
+&nbsp;&nbsp; Sir, there is one Mrs Macaulay in this town, a great republican.  One day when I was at her house, I put on a very grave countenance, and said to her, Madam, I am now become a convert to your way of thinking.  I am convinced that all mankind are upon an equal footing... (Boswell, The Life of Samuel Johnson, 1791).   Travels of a Republican Radical in Search of Hot Water - Title of a collection of essays published by the leftwing novelist H. G. Wells in 1939.
+Adj
+ Of or belonging to a republic.
+ Favouring a republic.
+Noun
+ Any of various eight-legged, predatory arthropods, of the order ''Araneae'', most of which spin webs to catch prey.
+ A program which follows links on the World Wide Web in order to gather information.
+Verb
+ to follow links on the World Wide Web in order to gather information.
+&nbsp;&nbsp; The online dictionary is regularly spidered by search engines.
+Verb
+ To look throughout (a place) '''for''' something.  To try to find something.
+&nbsp;&nbsp; I searched the garden for the keys and found them in the vegetable patch.
+ (''followed by "for"'') To look thoroughly.
+&nbsp;&nbsp; The police are searching for evidence in his flat.
+Noun
+ An attempt to find something.
+&nbsp;&nbsp; With only five minutes until we were meant to leave, the search for the keys started in earnest.
+ The act of searching in general.
+&nbsp;&nbsp; Search is a hard problem for computers to solve efficiently
+Noun
+ A long firearm firing a single projectile, usually with a rifled barrel to improve accuracy.
+Verb
+ to search with intent to steal; to ransack, pillage or plunder.
+ To scan many items (especially papers) in a set, quickly. ''(See also riffle<sup>http://verbmall.blogspot.com/2008/05/riffle-or-rifle.html</sup>)''
+&nbsp;&nbsp; She made a mess when she rifled through the stack of papers, looking for the title document.
+Noun
+ Any of the rodents of the family Sciuridae distinguished by their large bushy tail.
+ A freezoner or other who fails to apply L Ron Hubbards technology as is considered appropriate. http://cgi.amazing.com/scientology/dict.html http://www.cs.cmu.edu/~dst/Library/Shelf/la90/la90-6e.htmlVerb
+ ''with "away":'' To hoard in a hidden place, by analogy to squirrels' habit of hoarding nuts.
+ ''with "around":'' To move or search erratically, especially as if hurried or confused.
+&nbsp;&nbsp; My mother warned me not to squirrel around in my dads workshop.
+Verb
+ To try to find, to look for, to search.
+&nbsp;&nbsp; I seek wisdom.
+ To inquire for; to ask for; to solicit; to beseech.
+Noun
+ A garden tool with a row of pointed teeth fixed to a long handle, used for collecting grass or debris, or for loosening soil.
+ a lot, plenty.
+&nbsp;&nbsp; Jim has had a rake of trouble with his new car.
+Verb
+ To use a rake on (leaves, debris, soil, a lawn, etc) in order to loosen, gather together, or remove debris from.
+&nbsp;&nbsp; We raked all the leaves into a pile
+ To search thoroughly.
+&nbsp;&nbsp; Detectives appeared, roped the curious people out of the grounds, and raked the place for clews.  -- Captain John Blaine
+&nbsp;&nbsp; the enemy machine guns raked the roadway
+&nbsp;&nbsp; Her sharp fingernails raked the side of my face.
+&nbsp;&nbsp; The casino is just raking in the cash; its like a license to print money.
+Verb
+ To proceed rapidly; to move swiftly.
+ To guide; to directNoun
+ A man habituated to immoral conduct.
+&nbsp;&nbsp; We now have rakes in the habit of Roman senators, and grave politicians in the dress of Rakes. &mdash; the Spectator
+Verb
+ a course; direction; stretch.
+ a range, stray.
+&nbsp;&nbsp; a sheep-raik = a sheep-walk
+Verb
+ To run or rove.
+Verb
+ To chase down prey and (usually) kill it.
+&nbsp;&nbsp; Her uncle is out deer hunting, now that it is open season.
+ To try to find something; search.
+&nbsp;&nbsp; The little girl was hunting for shells on the beach.
+Noun
+ The act of hunting
+ A hunting expedition
+Adj
+ Full of care or grief; sorrowful, sad.
+ Full of cares or anxiety; worried, troubled.
+&nbsp;&nbsp; He was a slow and careful driver.
+&nbsp;&nbsp; They made a careful search of the crimescene.
+Verb
+ To perform OCR (optical character recognition).
+&nbsp;&nbsp; Google Book Search is a tool from Google that searches the full text of books that Google scans, OCRs, and stores in its digital database.http//en.wikipedia.org/wiki/Google_Book_Search
+
+
+Started GET "/words?utf8=%E2%9C%93&query=search" for 127.0.0.1 at Sun Jan 02 23:05:44 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"search"}
+Rendered words/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 528ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+Noun
+ The inevitable progression into the future with the passing of present events into the past.
+&nbsp;&nbsp; Time stops for nobody.
+&nbsp;&nbsp; the ebb and flow of time
+ A quantity of availability in time.
+&nbsp;&nbsp; More time is needed to complete the project.
+&nbsp;&nbsp; You had plenty of time, but you waited until the last minute.
+&nbsp;&nbsp; Are you finished yet? Time’s up!
+&nbsp;&nbsp; Our instructor didnt give us enough time to complete the test.
+&nbsp;&nbsp; The two of us can never find time to see each other any more.
+Verb
+ To measure seconds, hours etc passed, especially using a clock of some kind.
+ To choose how long something lasts.
+&nbsp;&nbsp; The President timed his speech badly, coinciding with the Super Bowl.
+&nbsp;&nbsp; The bomb was timed to explode at 920 p.m.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=super" for 127.0.0.1 at Sun Jan 02 23:05:50 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"super"}
+Rendered words/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 484ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+Noun
+ The state of being abject; abasement; meanness; servility.
+Adv
+ With great shame, desperately; in an abject fashion.
+&nbsp;&nbsp; I abjectly apologise for the damage I have done.
+Adj
+ Sunk to a low condition; down in spirit or hope; degraded; servile; grovelling; despicable; as, ''abject'' posture, fortune, thoughts.
+&nbsp;&nbsp; "Base and abject flatterers." - wJoseph Addison|Joseph Addison
+&nbsp;&nbsp; "An abject liar." - wThomas Babington Macaulay|Thomas Babington Macaulay
+&nbsp;&nbsp; "And banish hence these abject, lowly dreams." - Shakespeare, Taming of the Shrew, I-ii
+&nbsp;&nbsp; "He sat obediently with that tentative and abject eagerness of a man who has but one pleasure left and whom the world can reach only through one sense, for he was both blind and deaf." - 1931 Faulkner, Sanctuary, ii
+ Cast down; rejected; low-lying.
+&nbsp;&nbsp; "So thick bestrown abject and lost lay these, covering the flood." - wJohn Milton|John Milton
+Noun
+ A person in the lowest and most despicable condition; a castaway.
+&nbsp;&nbsp; Shall these abjects, these victims, these outcasts, know any thing of pleasure?- wIsaac Taylor|Isaac Taylor
+&nbsp;&nbsp; We are the queens abjects, and must obey. - W. Shakespeare Richard III, Act I, Scene I
+Verb
+ To cast off or down; hence, to abase; to degrade; to lower; to debase.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=abject" for 127.0.0.1 at Sun Jan 02 23:05:53 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"abject"}
+Rendered words/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 576ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=word%3Aabject" for 127.0.0.1 at Sun Jan 02 23:05:59 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"word:abject"}
+Rendered words/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 522ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:06:04 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 38ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:06:36 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 37ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+Noun
+ The action of the verb bang|to bang.
+&nbsp;&nbsp; The banging of the hammers could be heard from several streets away.
+Noun
+'''banging''' (also '''bangin'''')
+ excellent|Excellent, brilliant, very exciting, top, great.
+&nbsp;&nbsp; Wow, what a banging haircut! It looks terrific!frbanginghubangingnlbangingsimplebangingvibanging
+Noun
+ The branch of philosophy dealing with the study of knowledge; theory of knowledge, asking such questions as "What is knowledge?", "How is knowledge acquired?", "What do people know?", "How do we know what we know?".
+&nbsp;&nbsp; Some thinkers take the view that, beginning with the work of Descartes, epistemology began to replace metaphysics as the most important area of philosophy.
+ A particular theory of knowledge.
+&nbsp;&nbsp; In his epistemology, Plato maintains that our knowledge of universal concepts is a kind of recollection.
+Noun
+ That which is believed; accepted doctrine, especially religious; a particular set of beliefs; any summary of principles or opinions professed or adhered to.
+ A reading or statement of belief that summarizes the faith it represents; a definite summary of what is believed; a confession of faith for public use; esp., one which is brief and comprehensive.
+Verb
+ To believe; to credit.
+Noun
+&nbsp;&nbsp; He felt a great will to make a pilgrimage to the Holy Land.
+ One's independent faculty of choice; the ability to be able to exercise one's choice or intention. 
+&nbsp;&nbsp; Of course, mans will is often regulated by his reason.
+ One's intention or decision; someone's orders or commands. 
+Verb
+ To wish, desire.  To instruct (that something be done) in ones will. Verb
+ To try to make (something) happen by using ones will (intention). &nbsp;&nbsp; All the fans were willing their team to win the game.
+ To bequeath (something) to someone in ones will (legal document). Verb
+ To wish, desire (something).  To wish or desire (that something happen); to intend (that). Verb
+ Used to express the future tense, formerly with some implication of volition, especially in first-person. Compare  William Shakespeare, ''Twelfth Night Or What You Will'', act IV:
+Adj
+ not clearly expressed; stated in indefinite terms.
+ not having a precise meaning.
+&nbsp;&nbsp; a vague term of abuse
+&nbsp;&nbsp; only a vague notion of what’s needed
+&nbsp;&nbsp; a vague hint of a thickening waistline
+&nbsp;&nbsp; I haven’t the vaguest idea.
+&nbsp;&nbsp; a vague longing
+Adj
+ Prepared in accordance with Jewish religious practices.
+&nbsp;&nbsp; Well, if I had known it was a kosher deli, I certainly would not have ordered a ham and cheese on rye.
+ In accordance with standards or usual practice.
+&nbsp;&nbsp; Is what I have done kosher with Mr. Smith?
+Verb
+ to make kosher.
+Noun
+ The state or quality of being true to someone or something; faithfulness, fidelity.
+&nbsp;&nbsp; Truth to ones own feelings is all-important in life.
+ A pledge of loyalty or faith.
+&nbsp;&nbsp; There was some truth in his statement that he had no other choice.
+&nbsp;&nbsp; The truth is that our leaders knew a lot more than they were letting on.
+&nbsp;&nbsp; "The truth is what is."
+&nbsp;&nbsp; Alcoholism and redemption led me finally to truth.
+&nbsp;&nbsp; Hunger and jealousy are just eternal truths of human existence.
+Adj
+ Very comprehensive; pertaining or appropriate to large classes or groups as opposed to specific
+&nbsp;&nbsp;* "...the essence is that such self-describing poets describe what is in them, but not peculiar to them,---what is generic, not what is special and individual." &mdash; Walter Bagehot (1826-1877)
+ Of, or relating to a genus Noun
+ Not having a brand name
+ Of a drug identified by its chemical name
+Noun
+ A product sold under a generic name
+ A wine that is a blend of several wines, or made from a blend of several grape varieties
+Adv
+ accurately|Accurately, competently.
+&nbsp;&nbsp; He does his job well.
+ completely|Completely, fully.
+&nbsp;&nbsp; A well done steak.
+Adj
+ very|Very (as a general-purpose intensifier).
+ them FIFA 2003 is easliyInterj
+ In good health.
+&nbsp;&nbsp; I had been sick, but now Im well.
+ prudent|Prudent; good; well-advised.
+Noun
+ Used to acknowledge a statement or situation (short form for "that is well").
+&nbsp;&nbsp; A The car is broken.
+&nbsp;&nbsp; B Well, we could walk to the movies instead.
+&nbsp;&nbsp; A I didnt like the music.
+&nbsp;&nbsp; B Well, I thought it was good.
+&nbsp;&nbsp; A (Accidentally sets tent on fire).
+&nbsp;&nbsp; B Well, I guess were sleeping under the stars tonight.
+ An exclamation of surprise, often doubled or tripled.
+&nbsp;&nbsp; Well, well, well, what do we have here?
+Verb
+ A hole sunk into the ground as a source of water, oil, natural gas or other fluids.
+ A place where a liquid such as water surfaces naturally, a spring.
+Verb
+ To seep out of the surface.
+&nbsp;&nbsp; Blood welled from the wound.
+ To have something seep out of the surface.
+&nbsp;&nbsp; Her eyes welled with tears.
+Noun
+ Former name of what is now darmstadtium.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=what" for 127.0.0.1 at Sun Jan 02 23:06:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"what"}
+Rendered words/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 729ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:06:46 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 35ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Sun Jan 02 23:06:52 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 38ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+^C[2011-01-02 23:07:16] INFO  going to shutdown ...
+[2011-01-02 23:07:17] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails console
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+Loading development environment (Rails 3.0.0)
+irb(main):001:0> REDIS.lrange("rc[Kecent")
+ArgumentError: wrong number of arguments (1 for 3)
+	from (irb):1:in `lrange'
+	from (irb):1
+irb(main):002:0> REDIS.lrange("recent"),)0)[1P)-)1)0),)-)1)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test", "one", "two", "three", "four"]
+irb(main):003:0> REDIS.lrange("recent",-10,-1)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KREDIS.lpush("recent","what")
+=> 12
+irb(main):004:0> REDIS.lpush("recent","what")range("recent",-10,-1)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test", "one", "two", "three", "four"]
+irb(main):005:0> REDIS.lrange("recent",-10,-1)[1Ppush("recent","what")range("recent",-10,-1)[C[1P("recent",-10,-1)[1P("recent",-10,-1)[1P("recent",-10,-1)[1P("recent",-10,-1)[1P("recent",-10,-1)t("recent",-10,-1)r("recent",-10,-1)i("recent",-10,-1)m("recent",-10,-1)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+=> "OK"
+irb(main):006:0> REDIS.ltrim("recent",-10,-1)range("recent",-10,-1)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test", "one", "two", "three", "four"]
+irb(main):007:0> REDIS.lrange("recent",-10,-1)[1Ptrim("recent",-10,-1)
+=> "OK"
+irb(main):008:0> REDIS.ltrim("recent",-10,-1)range("recent",-10,-1)[1Ptrim("recent",-10,-1)range("recent",-10,-1)[1Ppush("recent","what")[C[1P")[1P")[1P")[1P")b")h")a")a")r")a")t") ")t")e")s")t")i")n")g") ")t")h")i")s") ")f")o")r") ")r")e")a")l")
+=> 11
+irb(main):009:0> REDIS.lpush("recent","bhaarat testing this for real")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Ptrim("recent",-10,-1)
+=> "OK"
+irb(main):010:0> REDIS.ltrim("recent",-10,-1)push("recent","bhaarat testing this for real")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Ptrim("recent",-10,-1)range("recent",-10,-1)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test", "one", "two", "three", "four"]
+irb(main):011:0> REDIS.lrange("recent",-10,-1)[C[C[1P,-1)2,-1)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test", "one", "two", "three", "four"]
+irb(main):012:0> REDIS.lrange("recent",-12,-1)[C[1P,-1)0,-1)[C[C[C[1P)5)
+=> ["word:dictionary", "word:gaffle", "word:sisterhood", "Hyderabad", "examination", "test"]
+irb(main):013:0> REDIS.lrange("recent",-10,-5)2,-1)0,-1)[1Ptrim("recent",-10,-1)range("recent",-10,-1)2,-1)0,-5)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KREDIS.lrange("wiki_recent", 0[K-10,-1)
+=> ["verdict", "desk", "jordan", "jesus", "king", "politics parliament", "politics", "word:psychiatrist", "America", "abject"]
+irb(main):014:0> REDIS.lrange("wiki_recent", -10,-1)[1P,-1)[1P,-1)[1P,-1)1,-1)[C[C[C[1P)[1P) )1)1)
+=> ["verdict", "desk", "jordan", "jesus", "king", "politics parliament", "politics", "word:psychiatrist", "America", "abject"]
+irb(main):015:0> REDIS.lrange("wiki_recent", 1, 11)[1P)[1P)2)0)
+=> ["verdict", "desk", "jordan", "jesus", "king", "politics parliament", "politics", "word:psychiatrist", "America", "abject"]
+irb(main):016:0> REDIS.rpush("wiki_recent","search")
+=> 12
+irb(main):017:0> REDIS.rpush("wiki_recent","search")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Plrange("wiki_recent", 1, 20)
+=> ["verdict", "desk", "jordan", "jesus", "king", "politics parliament", "politics", "word:psychiatrist", "America", "abject", "search"]
+irb(main):018:0> REDIS.lrange("wiki_recent", 1, 20)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crpush("wiki_recent","search")[1Ppush("wiki_recent","search")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clpush("wiki_recent","search")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P")[1P")[1P")[1P")[1P")[1P")b")h")a")a")r")a")t")
+=> 13
+irb(main):019:0> REDIS.lpush("wiki_recent","bhaarat")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prange("wiki_recent", 1, 20)
+=> ["search", "verdict", "desk", "jordan", "jesus", "king", "politics parliament", "politics", "word:psychiatrist", "America", "abject", "search"]
+irb(main):020:0> REDIS.lrange("wiki_recent", 1, 20)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush("wiki_recent","bhaarat")^C
+irb(main):020:0> c[Kexit
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails console
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+Loading development environment (Rails 3.0.0)
+irb(main):001:0> REDIS.lpush("my","one'[K")
+=> 1
+irb(main):002:0> REDIS.lpush("my","one")[1P")[1P")[1P")t")w")o")
+=> 2
+irb(main):003:0> REDIS.lpush("my","two")[1P")[1P")[1P")t")h")r")e")e")
+=> 3
+irb(main):004:0> REDIS.lpush("my","three")[C[1P")[1P")[1P")[1P")[1P")f")o")r")[1P")u")r")
+=> 4
+irb(main):005:0> REDIS.lpush("my","four")[1P")[1P")[1P")i")f")e")
+=> 5
+irb(main):006:0> REDIS.lpush("my","fife")[1P")[1P")[1P")[1P")s")i")x")
+=> 6
+irb(main):007:0> REDIS.lpush("my","six")[1P")[1P")[1P")s")e")v")e")n")
+=> 7
+irb(main):008:0> REDIS.lpush("my","seven")[1P")[1P")[1P")[1P")[1P")e")i")g")h")t")
+=> 8
+irb(main):009:0> REDIS.lpush("my","eight")[1P")[1P")[1P")[1P")[1P")n")i")n")e")
+=> 9
+irb(main):010:0> AREDIS.lpush("my","nine")[1P")[1P")[1P")[1P")t")e")n")
+=> 10
+irb(main):011:0> REDIS.lpush("my","ten")[1P")[1P")[1P")e")l")e")v")e")n")
+=> 11
+irb(main):012:0> REDIS.lrange
+ArgumentError: wrong number of arguments (0 for 3)
+	from (irb):12:in `lrange'
+	from (irb):12
+irb(main):013:0> REDIS.lrange[C(-10, 01[K[K-1([K)
+ArgumentError: wrong number of arguments (2 for 3)
+	from (irb):13:in `lrange'
+	from (irb):13
+irb(main):014:0> REDIS.lrange(-10, -1)[C[1@"[1@m[1@y[1@"[1@,
+=> ["ten", "nine", "eight", "seven", "six", "fife", "four", "three", "two", "one"]
+irb(main):015:0> REDIS.lrange("my",-10, -1)[1P[1@1
+=> ["eleven", "ten", "nine", "eight", "seven", "six", "fife", "four", "three", "two", "one"]
+irb(main):016:0> REDIS.lrange("my",-11, -1)[1P)2)
+=> ["eleven", "ten", "nine", "eight", "seven", "six", "fife", "four", "three", "two"]
+irb(main):017:0> REDIS.lrange("my",-11, -2)[1P[1P[1@t[1@s[1P[1@e[1@s[1@t[2Pmy",-11, -1)0[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[Kpush("my","eleven")[C[1P","eleven")[1P","eleven")t","eleven")e","eleven")s","eleven")t","eleven")[C[C[C[C[C[C[C[C[C[C[1P")[1P")[1P")[1P")[1P")[1P")o")n")e")[1Ppush("test","one")rpush("test","one")
+=> 1
+irb(main):018:0> REDIS.rpush("test","one")[C[1P")[1P")[1P")t")w")o")
+=> 2
+irb(main):019:0> REDIS.rpush("test","two")[C[1P")[1P")[1P")t")h")r")e")e")
+^[[A^[[D=> 3
+irb(main):020:0> REDIS.rpush("test","three")[1P")[1P")[1P")[1P")[1P")f")o")u")r")
+=> 4
+irb(main):021:0> REDIS.rpush("test","four")[1P")[1P")[1P")i")v")e")
+=> 5
+irb(main):022:0> REDIS.rpush("test","five")[C[1P")[1P")[1P")[1P")s")i")x")
+=> 6
+irb(main):023:0> REDIS.rpush("test","six")[1P")[1P")[1P")s")e")v")e")n")
+=> 7
+irb(main):024:0> REDIS.rpush("test","seven")[C[1P")[1P")[1P")[1P")[1P")e")i")g")h")t")
+=> 8
+irb(main):025:0> REDIS.rpush("test","eight")[1P")[1P")[1P")[1P")[1P")n")i")n")e")
+=> 9
+irb(main):026:0> REDIS.rpush("test","nine")[1P")[1P")[1P")[1P")t")e")n")
+=> 10
+irb(main):027:0> REDIS.lrange
+ArgumentError: wrong number of arguments (0 for 3)
+	from (irb):27:in `lrange'
+	from (irb):27
+irb(main):028:0> REDIS.lrange[C("test", 01[K[K-19[K0, 01[K[K-1)
+=> ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+irb(main):029:0> REDIS.lrange("test", -10, -1)[Krpush("test","ten")[C[1P")[1P")[1P")e")l")e")v")e")n")
+=> 11
+irb(main):030:0> REDIS.rpush("test","eleven")lrange("test", -10, -1)
+=> ["two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven"]
+irb(main):031:0> exit
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Gemfile
+#	modified:   Gemfile.lock
+#	modified:   app/assets/output_saved.txt
+#	new file:   app/controllers/.words_controller.rb.swp
+#	modified:   app/controllers/words_controller.rb
+#	new file:   ap

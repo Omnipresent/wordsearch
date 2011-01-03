@@ -22,7 +22,7 @@
 	Wiktionary Search 
 	<div id="search">
 		<%= form_tag words_path, :method => :get do %>
-  			<%= text_field_tag :query %> &nbsp;&nbsp; <p id="small">=> word:xxx to find exact words</p>
+  			<%= text_field_tag :query %> 
 		<% end %>
 	</div>
 	<div id="brag">
@@ -39,8 +39,32 @@
 		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
 		<!--<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet") if record['snippet_text']!=nil%>-->
 		<%= simple_format(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'))%>
+		<%= record['timestamp']%>
 		</div>	
 	<%end%> 
+<% else %>
+	<div id="info">
+		<br><br>
+		<p id="heading">Purpose:</p>
+		<p id="purpose">Search through words from Wiktionary</p>
+		</br><br><br><br>
+		<p id="heading">Use Case:</p>
+		<p id="purpose">Reverse lookup of a traditional word lookup.  Find words by their definition</p>
+		</br><br><br><br>
+		<p id="heading">Options:</p>
+		<p id="purpose">word:&lt;xxx&gt; (look up exact words)</p>
+		</br><br><br><br>
+		<p id="heading">Recent Searches:</p>
+		<p id="purpose">
+			<%if @recent_searches%>
+				<ul>
+				<%@recent_searches.reverse.each do |recent|%>
+					<li><a href="http://wikidex.heroku.com/words?query=<%=recent%>"><%=recent%></a></li>
+				<%end%>
+				</ul>
+			<%end%>
+		</p>
+	</div>	
 <% end %>
 </div>
 </div>
