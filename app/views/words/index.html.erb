@@ -19,7 +19,7 @@
 <body>
 
 <div id="logo">
-	Wiktionary Search 
+	<a id="none" href="http://wikidex.heroku.com">Wiktionary Search</a> 
 	<div id="search">
 		<%= form_tag words_path, :method => :get do %>
   			<%= text_field_tag :query %> 
@@ -57,11 +57,11 @@
 		<p id="heading">Recent Searches:</p>
 		<p id="purpose">
 			<%if @recent_searches%>
-				<ul>
+				<ol id="recent">
 				<%@recent_searches.reverse.each do |recent|%>
 					<li><a href="http://wikidex.heroku.com/words?query=<%=recent%>"><%=recent%></a></li>
 				<%end%>
-				</ul>
+				</ol>
 			<%end%>
 		</p>
 	</div>	

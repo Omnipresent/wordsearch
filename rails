@@ -6404,4 +6404,106 @@ irb(main):031:0> exit
 #	modified:   app/assets/output_saved.txt
 #	new file:   app/controllers/.words_controller.rb.swp
 #	modified:   app/controllers/words_controller.rb
-#	new file:   ap
+#	new file:   app/models/.word_searcher.rb.swp
+#	modified:   app/views/words/.index.html.erb.swp
+#	modified:   app/views/words/index.html.erb
+#	modified:   config/environments/development.rb
+#	new file:   config/initializers/redis.rb
+#	modified:   public/stylesheets/screen.css
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/helpers/.application_helper.rb.swp
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ bundle [K[K[K[K[K[K[Kgit commit -am "reddis recent search"
+[master d093a76] reddis recent search
+ 12 files changed, 1574 insertions(+), 1313 deletions(-)
+ copy app/{helpers/.application_helper.rb.swp => controllers/.words_controller.rb.swp} (92%)
+ rename app/{helpers/.application_helper.rb.swp => models/.word_searcher.rb.swp} (91%)
+ create mode 100644 config/initializers/redis.rb
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin mas[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push origin master
+Counting objects: 48, done.
+Delta compression using up to 2 threads.
+Compressing objects:   4% (1/25)   Compressing objects:   8% (2/25)   Compressing objects:  12% (3/25)   Compressing objects:  16% (4/25)   Compressing objects:  20% (5/25)   Compressing objects:  24% (6/25)   Compressing objects:  28% (7/25)   Compressing objects:  32% (8/25)   Compressing objects:  36% (9/25)   Compressing objects:  40% (10/25)   Compressing objects:  44% (11/25)   Compressing objects:  48% (12/25)   Compressing objects:  52% (13/25)   Compressing objects:  56% (14/25)   Compressing objects:  60% (15/25)   Compressing objects:  64% (16/25)   Compressing objects:  68% (17/25)   Compressing objects:  72% (18/25)   Compressing objects:  76% (19/25)   Compressing objects:  80% (20/25)   Compressing objects:  84% (21/25)   Compressing objects:  88% (22/25)   Compressing objects:  92% (23/25)   Compressing objects:  96% (24/25)   Compressing objects: 100% (25/25)   Compressing objects: 100% (25/25), done.
+Writing objects:   3% (1/26)   Writing objects:   7% (2/26)   Writing objects:  11% (3/26)   Writing objects:  15% (4/26)   Writing objects:  19% (5/26)   Writing objects:  23% (6/26)   Writing objects:  26% (7/26)   Writing objects:  30% (8/26)   Writing objects:  34% (9/26)   Writing objects:  38% (10/26)   Writing objects:  42% (11/26)   Writing objects:  46% (12/26)   Writing objects:  53% (14/26)   Writing objects:  57% (15/26)   Writing objects:  61% (16/26)   Writing objects:  65% (17/26)   Writing objects:  69% (18/26)   Writing objects:  73% (19/26)   Writing objects:  76% (20/26)   Writing objects:  80% (21/26)   Writing objects:  84% (22/26)   Writing objects:  88% (23/26)   Writing objects:  92% (24/26)   Writing objects:  96% (25/26)   Writing objects: 100% (26/26)   Writing objects: 100% (26/26), 24.57 KiB, done.
+Total 26 (delta 14), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   bf767f7..d093a76  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heroku master
+Counting objects: 48, done.
+Delta compression using up to 2 threads.
+Compressing objects:   4% (1/25)   Compressing objects:   8% (2/25)   Compressing objects:  12% (3/25)   Compressing objects:  16% (4/25)   Compressing objects:  20% (5/25)   Compressing objects:  24% (6/25)   Compressing objects:  28% (7/25)   Compressing objects:  32% (8/25)   Compressing objects:  36% (9/25)   Compressing objects:  40% (10/25)   Compressing objects:  44% (11/25)   Compressing objects:  48% (12/25)   Compressing objects:  52% (13/25)   Compressing objects:  56% (14/25)   Compressing objects:  60% (15/25)   Compressing objects:  64% (16/25)   Compressing objects:  68% (17/25)   Compressing objects:  72% (18/25)   Compressing objects:  76% (19/25)   Compressing objects:  80% (20/25)   Compressing objects:  84% (21/25)   Compressing objects:  88% (22/25)   Compressing objects:  92% (23/25)   Compressing objects:  96% (24/25)   Compressing objects: 100% (25/25)   Compressing objects: 100% (25/25), done.
+Writing objects:   3% (1/26)   Writing objects:   7% (2/26)   Writing objects:  11% (3/26)   Writing objects:  15% (4/26)   Writing objects:  19% (5/26)   Writing objects:  23% (6/26)   Writing objects:  26% (7/26)   Writing objects:  30% (8/26)   Writing objects:  34% (9/26)   Writing objects:  38% (10/26)   Writing objects:  42% (11/26)   Writing objects:  46% (12/26)   Writing objects:  53% (14/26)   Writing objects:  57% (15/26)   Writing objects:  61% (16/26)   Writing objects:  65% (17/26)   Writing objects:  69% (18/26)   Writing objects:  73% (19/26)   Writing objects:  76% (20/26)   Writing objects:  80% (21/26)   Writing objects:  84% (22/26)   Writing objects:  88% (23/26)   Writing objects:  92% (24/26)   Writing objects:  96% (25/26)   Writing objects: 100% (26/26)   Writing objects: 100% (26/26), 24.59 KiB, done.
+Total 26 (delta 14), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       Unresolved dependencies detected; Installing...
+       Using --without development:test
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.0) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.4.2) 
+       Installing activemodel (3.0.0) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.1) 
+       Installing rack-mount (0.6.13) 
+       Installing rack-test (0.5.7) 
+       Installing tzinfo (0.3.23) 
+       Installing actionpack (3.0.0) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.13) 
+       Installing actionmailer (3.0.0) 
+       Installing arel (1.0.1) 
+       Installing activerecord (3.0.0) 
+       Installing activeresource (3.0.0) 
+       Installing addressable (2.2.2) 
+       Installing multipart-post (1.0.1) 
+       Installing faraday (0.5.3) 
+       Installing yajl-ruby (0.7.7) with native extensions 
+       Installing indextank (0.0.4) 
+       Installing json_pure (1.4.6) 
+       Installing nokogiri (1.4.4) with native extensions 
+       Using bundler (1.0.3) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.0) 
+       Installing rails (3.0.0) 
+       Installing redis (2.1.1) 
+       [32mYour bundle is complete! It was installed into ./.bundle/gems[0m
+       Compiled slug size is 13.1MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   bf767f7..d093a76  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git add .
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   app/views/words/.index.html.erb.swp
+#	modified:   app/views/words/index.html.erb
+#	new file:   public/stylesheets/.screen.css.swp
+#	modified:   public/stylesheets/screen.css
+#	modified:   rails
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/.words_controller.rb.swp
+#	deleted:    app/models/.word_searcher.rb.swp
+#
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git pu
