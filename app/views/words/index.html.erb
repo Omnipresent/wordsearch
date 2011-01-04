@@ -16,6 +16,52 @@
 
 </script>
 
+<script src='http://www.google.com/jsapi' type='text/javascript'></script> 
+<script type='text/javascript'> 
+var theme = "vader";
+google.load("jquery", "1.4.4");
+google.load("jqueryui", "1.8.7");
+google.loader.writeLoadTag("css", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/themes/" + theme + "/jquery-ui.css");
+</script>
+
+<script type='text/javascript'> 
+var publicApiUrl = "http://dw6hr.api.indextank.com";
+var indexName = "idx";
+var elementId = "#query";
+var remoteSource = publicApiUrl + "/v1/indexes/" + indexName + "/autocomplete";
+</script> 
+
+<script type='text/javascript'>
+google.setOnLoadCallback(function() {
+$(function() {
+ 
+var sourceCallback = function( request, responseCallback ) {
+ $.ajax( {
+   url: remoteSource,
+   dataType: "jsonp",
+   data: { query: request.term },
+   success: function( data ) { responseCallback( data.suggestions ); }
+ } );
+};
+ 
+var selectCallback = function( event, ui ) { 
+ event.target.value = ui.item.value;
+ event.target.form.submit();
+};
+ 
+$( elementId ).autocomplete( {
+ source: sourceCallback,
+ minLength: 2,
+ delay: 100,
+ select: selectCallback
+} );
+ 
+}); // $ fun
+}); // g callback
+ 
+</script> 
+
+
 <body>
 
 <div id="logo">
@@ -36,10 +82,10 @@
 <br><br>
 	<%@docs['results'].each do |record|%>
 		<div id="word">
-		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
+		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a> <% if record['timestamp'] != nil%>- <%= Time.at(record['timestamp'].to_i).strftime("Indexed on %m/%d/%Y %r") %> <%end%>
+
 		<!--<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet") if record['snippet_text']!=nil%>-->
 		<%= simple_format(addhighlights(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'), removechars(params[:query])))%>
-		<%= record['timestamp']%>
 		</div>	
 	<%end%> 
 <% else %>
@@ -51,9 +97,16 @@
 		<p id="heading">Use Case:</p>
 		<p id="purpose">Find words by their definition.  Answer to: "What's that word that means _____?"</p>
 		</br><br><br><br>
-		<p id="heading">Options:</p>
-		<p id="purpose">word:&lt;xxx&gt; (look up exact words)</p>
-		</br><br><br><br>
+		<p id="heading">Features:</p>
+			<ul id="recent">
+				<li>word:&lt;exact_word&gt;</li>
+				<li>autocomplete</li>
+				<li>full text highlight</li>
+				<li>timestamp search (coming soon)</li>
+				<li>pagination (coming soon)</li>
+				<li>search in examples and/or definitions (coming soon)</li>
+			</ul>
+		</br><br>
 		<p id="heading">Recent Searches:</p>
 		<p id="purpose">
 			<%if @recent_searches%>

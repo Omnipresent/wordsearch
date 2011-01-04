@@ -14,7 +14,7 @@ class WordSearcher
 		if (query.match(/^word:/)!=nil)
 			match = query.match(/:(\w+)/)
 			query = "searched_word:"+match[1]
-			test = index.search(query, :fetch=>'searched_word,text')
+			test = index.search(query, :fetch=>'timestamp,searched_word,text')
 			return test
 		else
 			puts "came here"
