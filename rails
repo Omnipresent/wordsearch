@@ -6506,4 +6506,1241 @@ To git@heroku.com:wikidex.git
 #	deleted:    app/controllers/.words_controller.rb.swp
 #	deleted:    app/models/.word_searcher.rb.swp
 #
-]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git pu
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git pu[K[K[Kc [K[K commit -am "de[K[Kbeautification [K" changes
+fatal: Paths with -a does not make sense.
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git commit -am "beautification" changes[K[K[K[K[K[K[K
+[master e769c1c] beautification
+ 6 files changed, 116 insertions(+), 4 deletions(-)
+ delete mode 100644 app/models/.word_searcher.rb.swp
+ rename app/controllers/.words_controller.rb.swp => public/stylesheets/.screen.css.swp (84%)
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push origin master
+Counting objects: 26, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 3.23 KiB, done.
+Total 14 (delta 6), reused 0 (delta 0)
+To git@github.com:Omnipresent/wordsearch.git
+   d093a76..e769c1c  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ git push heroku master
+Counting objects: 26, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 3.23 KiB, done.
+Total 14 (delta 6), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Gemfile detected, running Bundler version 1.0.3
+       All dependencies are satisfied
+       Compiled slug size is 13.1MB
+-----> Launching... done
+       http://wikidex.heroku.com deployed to Heroku
+
+To git@heroku.com:wikidex.git
+   d093a76..e769c1c  master -> master
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails server
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-03 20:33:26] INFO  WEBrick 1.3.1
+[2011-01-03 20:33:26] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-03 20:33:26] INFO  WEBrick::HTTPServer#start: pid=30221 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:33:30 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (41.8ms)
+Completed   in 4510ms
+
+ActionView::Template::Error (undefined local variable or method `addhighlights' for #<#<Class:0xb66f83d8>:0xb66f4ee0>):
+    57: 		<p id="heading">Recent Searches:</p>
+    58: 		<p id="purpose">
+    59: 			<%if @recent_searches%>
+    60: 				<%=addhighlights%>
+    61: 				<ol id="recent">
+    62: 				<%@recent_searches.reverse.each do |recent|%>
+    63: 					<li><a href="http://wikidex.heroku.com/words?query=<%=recent%>"><%=recent%></a></li>
+  app/views/words/index.html.erb:60:in `_app_views_words_index_html_erb__698900337__617111638_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:34:01 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 71ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+* [http://www.iec.ch/online_news/etech/arch_2003/etech_0503/focus.htm The IEC explanation of its definitions]
+Verb
+ To rework old material (physical material, ideas, documents etc), redo some work, with some variations.
+&nbsp;&nbsp; Todays parliamentary session only rehashed last weeks arguments. 
+&nbsp;&nbsp; The CEO of the company only rehashed a speech for the news conference.
+&nbsp;&nbsp; The general rehashed plans for the war.
+Noun
+ An enterprise.
+ Variant of prize.Verb
+ To force (open) with a lever; to pry.
+&nbsp;&nbsp; 1919 I think he must have been trying to prise open that box yonder when he was attacked. — wSax Rohmer|Sax Rohmer, The Quest of the Sacred Slipper
+&nbsp;&nbsp; c. 1925 Come, force the gates with crowbars, prise them apart! — Jack Lindsay, translation of Lysistrata
+&nbsp;&nbsp; 2004 Most people used pliers, scissors, rubber gloves and knives to try to prise open products. — BBC News
+Verb
+ To make deep or deeper
+&nbsp;&nbsp; They deepened the well by 200 feet.
+ To make darker or more intense; to darken
+&nbsp;&nbsp; The event deepened the prevailing gloom.
+&nbsp;&nbsp; News of her death deepened my sorrow.
+&nbsp;&nbsp; The tuner deepened the tone of the organ.
+Noun
+ A servomechanism or servomotor
+ Abbreviation of service station, being a place for cars etc to buy petrol and various convenience items, with or without actual car service facilities.
+&nbsp;&nbsp; Man arrested after allegedly driving car through servo &mdash; title of wAustralian Broadcasting Commission|Australian Broadcasting Commission News Radio item, 3 June 2005 http//www.abc.net.au/news/newsitems/200606/s1654443.htm
+'''fisking'''# A point-by-point [[refutation]] of a [[blog]] entry or (especially) news story.[[Category:English eponyms]]
+Noun
+ A person with poor judgment and taste
+&nbsp;&nbsp; Stocks Genius or Dot-Com Doofus? - Wired News
+&nbsp;&nbsp; Danny is such a doofus!
+Noun
+ News 
+ of pleasant, fortunate
+Noun
+ News of unpleasant, unfortunate or sad events.
+ An irritating, troublesome or harmful person, situation or thing.
+Noun
+ New information of interest.
+&nbsp;&nbsp; Is there any news about the storm?
+&nbsp;&nbsp; Thats news to me.
+ report|Reports of current events broadcast via media such as newspapers or television.
+&nbsp;&nbsp; Did you listen to the news tonight?
+
+
+Started GET "/words?utf8=%E2%9C%93&query=news" for 127.0.0.1 at Mon Jan 03 20:34:07 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"news"}
+Rendered words/index.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 905ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+* [http://www.iec.ch/online_news/etech/arch_2003/etech_0503/focus.htm The IEC explanation of its definitions]
+Verb
+ To rework old material (physical material, ideas, documents etc), redo some work, with some variations.
+&nbsp;&nbsp; Todays parliamentary session only rehashed last weeks arguments. 
+&nbsp;&nbsp; The CEO of the company only rehashed a speech for the news conference.
+&nbsp;&nbsp; The general rehashed plans for the war.
+Noun
+ An enterprise.
+ Variant of prize.Verb
+ To force (open) with a lever; to pry.
+&nbsp;&nbsp; 1919 I think he must have been trying to prise open that box yonder when he was attacked. — wSax Rohmer|Sax Rohmer, The Quest of the Sacred Slipper
+&nbsp;&nbsp; c. 1925 Come, force the gates with crowbars, prise them apart! — Jack Lindsay, translation of Lysistrata
+&nbsp;&nbsp; 2004 Most people used pliers, scissors, rubber gloves and knives to try to prise open products. — BBC News
+Verb
+ To make deep or deeper
+&nbsp;&nbsp; They deepened the well by 200 feet.
+ To make darker or more intense; to darken
+&nbsp;&nbsp; The event deepened the prevailing gloom.
+&nbsp;&nbsp; News of her death deepened my sorrow.
+&nbsp;&nbsp; The tuner deepened the tone of the organ.
+Noun
+ A servomechanism or servomotor
+ Abbreviation of service station, being a place for cars etc to buy petrol and various convenience items, with or without actual car service facilities.
+&nbsp;&nbsp; Man arrested after allegedly driving car through servo &mdash; title of wAustralian Broadcasting Commission|Australian Broadcasting Commission News Radio item, 3 June 2005 http//www.abc.net.au/news/newsitems/200606/s1654443.htm
+'''fisking'''# A point-by-point [[refutation]] of a [[blog]] entry or (especially) news story.[[Category:English eponyms]]
+Noun
+ A person with poor judgment and taste
+&nbsp;&nbsp; Stocks Genius or Dot-Com Doofus? - Wired News
+&nbsp;&nbsp; Danny is such a doofus!
+Noun
+ News 
+ of pleasant, fortunate
+Noun
+ News of unpleasant, unfortunate or sad events.
+ An irritating, troublesome or harmful person, situation or thing.
+Noun
+ New information of interest.
+&nbsp;&nbsp; Is there any news about the storm?
+&nbsp;&nbsp; Thats news to me.
+ report|Reports of current events broadcast via media such as newspapers or television.
+&nbsp;&nbsp; Did you listen to the news tonight?
+
+
+Started GET "/words?utf8=%E2%9C%93&query=news" for 127.0.0.1 at Mon Jan 03 20:35:15 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"news"}
+Rendered words/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 732ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:35:25 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 72ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+Adv
+ Without paying.
+&nbsp;&nbsp; We got all our food for free, it was included in the contract.
+ Without effort; as a useful side-effect of something that was to be done anyway.
+&nbsp;&nbsp; When they fixed that one bug, we got this new software feature for free.
+Noun
+ The atomic bomb; the capability to launch a nuclear attack. Often capitalized.
+&nbsp;&nbsp; Pakistan and India both have the Bomb now.
+ A success; something excellent.
+&nbsp;&nbsp; Their new record is the bomb.
+&nbsp;&nbsp; That party was the bomb!
+ ballpoint pen, Biro (''Britain, Australia, New Zealand'')
+Verb
+ To change, swap.
+&nbsp;&nbsp; His political stance shifted daily.
+ to move from one place to another; to redistribute.
+&nbsp;&nbsp; Well have to shift these boxes to the downtown office.
+Noun
+ a type of women's undergarment, a slip
+&nbsp;&nbsp; Just last week she bought a new shift at the market.
+ a change of workers, now specifically a set group of workers or period of working time
+&nbsp;&nbsp; Well work three shifts a day till the jobs done.
+&nbsp;&nbsp; There was a shift in the political atmosphere.
+Noun
+ The inability to remember new information from the period beginning the amnesic episode.
+ new
+'''un nuovo''' ''m'' (''f'' '''una nuova''', ''m plural'' '''nuovi''', ''f plural'' '''nuove''')
+ a new one
+Verb
+ To furnish or give experimental knowledge of; to make (one) to know; to make familiar; -- followed by 'with'.
+&nbsp;&nbsp; Before a man can speak on any subject, it is necessary to be acquainted with it. -wJohn Locke|John Locke
+&nbsp;&nbsp; A man of sorrows and acquainted with grief. -Isaiah 533
+ To communicate notice to; to inform; to make cognizant; -- followed by 'with' (formerly, also, by 'of'), or by 'that', introducing the intelligence; as, to acquaint a friend with the particulars of an act.
+&nbsp;&nbsp; Acquaint her here of my son Paris love. -Shakespeare, Romeo and Juliet, III-iv
+&nbsp;&nbsp; I must acquaint you that I have received New dated letters from Northumberland. -wWilliam Shakespeare|William Shakespeare, Henry IV, Part II, IV-i
+Noun
+ The first section of the Christian New Testament scripture, comprising the books of w:Gospel of Matthew|Matthew, w:Gospel of Mark|Mark, w:Gospel of Luke|Luke and w:Gospel of John|John, concerned with the life, death, and teachings of Jesus.
+ An account of the life, death, and teachings of Jesus, generally written during the first several centuries of the Common Era.
+ (''New Age, rare'') A process of expanding personal awareness into consciousness from what was previously unconscious.
+Verb
+ To encourage growth.
+&nbsp;&nbsp; Further the economy.
+ To support progress or growth of something.
+Verb
+ Also; in addition to.
+ A greater distance in space or time; farther.
+&nbsp;&nbsp; Washington DC is further from Europe than New York.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=new" for 127.0.0.1 at Mon Jan 03 20:35:34 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"new"}
+Rendered words/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 2891ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=news" for 127.0.0.1 at Mon Jan 03 20:35:37 -0500 2011
+* [http://www.iec.ch/online_news/etech/arch_2003/etech_0503/focus.htm The IEC explanation of its definitions]
+Verb
+ To rework old material (physical material, ideas, documents etc), redo some work, with some variations.
+&nbsp;&nbsp; Todays parliamentary session only rehashed last weeks arguments. 
+&nbsp;&nbsp; The CEO of the company only rehashed a speech for the news conference.
+&nbsp;&nbsp; The general rehashed plans for the war.
+Noun
+ An enterprise.
+ Variant of prize.Verb
+ To force (open) with a lever; to pry.
+&nbsp;&nbsp; 1919 I think he must have been trying to prise open that box yonder when he was attacked. — wSax Rohmer|Sax Rohmer, The Quest of the Sacred Slipper
+&nbsp;&nbsp; c. 1925 Come, force the gates with crowbars, prise them apart! — Jack Lindsay, translation of Lysistrata
+&nbsp;&nbsp; 2004 Most people used pliers, scissors, rubber gloves and knives to try to prise open products. — BBC News
+Verb
+ To make deep or deeper
+&nbsp;&nbsp; They deepened the well by 200 feet.
+ To make darker or more intense; to darken
+&nbsp;&nbsp; The event deepened the prevailing gloom.
+&nbsp;&nbsp; News of her death deepened my sorrow.
+&nbsp;&nbsp; The tuner deepened the tone of the organ.
+Noun
+ A servomechanism or servomotor
+ Abbreviation of service station, being a place for cars etc to buy petrol and various convenience items, with or without actual car service facilities.
+&nbsp;&nbsp; Man arrested after allegedly driving car through servo &mdash; title of wAustralian Broadcasting Commission|Australian Broadcasting Commission News Radio item, 3 June 2005 http//www.abc.net.au/news/newsitems/200606/s1654443.htm
+'''fisking'''# A point-by-point [[refutation]] of a [[blog]] entry or (especially) news story.[[Category:English eponyms]]
+Noun
+ A person with poor judgment and taste
+&nbsp;&nbsp; Stocks Genius or Dot-Com Doofus? - Wired News
+&nbsp;&nbsp; Danny is such a doofus!
+Noun
+ News 
+ of pleasant, fortunate
+Noun
+ News of unpleasant, unfortunate or sad events.
+ An irritating, troublesome or harmful person, situation or thing.
+Noun
+ New information of interest.
+&nbsp;&nbsp; Is there any news about the storm?
+&nbsp;&nbsp; Thats news to me.
+ report|Reports of current events broadcast via media such as newspapers or television.
+&nbsp;&nbsp; Did you listen to the news tonight?
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"news"}
+Rendered words/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 705ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:35:53 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 47ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:36:30 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 47ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+Noun
+ An e-mail address, a unique identifier specifying a virtual location to which e-mail can be sent.
+Noun
+ A sudden causeless change or turn of the mind; a whim of fancy; a capricious prank; a vagary or caprice.
+ A nonconformist, especially in appearance, social behavior, sexual orientation, gender identity, and/or business practices; an oddball, especially in physiology (i.e., "circus freak"); unique, sometimes in a displeasing way.
+Verb
+ To make greatly distressed and/or a discomposed appearance
+ To be placed or place someone under the influence of a psychedelic drug
+Adj
+ Made up of three related elements, often matching
+&nbsp;&nbsp; The triple markings on this vase are quite unique.
+ Three times the quantity
+&nbsp;&nbsp; Give me a triple serving of mashed potatoes.
+&nbsp;&nbsp; a triple room
+&nbsp;&nbsp; a triple meaning
+Noun
+ A drink with three portions of alcohol.
+&nbsp;&nbsp; Ive had a hard day, make that a triple.
+ A hamburger with three patty|patties.
+&nbsp;&nbsp; Id like a triple with cheese.
+Verb
+ To multiply by three
+&nbsp;&nbsp; The company tripled their earnings per share over last quarter.
+ To get a three-base hit
+&nbsp;&nbsp; The batter tripled into the gap.
+&nbsp;&nbsp; Our earnings have tripled in the last year.
+Noun
+ A determine|determining factor; an element that determines the nature of something
+ The unique scalar function over square matrix|matrices which is distributive over matrix multiplication, multilinear in the rows and columns, and takes the value of 1 for the unit matrix. Abbreviation: det
+ only, sole, single
+ unique
+Noun
+ The unique natural pattern of ridges on the tips of the fingers.
+ The patterns left on surfaces where uncovered fingertips have touched.
+Verb
+ To take somebody's fingerprints.
+&nbsp;&nbsp; The jail staff fingerprints its guests routinely
+Noun
+ a person's or a group's conception, philosophy or view of the world; a worldview
+&nbsp;&nbsp; Your background and experiences must give you a unique weltanschauung.
+Adj
+ Distinguished by a unique or unusual quality.
+&nbsp;&nbsp; a special episode of a television series
+ Of particular interest or value; certain; dear; beloved; favored.
+&nbsp;&nbsp; Everyone is special to someone.
+Noun
+ A reduction in consumer cost (usually for a limited time) for items or services rendered.
+&nbsp;&nbsp; Were running a special on turkey for Thanksgiving.
+ Unusual or exceptional episode of a series
+Noun
+ A very short abbreviation, often with little correlation to the item it represents
+&nbsp;&nbsp; You assigned the same "unique" code to two intake-categories, causing a database error!
+ A body of law, sanctioned by legislation, in which the rules of law to be specifically applied by the courts are set forth in systematic form; a compilation of laws by public authority; a digest.
+&nbsp;&nbsp; "The collection of laws made by the order of Justinian is sometimes called, by way of eminence, "The Code"." -Wharton
+Verb
+ To write software programs.
+ To categorise by assigning identifiers from a schedule, for example CPT coding for medical insurance purposes.
+Adj
+ Pertaining to a feast or feast-day. (Now only as the noun used attributively.)
+Noun
+ an event or community gathering, usually staged by a local community, which centers on some theme, sometimes on some unique aspect of the community.
+ in mythology, a set of celebrations in the honour of a god.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=unique" for 127.0.0.1 at Mon Jan 03 20:38:41 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"unique"}
+Rendered words/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 631ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+Noun
+ An e-mail address, a unique identifier specifying a virtual location to which e-mail can be sent.
+Noun
+ A sudden causeless change or turn of the mind; a whim of fancy; a capricious prank; a vagary or caprice.
+ A nonconformist, especially in appearance, social behavior, sexual orientation, gender identity, and/or business practices; an oddball, especially in physiology (i.e., "circus freak"); unique, sometimes in a displeasing way.
+Verb
+ To make greatly distressed and/or a discomposed appearance
+ To be placed or place someone under the influence of a psychedelic drug
+Adj
+ Made up of three related elements, often matching
+&nbsp;&nbsp; The triple markings on this vase are quite unique.
+ Three times the quantity
+&nbsp;&nbsp; Give me a triple serving of mashed potatoes.
+&nbsp;&nbsp; a triple room
+&nbsp;&nbsp; a triple meaning
+Noun
+ A drink with three portions of alcohol.
+&nbsp;&nbsp; Ive had a hard day, make that a triple.
+ A hamburger with three patty|patties.
+&nbsp;&nbsp; Id like a triple with cheese.
+Verb
+ To multiply by three
+&nbsp;&nbsp; The company tripled their earnings per share over last quarter.
+ To get a three-base hit
+&nbsp;&nbsp; The batter tripled into the gap.
+&nbsp;&nbsp; Our earnings have tripled in the last year.
+Noun
+ A determine|determining factor; an element that determines the nature of something
+ The unique scalar function over square matrix|matrices which is distributive over matrix multiplication, multilinear in the rows and columns, and takes the value of 1 for the unit matrix. Abbreviation: det
+ only, sole, single
+ unique
+Noun
+ The unique natural pattern of ridges on the tips of the fingers.
+ The patterns left on surfaces where uncovered fingertips have touched.
+Verb
+ To take somebody's fingerprints.
+&nbsp;&nbsp; The jail staff fingerprints its guests routinely
+Noun
+ a person's or a group's conception, philosophy or view of the world; a worldview
+&nbsp;&nbsp; Your background and experiences must give you a unique weltanschauung.
+Adj
+ Distinguished by a unique or unusual quality.
+&nbsp;&nbsp; a special episode of a television series
+ Of particular interest or value; certain; dear; beloved; favored.
+&nbsp;&nbsp; Everyone is special to someone.
+Noun
+ A reduction in consumer cost (usually for a limited time) for items or services rendered.
+&nbsp;&nbsp; Were running a special on turkey for Thanksgiving.
+ Unusual or exceptional episode of a series
+Noun
+ A very short abbreviation, often with little correlation to the item it represents
+&nbsp;&nbsp; You assigned the same "unique" code to two intake-categories, causing a database error!
+ A body of law, sanctioned by legislation, in which the rules of law to be specifically applied by the courts are set forth in systematic form; a compilation of laws by public authority; a digest.
+&nbsp;&nbsp; "The collection of laws made by the order of Justinian is sometimes called, by way of eminence, "The Code"." -Wharton
+Verb
+ To write software programs.
+ To categorise by assigning identifiers from a schedule, for example CPT coding for medical insurance purposes.
+Adj
+ Pertaining to a feast or feast-day. (Now only as the noun used attributively.)
+Noun
+ an event or community gathering, usually staged by a local community, which centers on some theme, sometimes on some unique aspect of the community.
+ in mythology, a set of celebrations in the honour of a god.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=unique" for 127.0.0.1 at Mon Jan 03 20:41:24 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"unique"}
+Rendered words/index.html.erb within layouts/application (49.2ms)
+Completed   in 1035ms
+
+ActionView::Template::Error (undefined local variable or method `otext' for #<#<Class:0xb6837974>:0xb68352a0>):
+    38: 		<div id="word">
+    39: 		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
+    40: 		<!--<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet") if record['snippet_text']!=nil%>-->
+    41: 		<%= simple_format(addhighlights(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'), params[:query]))%>
+    42: 		<%= record['timestamp']%>
+    43: 		</div>	
+    44: 	<%end%> 
+  app/helpers/application_helper.rb:4:in `addhighlights'
+  app/helpers/application_helper.rb:3:in `each'
+  app/helpers/application_helper.rb:3:in `addhighlights'
+  app/views/words/index.html.erb:41:in `_app_views_words_index_html_erb__698900337__616462948_0'
+  app/views/words/index.html.erb:37:in `each'
+  app/views/words/index.html.erb:37:in `_app_views_words_index_html_erb__698900337__616462948_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:43:23 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 135ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+Noun
+ The totality of blogs, especially the unique jargons, cultures and shared interests created by their interconnection.
+Noun
+ An e-mail address, a unique identifier specifying a virtual location to which e-mail can be sent.
+Noun
+ A sudden causeless change or turn of the mind; a whim of fancy; a capricious prank; a vagary or caprice.
+ A nonconformist, especially in appearance, social behavior, sexual orientation, gender identity, and/or business practices; an oddball, especially in physiology (i.e., "circus freak"); unique, sometimes in a displeasing way.
+Verb
+ To make greatly distressed and/or a discomposed appearance
+ To be placed or place someone under the influence of a psychedelic drug
+Adj
+ Made up of three related elements, often matching
+&nbsp;&nbsp; The triple markings on this vase are quite unique.
+ Three times the quantity
+&nbsp;&nbsp; Give me a triple serving of mashed potatoes.
+&nbsp;&nbsp; a triple room
+&nbsp;&nbsp; a triple meaning
+Noun
+ A drink with three portions of alcohol.
+&nbsp;&nbsp; Ive had a hard day, make that a triple.
+ A hamburger with three patty|patties.
+&nbsp;&nbsp; Id like a triple with cheese.
+Verb
+ To multiply by three
+&nbsp;&nbsp; The company tripled their earnings per share over last quarter.
+ To get a three-base hit
+&nbsp;&nbsp; The batter tripled into the gap.
+&nbsp;&nbsp; Our earnings have tripled in the last year.
+Noun
+ A determine|determining factor; an element that determines the nature of something
+ The unique scalar function over square matrix|matrices which is distributive over matrix multiplication, multilinear in the rows and columns, and takes the value of 1 for the unit matrix. Abbreviation: det
+ only, sole, single
+ unique
+Noun
+ The unique natural pattern of ridges on the tips of the fingers.
+ The patterns left on surfaces where uncovered fingertips have touched.
+Verb
+ To take somebody's fingerprints.
+&nbsp;&nbsp; The jail staff fingerprints its guests routinely
+Noun
+ a person's or a group's conception, philosophy or view of the world; a worldview
+&nbsp;&nbsp; Your background and experiences must give you a unique weltanschauung.
+Adj
+ Distinguished by a unique or unusual quality.
+&nbsp;&nbsp; a special episode of a television series
+ Of particular interest or value; certain; dear; beloved; favored.
+&nbsp;&nbsp; Everyone is special to someone.
+Noun
+ A reduction in consumer cost (usually for a limited time) for items or services rendered.
+&nbsp;&nbsp; Were running a special on turkey for Thanksgiving.
+ Unusual or exceptional episode of a series
+Noun
+ A very short abbreviation, often with little correlation to the item it represents
+&nbsp;&nbsp; You assigned the same "unique" code to two intake-categories, causing a database error!
+ A body of law, sanctioned by legislation, in which the rules of law to be specifically applied by the courts are set forth in systematic form; a compilation of laws by public authority; a digest.
+&nbsp;&nbsp; "The collection of laws made by the order of Justinian is sometimes called, by way of eminence, "The Code"." -Wharton
+Verb
+ To write software programs.
+ To categorise by assigning identifiers from a schedule, for example CPT coding for medical insurance purposes.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=unique" for 127.0.0.1 at Mon Jan 03 20:43:31 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"unique"}
+Rendered words/index.html.erb within layouts/application (104.6ms)
+Completed 200 OK in 578ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+Noun
+ The totality of blogs, especially the unique jargons, cultures and shared interests created by their interconnection.
+Noun
+ An e-mail address, a unique identifier specifying a virtual location to which e-mail can be sent.
+Noun
+ A sudden causeless change or turn of the mind; a whim of fancy; a capricious prank; a vagary or caprice.
+ A nonconformist, especially in appearance, social behavior, sexual orientation, gender identity, and/or business practices; an oddball, especially in physiology (i.e., "circus freak"); unique, sometimes in a displeasing way.
+Verb
+ To make greatly distressed and/or a discomposed appearance
+ To be placed or place someone under the influence of a psychedelic drug
+Adj
+ Made up of three related elements, often matching
+&nbsp;&nbsp; The triple markings on this vase are quite unique.
+ Three times the quantity
+&nbsp;&nbsp; Give me a triple serving of mashed potatoes.
+&nbsp;&nbsp; a triple room
+&nbsp;&nbsp; a triple meaning
+Noun
+ A drink with three portions of alcohol.
+&nbsp;&nbsp; Ive had a hard day, make that a triple.
+ A hamburger with three patty|patties.
+&nbsp;&nbsp; Id like a triple with cheese.
+Verb
+ To multiply by three
+&nbsp;&nbsp; The company tripled their earnings per share over last quarter.
+ To get a three-base hit
+&nbsp;&nbsp; The batter tripled into the gap.
+&nbsp;&nbsp; Our earnings have tripled in the last year.
+Noun
+ A determine|determining factor; an element that determines the nature of something
+ The unique scalar function over square matrix|matrices which is distributive over matrix multiplication, multilinear in the rows and columns, and takes the value of 1 for the unit matrix. Abbreviation: det
+ only, sole, single
+ unique
+Noun
+ The unique natural pattern of ridges on the tips of the fingers.
+ The patterns left on surfaces where uncovered fingertips have touched.
+Verb
+ To take somebody's fingerprints.
+&nbsp;&nbsp; The jail staff fingerprints its guests routinely
+Noun
+ a person's or a group's conception, philosophy or view of the world; a worldview
+&nbsp;&nbsp; Your background and experiences must give you a unique weltanschauung.
+Adj
+ Distinguished by a unique or unusual quality.
+&nbsp;&nbsp; a special episode of a television series
+ Of particular interest or value; certain; dear; beloved; favored.
+&nbsp;&nbsp; Everyone is special to someone.
+Noun
+ A reduction in consumer cost (usually for a limited time) for items or services rendered.
+&nbsp;&nbsp; Were running a special on turkey for Thanksgiving.
+ Unusual or exceptional episode of a series
+Noun
+ A very short abbreviation, often with little correlation to the item it represents
+&nbsp;&nbsp; You assigned the same "unique" code to two intake-categories, causing a database error!
+ A body of law, sanctioned by legislation, in which the rules of law to be specifically applied by the courts are set forth in systematic form; a compilation of laws by public authority; a digest.
+&nbsp;&nbsp; "The collection of laws made by the order of Justinian is sometimes called, by way of eminence, "The Code"." -Wharton
+Verb
+ To write software programs.
+ To categorise by assigning identifiers from a schedule, for example CPT coding for medical insurance purposes.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=unique" for 127.0.0.1 at Mon Jan 03 20:44:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"unique"}
+Rendered words/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 447ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+Noun
+ An e-mail address, a unique identifier specifying a virtual location to which e-mail can be sent.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=unique+e-mail" for 127.0.0.1 at Mon Jan 03 20:44:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"unique e-mail"}
+Rendered words/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 15564ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+^C[2011-01-03 20:46:03] INFO  going to shutdown ...
+[2011-01-03 20:46:03] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ clear
+[H[2J]0;bhaarat@bhaarat-laptop: ~/rails/wordsearchbhaarat@bhaarat-laptop:~/rails/wordsearch$ rails server
+WARNING: using the built-in Timeout class which is known to have issues when used for opening connections. Install the SystemTimer gem if you want to make sure the Redis client will not hang.
+=> Booting WEBrick
+=> Rails 3.0.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-03 20:46:30] INFO  WEBrick 1.3.1
+[2011-01-03 20:46:30] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2011-01-03 20:46:30] INFO  WEBrick::HTTPServer#start: pid=1134 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:46:33 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 830ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%7E" for 127.0.0.1 at Mon Jan 03 20:46:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"~"}
+Completed   in 946ms
+
+Faraday::Error::ParsingError (lexical error: inside a string, '\' occurs before a character which it may not.
+                       "Invalid query: \~"
+                     (right here) ------^
+):
+  app/models/word_searcher.rb:18:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+came here
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%7E" for 127.0.0.1 at Mon Jan 03 20:49:55 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"~"}
+Completed   in 458ms
+
+Faraday::Error::ParsingError (lexical error: inside a string, '\' occurs before a character which it may not.
+                       "Invalid query: \~"
+                     (right here) ------^
+):
+  app/models/word_searcher.rb:19:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:53:25 -0500 2011
+
+SyntaxError (/home/bhaarat/rails/wordsearch/app/controllers/words_controller.rb:3: syntax error, unexpected $undefined
+...nd params[:query].gsub(/[~!@#$%^&*()\/]/,'').length > 0
+                              ^
+/home/bhaarat/rails/wordsearch/app/controllers/words_controller.rb:3: syntax error, unexpected $undefined, expecting tCOLON2 or '[' or '.'
+...ms[:query].gsub(/[~!@#$%^&*()\/]/,'').length > 0
+                              ^):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:54:10 -0500 2011
+  Processing by WordsController#index as HTML
+Completed   in 5044ms
+
+Timeout::Error (execution expired):
+  app/controllers/words_controller.rb:4:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 20:54:21 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 956ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%21" for 127.0.0.1 at Mon Jan 03 20:54:28 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"!"}
+Rendered words/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 56ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%40" for 127.0.0.1 at Mon Jan 03 20:54:32 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"@"}
+Rendered words/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 44ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%24" for 127.0.0.1 at Mon Jan 03 20:54:35 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"$"}
+Rendered words/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 115ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%2F" for 127.0.0.1 at Mon Jan 03 20:54:37 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"/"}
+Rendered words/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 51ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+came here
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5C" for 127.0.0.1 at Mon Jan 03 20:54:39 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"\\"}
+Completed   in 538ms
+
+IndexTank::InvalidQuery (IndexTank::InvalidQuery):
+  app/models/word_searcher.rb:19:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+[2011-01-03 20:54:52] ERROR bad URI `/words?utf8=%E2%9C%93&query=\\'.
+
+
+Started GET "/words" for 127.0.0.1 at Mon Jan 03 20:54:56 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 50ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5C" for 127.0.0.1 at Mon Jan 03 20:54:58 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"\\"}
+Rendered words/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 43ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%2F" for 127.0.0.1 at Mon Jan 03 20:55:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"/"}
+Rendered words/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 54ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+came here
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test%5C" for 127.0.0.1 at Mon Jan 03 20:55:10 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test\\"}
+Completed   in 523ms
+
+IndexTank::InvalidQuery (IndexTank::InvalidQuery):
+  app/models/word_searcher.rb:19:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (71.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.2ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5B" for 127.0.0.1 at Mon Jan 03 20:56:45 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"["}
+Completed   in 9ms
+
+NameError (undefined local variable or method `params' for WordSearcher:Class):
+  app/models/word_searcher.rb:12:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+/home/bhaarat/rails/wordsearch/app/controllers/words_controller.rb:3: warning: regexp has `]' without escape
+came here
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5B" for 127.0.0.1 at Mon Jan 03 20:57:43 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"["}
+Completed   in 441ms
+
+Faraday::Error::ParsingError (lexical error: inside a string, '\' occurs before a character which it may not.
+                       "Invalid query: \["
+                     (right here) ------^
+):
+  app/models/word_searcher.rb:20:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+/home/bhaarat/rails/wordsearch/app/controllers/words_controller.rb:3: warning: regexp has `]' without escape
+
+
+Started GET "/words" for 127.0.0.1 at Mon Jan 03 20:57:50 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 534ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+/home/bhaarat/rails/wordsearch/app/controllers/words_controller.rb:3: warning: regexp has `]' without escape
+came here
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test%5C" for 127.0.0.1 at Mon Jan 03 20:57:54 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test\\"}
+Completed   in 318ms
+
+IndexTank::InvalidQuery (IndexTank::InvalidQuery):
+  app/models/word_searcher.rb:20:in `search'
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (71.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.6ms)
+/home/bhaarat/rails/wordsearch/app/models/word_searcher.rb:12: warning: character class has `[' without escape
+came here
+came here 1
+ To (experience/recognize a) taste
+ To test by tasting
+ the plural of proef (all senses)
+ the plural of proevees:proevenfr:proevenio:proevennl:proeven
+Noun
+ an improvised device, usually crudely constructed.  Typically used to test the validity of a principle before doing a finished design.
+ any construction or practice, typically inelegant, designed to solve a problem temporarily or expediently.
+Verb
+ to build or use a kludge
+Noun
+ A word, especially seen as a test, to distinguish someone as belonging to a particular nation, class, profession etc.
+ A common or longstanding belief, custom, or catchphrase associated with a particular group, especially one with little current meaning or truth.
+&nbsp;&nbsp; Its about time we abandoned the bourgeois shibboleth that earning money makes you a better person.
+Noun
+ An inconsistency between facts or sentiments.
+&nbsp;&nbsp; They found a discrepancy between the first set of test results and the second, and theyre still trying to figure out why.
+ The state or quality of being discrepant.
+Verb
+ To subject (granular material, especially food grain) to a current of air separating heavier and lighter components, as grain from chaff.
+ To separate, sift, analyze, or test in this manner.
+&nbsp;&nbsp; They winnowed the field to twelve.
+&nbsp;&nbsp; They winnowed the winners from the losers.
+&nbsp;&nbsp; They winnowed the losers from the winners.
+Noun
+ That which winnows or which is used in winnowing; a contrivance for fanning or winnowing grain.
+Noun
+ A dyestuff extracted from certain lichens, that changes color when exposed to pH levels greater than or less than certain critical levels.
+ A simple test of acidity in a liquid using litmus, usually in the form of litmus paper.
+Adj
+ surly|Surly.
+Verb
+ A coarse or stupid fellow.
+ Superfluous small talk that is free of conflict, offers no character development, description or insight, and does not advance the story or plot.
+Verb
+ To make noisy puffing sounds, as of a steam locomotive.
+ To purposefully fail a standardized test in a conspicuous way.
+Noun
+ An examination in general.
+ A judicial examination.
+&nbsp;&nbsp; National Assembly audit
+Verb
+ To conduct an independent review and examination of system records and activities in order to test the adequacy and effectiveness of data security and data integrity procedures, to ensure compliance with established policy and operational procedures, and to recommend any necessary changes
+ To attend an academic class on a not-for-academic-credit basis.
+Noun
+ trial, attempt, essay.
+ the qualitative or quantitative chemical analysis of something
+Verb
+ To analyze or estimate the composition or value of (a metal, ore etc.).
+ To test the abilities of (someone) in combat; to fight.
+Adj
+ Requiring little skill or effort, soft.
+&nbsp;&nbsp; The teacher gave an easy test to her students.
+ Consenting readily to sex.
+&nbsp;&nbsp; She has a reputation for being easy; they say shes slept with half the senior class.
+Adj
+ comfortable|Comfortable; at ease.
+&nbsp;&nbsp; In the middle of the room was a fluffy easy chair.
+&nbsp;&nbsp; Now that I know its taken care of, I can rest easy at night.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test%5C" for 127.0.0.1 at Mon Jan 03 20:58:36 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test\\"}
+Rendered words/index.html.erb within layouts/application (151.1ms)
+Completed 200 OK in 650ms (Views: 172.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5B" for 127.0.0.1 at Mon Jan 03 20:59:00 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"["}
+Rendered words/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 124ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5D" for 127.0.0.1 at Mon Jan 03 20:59:08 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"]"}
+Rendered words/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 243ms (Views: 211.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%5B%2F%21" for 127.0.0.1 at Mon Jan 03 20:59:20 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"[/!"}
+Rendered words/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 135ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at Mon Jan 03 21:02:12 -0500 2011
+  Processing by WordsController#index as HTML
+Completed   in 5025ms
+
+Timeout::Error (execution expired):
+  app/controllers/words_controller.rb:4:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.1ms)
+
+
+Started GET "/words" for 127.0.0.1 at Mon Jan 03 21:02:22 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 418ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%21" for 127.0.0.1 at Mon Jan 03 21:02:26 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"!"}
+Completed   in 3ms
+
+NoMethodError (undefined method `removechars' for #<WordsController:0xb66aeeb8>):
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/words" for 127.0.0.1 at Mon Jan 03 21:05:30 -0500 2011
+
+ActionController::RoutingError (uninitialized constant ApplicationHelher):
+  app/controllers/words_controller.rb:1
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 21:06:30 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 425ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%21" for 127.0.0.1 at Mon Jan 03 21:06:34 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"!"}
+Completed   in 2ms
+
+NoMethodError (undefined method `removechars' for #<WordsController:0xb6500260>):
+  app/controllers/words_controller.rb:3:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 21:12:11 -0500 2011
+  Processing by WordsController#index as HTML
+Completed   in 5274ms
+
+Timeout::Error (execution expired):
+  app/controllers/words_controller.rb:5:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 21:12:32 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 829ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=%24" for 127.0.0.1 at Mon Jan 03 21:12:42 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"$"}
+Rendered words/index.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 142ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Mon Jan 03 21:14:57 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Completed   in 37ms
+
+NoMethodError (undefined method `removechars' for WordSearcher:Class):
+  app/models/word_searcher.rb:13:in `search'
+  app/controllers/words_controller.rb:4:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Mon Jan 03 21:18:38 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Completed   in 9ms
+
+NoMethodError (undefined method `removeunwanted' for WordSearcher:Class):
+  app/models/word_searcher.rb:13:in `search'
+  app/controllers/words_controller.rb:4:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.5ms)
+came here
+came here 1
+Noun
+ A container used to discreetly carry a small amount of a hard alcoholic beverage; a pocket flask.
+ laboratory|Laboratory glassware used to hold larger volumes than test tubes, normally having a narrow mouth of a standard size which widens to a flat or spherical base.
+Verb
+ To substantiate or prove the truth of something
+ To confirm or test the truth or accuracy of something
+ To (experience/recognize a) taste
+ To test by tasting
+ the plural of proef (all senses)
+ the plural of proevees:proevenfr:proevenio:proevennl:proeven
+Noun
+ an improvised device, usually crudely constructed.  Typically used to test the validity of a principle before doing a finished design.
+ any construction or practice, typically inelegant, designed to solve a problem temporarily or expediently.
+Verb
+ to build or use a kludge
+Noun
+ A word, especially seen as a test, to distinguish someone as belonging to a particular nation, class, profession etc.
+ A common or longstanding belief, custom, or catchphrase associated with a particular group, especially one with little current meaning or truth.
+&nbsp;&nbsp; Its about time we abandoned the bourgeois shibboleth that earning money makes you a better person.
+Noun
+ An inconsistency between facts or sentiments.
+&nbsp;&nbsp; They found a discrepancy between the first set of test results and the second, and theyre still trying to figure out why.
+ The state or quality of being discrepant.
+Verb
+ To subject (granular material, especially food grain) to a current of air separating heavier and lighter components, as grain from chaff.
+ To separate, sift, analyze, or test in this manner.
+&nbsp;&nbsp; They winnowed the field to twelve.
+&nbsp;&nbsp; They winnowed the winners from the losers.
+&nbsp;&nbsp; They winnowed the losers from the winners.
+Noun
+ That which winnows or which is used in winnowing; a contrivance for fanning or winnowing grain.
+Noun
+ A dyestuff extracted from certain lichens, that changes color when exposed to pH levels greater than or less than certain critical levels.
+ A simple test of acidity in a liquid using litmus, usually in the form of litmus paper.
+Adj
+ surly|Surly.
+Verb
+ A coarse or stupid fellow.
+ Superfluous small talk that is free of conflict, offers no character development, description or insight, and does not advance the story or plot.
+Verb
+ To make noisy puffing sounds, as of a steam locomotive.
+ To purposefully fail a standardized test in a conspicuous way.
+Noun
+ An examination in general.
+ A judicial examination.
+&nbsp;&nbsp; National Assembly audit
+Verb
+ To conduct an independent review and examination of system records and activities in order to test the adequacy and effectiveness of data security and data integrity procedures, to ensure compliance with established policy and operational procedures, and to recommend any necessary changes
+ To attend an academic class on a not-for-academic-credit basis.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test" for 127.0.0.1 at Mon Jan 03 21:18:56 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test"}
+Rendered words/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 1018ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+came here
+came here 1
+Noun
+ A container used to discreetly carry a small amount of a hard alcoholic beverage; a pocket flask.
+ laboratory|Laboratory glassware used to hold larger volumes than test tubes, normally having a narrow mouth of a standard size which widens to a flat or spherical base.
+Verb
+ To substantiate or prove the truth of something
+ To confirm or test the truth or accuracy of something
+ To (experience/recognize a) taste
+ To test by tasting
+ the plural of proef (all senses)
+ the plural of proevees:proevenfr:proevenio:proevennl:proeven
+Noun
+ an improvised device, usually crudely constructed.  Typically used to test the validity of a principle before doing a finished design.
+ any construction or practice, typically inelegant, designed to solve a problem temporarily or expediently.
+Verb
+ to build or use a kludge
+Noun
+ A word, especially seen as a test, to distinguish someone as belonging to a particular nation, class, profession etc.
+ A common or longstanding belief, custom, or catchphrase associated with a particular group, especially one with little current meaning or truth.
+&nbsp;&nbsp; Its about time we abandoned the bourgeois shibboleth that earning money makes you a better person.
+Noun
+ An inconsistency between facts or sentiments.
+&nbsp;&nbsp; They found a discrepancy between the first set of test results and the second, and theyre still trying to figure out why.
+ The state or quality of being discrepant.
+Verb
+ To subject (granular material, especially food grain) to a current of air separating heavier and lighter components, as grain from chaff.
+ To separate, sift, analyze, or test in this manner.
+&nbsp;&nbsp; They winnowed the field to twelve.
+&nbsp;&nbsp; They winnowed the winners from the losers.
+&nbsp;&nbsp; They winnowed the losers from the winners.
+Noun
+ That which winnows or which is used in winnowing; a contrivance for fanning or winnowing grain.
+Noun
+ A dyestuff extracted from certain lichens, that changes color when exposed to pH levels greater than or less than certain critical levels.
+ A simple test of acidity in a liquid using litmus, usually in the form of litmus paper.
+Adj
+ surly|Surly.
+Verb
+ A coarse or stupid fellow.
+ Superfluous small talk that is free of conflict, offers no character development, description or insight, and does not advance the story or plot.
+Verb
+ To make noisy puffing sounds, as of a steam locomotive.
+ To purposefully fail a standardized test in a conspicuous way.
+Noun
+ An examination in general.
+ A judicial examination.
+&nbsp;&nbsp; National Assembly audit
+Verb
+ To conduct an independent review and examination of system records and activities in order to test the adequacy and effectiveness of data security and data integrity procedures, to ensure compliance with established policy and operational procedures, and to recommend any necessary changes
+ To attend an academic class on a not-for-academic-credit basis.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test%5C" for 127.0.0.1 at Mon Jan 03 21:19:01 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test\\"}
+Rendered words/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 697ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+came here
+came here 1
+Noun
+ A container used to discreetly carry a small amount of a hard alcoholic beverage; a pocket flask.
+ laboratory|Laboratory glassware used to hold larger volumes than test tubes, normally having a narrow mouth of a standard size which widens to a flat or spherical base.
+Verb
+ To substantiate or prove the truth of something
+ To confirm or test the truth or accuracy of something
+ To (experience/recognize a) taste
+ To test by tasting
+ the plural of proef (all senses)
+ the plural of proevees:proevenfr:proevenio:proevennl:proeven
+Noun
+ an improvised device, usually crudely constructed.  Typically used to test the validity of a principle before doing a finished design.
+ any construction or practice, typically inelegant, designed to solve a problem temporarily or expediently.
+Verb
+ to build or use a kludge
+Noun
+ A word, especially seen as a test, to distinguish someone as belonging to a particular nation, class, profession etc.
+ A common or longstanding belief, custom, or catchphrase associated with a particular group, especially one with little current meaning or truth.
+&nbsp;&nbsp; Its about time we abandoned the bourgeois shibboleth that earning money makes you a better person.
+Noun
+ An inconsistency between facts or sentiments.
+&nbsp;&nbsp; They found a discrepancy between the first set of test results and the second, and theyre still trying to figure out why.
+ The state or quality of being discrepant.
+Verb
+ To subject (granular material, especially food grain) to a current of air separating heavier and lighter components, as grain from chaff.
+ To separate, sift, analyze, or test in this manner.
+&nbsp;&nbsp; They winnowed the field to twelve.
+&nbsp;&nbsp; They winnowed the winners from the losers.
+&nbsp;&nbsp; They winnowed the losers from the winners.
+Noun
+ That which winnows or which is used in winnowing; a contrivance for fanning or winnowing grain.
+Noun
+ A dyestuff extracted from certain lichens, that changes color when exposed to pH levels greater than or less than certain critical levels.
+ A simple test of acidity in a liquid using litmus, usually in the form of litmus paper.
+Adj
+ surly|Surly.
+Verb
+ A coarse or stupid fellow.
+ Superfluous small talk that is free of conflict, offers no character development, description or insight, and does not advance the story or plot.
+Verb
+ To make noisy puffing sounds, as of a steam locomotive.
+ To purposefully fail a standardized test in a conspicuous way.
+Noun
+ An examination in general.
+ A judicial examination.
+&nbsp;&nbsp; National Assembly audit
+Verb
+ To conduct an independent review and examination of system records and activities in order to test the adequacy and effectiveness of data security and data integrity procedures, to ensure compliance with established policy and operational procedures, and to recommend any necessary changes
+ To attend an academic class on a not-for-academic-credit basis.
+
+
+Started GET "/words?utf8=%E2%9C%93&query=test%26" for 127.0.0.1 at Mon Jan 03 21:19:06 -0500 2011
+  Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"\342\234\223", "query"=>"test&"}
+Rendered words/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 685ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 03 21:19:23 -0500 2011
+  Processing by WordsController#index as HTML
+Rendered words/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 207ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+came here
+came here 1
+Noun
+ A container used to discreetly carry a small amount of a hard alcoholic beverage; a pocket flask.
+ laboratory|Laboratory glassware used to hold larger volumes than test tubes, normally having a narrow mouth of a standard size which widens to a flat or spherical base.
+Verb
+ To substantiate or prove the truth of something
+ To confirm or test the truth or accuracy of something
+ To (experience/recognize a) taste
+ To test by tasting
+ the plural of proef (all senses)
+ the plural of proevees:proevenfr:proevenio:proevennl:proeven
+Noun
+ an improvised device, usually crudely constructed.  Typically used to test the validity of a principle before doing a finished design.
+ any construction or practice, typically inelegant, designed to solve a problem temporarily or expediently.
+Verb
+ to build or use a kludge
+Noun
+ A word, especially seen as a test, to distinguish someone as belonging to a particular nation, class, profession etc.
+ A common or longstanding belief, custom, or catchphrase associated with a particular group, especially one with little current meaning or truth.
+&nbsp;&nbsp; Its about time we abandoned the bourgeois shibboleth that earning money makes you a better person.
+Noun
+ An inconsistency between facts or sentiments.
+&nbsp;&nbsp; They found a discrepancy between the first set of test results and the second, and theyre still trying to figure out why.
+ The state or quality of being discrepant.
+Verb
+ To subject (granular material, especially food grain) to a current of air separating heavier and lighter components, as grain from chaff.
+ To separate, sift, analyze, or test in this manner.
+&nbsp;&nbsp; They winnowed the field to twelve.
+&nbsp;&nbsp; They winnowed the winners from the losers.
+&nbsp;&nbsp; They winnowed the losers from the winners.
+Noun
+ That which winnows or which is used in winnowing; a contrivance for fanning or winnowing grain.
+Noun
+ A dyestuff extracted from certain lichens, that changes color when exposed to pH levels greater than or less than certain critical levels.
+ A simple test of acidity in a liquid using litmus, usually in the form of litmus paper.
+Adj
+ surly|Surly.
+Verb
+ A coarse or stupid fellow.
+ Superfluous small talk that is free of conflict, offers no character development, description or insight, and does not advance the story or plot.
+Verb
+ To make noisy puffing sounds, as of a steam locomotive.
+ To purposefully fail a standardized test in a conspicuous way.
+Noun
+ An examination in general.
+ A judi

@@ -32,13 +32,13 @@
 <div id="content-out">
 <div id="content">
 <% if @docs %>
-  <p id="result-count">Search for <b>"<%= params[:query] %>"</b> returned <b><%= pluralize @docs['matches'], 'result' %></b> in <%=@docs['search_time']%> seconds</p>
+  <p id="result-count">Search for <b>"<%= removechars(params[:query]) %>"</b> returned <b><%= pluralize @docs['matches'], 'result' %></b> in <%=@docs['search_time']%> seconds</p>
 <br><br>
 	<%@docs['results'].each do |record|%>
 		<div id="word">
 		<a id="link_word" target="_blank" href="http://en.wiktionary.org/wiki/<%=record['searched_word']%>"><%=record['searched_word'].gsub('_',' ')%></a></b> 
 		<!--<%=simple_format(record['snippet_text'].gsub('\n',''), :class=>"snippet") if record['snippet_text']!=nil%>-->
-		<%= simple_format(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'))%>
+		<%= simple_format(addhighlights(record['text'].gsub(/\t/,'&nbsp;&nbsp;&nbsp;'), removechars(params[:query])))%>
 		<%= record['timestamp']%>
 		</div>	
 	<%end%> 
