@@ -1,7 +1,7 @@
 module ApplicationHelper
 	def addhighlights(text, textterms)
 		textterms.split(/\s/).each do |n|
-			text = text.gsub(/\b#{n}\b/,"<b>#{n}</b>")
+			text = text.gsub(/\b#{n}\b/i,"<b>#{n}</b>")
 		end
 		return text
 	end
